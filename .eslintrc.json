@@ -63,9 +63,8 @@
             "group": "internal",
             "position": "after"
           },
-
           {
-            "pattern": "components/**",
+            "pattern": "@/components/**",
             "group": "internal",
             "position": "after"
           },
@@ -76,6 +75,11 @@
           },
           {
             "pattern": "helpers/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@/images/**",
             "group": "internal",
             "position": "after"
           },
