@@ -1,14 +1,15 @@
 import Link from "next/link";
+
 import clsx from "clsx";
 
 function ChevronRightIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+    <svg aria-hidden="true" fill="none" viewBox="0 0 16 16" {...props}>
       <path
         d="M6.75 5.75 9.25 8l-2.5 2.25"
-        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
+        strokeWidth="1.5"
       />
     </svg>
   );
@@ -22,7 +23,7 @@ export function Card<T extends React.ElementType = "div">({
   as?: T;
   className?: string;
 }) {
-  let Component = as ?? "div";
+  const Component = as ?? "div";
 
   return (
     <Component
@@ -40,8 +41,10 @@ Card.Link = function CardLink({
   return (
     <>
       <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
+
       <Link {...props}>
         <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
+
         <span className="relative z-10">{children}</span>
       </Link>
     </>
@@ -56,7 +59,7 @@ Card.Title = function CardTitle<T extends React.ElementType = "h2">({
   as?: T;
   href?: string;
 }) {
-  let Component = as ?? "h2";
+  const Component = as ?? "h2";
 
   return (
     <Component className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
@@ -84,6 +87,7 @@ Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
       className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
     >
       {children}
+
       <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
     </div>
   );
@@ -99,7 +103,7 @@ Card.Eyebrow = function CardEyebrow<T extends React.ElementType = "p">({
   as?: T;
   decorate?: boolean;
 }) {
-  let Component = as ?? "p";
+  const Component = as ?? "p";
 
   return (
     <Component
@@ -112,12 +116,13 @@ Card.Eyebrow = function CardEyebrow<T extends React.ElementType = "p">({
     >
       {decorate && (
         <span
-          className="absolute inset-y-0 left-0 flex items-center"
           aria-hidden="true"
+          className="absolute inset-y-0 left-0 flex items-center"
         >
           <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
         </span>
       )}
+
       {children}
     </Component>
   );
