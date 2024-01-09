@@ -5,47 +5,38 @@ import Image from "next/image";
 import { Card } from "@/components/Card";
 import { SimpleLayout } from "@/components/SimpleLayout";
 
-import logoAnimaginary from "@/images/logos/animaginary.svg";
-import logoCosmos from "@/images/logos/cosmos.svg";
-import logoHelioStream from "@/images/logos/helio-stream.svg";
-import logoOpenShuttle from "@/images/logos/open-shuttle.svg";
-import logoPlanetaria from "@/images/logos/planetaria.svg";
+import logoAyruu from "@/images/logos/ayruu_logo.jpeg";
+import logoBNPParibas from "@/images/logos/bnp_paribas_logo.jpeg";
+import logoDalenys from "@/images/logos/dalenys_logo.jpeg";
+import logoKinetix from "@/images/logos/kinetixtech_logo.jpeg";
+import logoLaPoste from "@/images/logos/la_poste_logo.jpeg";
+import logoLeCLoset from "@/images/logos/le_closet_logo.jpeg";
+import logoLeFigaro from "@/images/logos/le_figaro_logo.jpeg";
+import logoRockUSupport from "@/images/logos/rock_u_support_logo.jpeg";
+import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
+import logoTilli from "@/images/logos/tilli_jointhecycle_logo.jpeg";
 
 const projects = [
   {
-    name: "Planetaria",
+    name: "Le Figaro",
     description:
       "Creating technology to empower civilians to explore space on their own terms.",
-    link: { href: "http://planetaria.tech", label: "planetaria.tech" },
-    logo: logoPlanetaria,
+    link: { href: "http://lefigaro.fr", label: "lefigaro.fr" },
+    logo: logoLeFigaro,
   },
   {
-    name: "Animaginary",
+    name: "Payplug",
     description:
       "High performance web animation library, hand-written in optimized WASM.",
-    link: { href: "#", label: "github.com" },
-    logo: logoAnimaginary,
+    link: { href: "https://www.payplug.com/", label: "payplug.com" },
+    logo: logoDalenys,
   },
   {
-    name: "HelioStream",
+    name: "Kinetix Tech",
     description:
-      "Real-time video streaming library, optimized for interstellar transmission.",
-    link: { href: "#", label: "github.com" },
-    logo: logoHelioStream,
-  },
-  {
-    name: "cosmOS",
-    description:
-      "The operating system that powers our Planetaria space shuttles.",
-    link: { href: "#", label: "github.com" },
-    logo: logoCosmos,
-  },
-  {
-    name: "OpenShuttle",
-    description:
-      "The schematics for the first rocket I designed that successfully made it to orbit.",
-    link: { href: "#", label: "github.com" },
-    logo: logoOpenShuttle,
+      "High performance web animation library, hand-written in optimized WASM.",
+    link: { href: "https://www.kinetix.tech/", label: "kinetix.tech" },
+    logo: logoKinetix,
   },
 ];
 
@@ -77,10 +68,10 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 overflow-hidden">
               <Image
                 alt=""
-                className="h-8 w-8"
+                className="object-cover"
                 src={project.logo}
                 unoptimized
               />
