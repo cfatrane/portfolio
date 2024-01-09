@@ -5,38 +5,55 @@ import Image from "next/image";
 import { Card } from "@/components/Card";
 import { SimpleLayout } from "@/components/SimpleLayout";
 
-import logoAyruu from "@/images/logos/ayruu_logo.jpeg";
-import logoBNPParibas from "@/images/logos/bnp_paribas_logo.jpeg";
 import logoDalenys from "@/images/logos/dalenys_logo.jpeg";
 import logoKinetix from "@/images/logos/kinetixtech_logo.jpeg";
-import logoLaPoste from "@/images/logos/la_poste_logo.jpeg";
-import logoLeCLoset from "@/images/logos/le_closet_logo.jpeg";
+import logoLeCloset from "@/images/logos/le_closet_logo.jpeg";
 import logoLeFigaro from "@/images/logos/le_figaro_logo.jpeg";
 import logoRockUSupport from "@/images/logos/rock_u_support_logo.jpeg";
 import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
-import logoTilli from "@/images/logos/tilli_jointhecycle_logo.jpeg";
 
 const projects = [
   {
     name: "Le Figaro",
     description:
-      "Creating technology to empower civilians to explore space on their own terms.",
+      "Le Figaro is a French daily morning newspaper founded in 1826. The oldest national newspaper in France",
     link: { href: "http://lefigaro.fr", label: "lefigaro.fr" },
     logo: logoLeFigaro,
   },
   {
     name: "Payplug",
     description:
-      "High performance web animation library, hand-written in optimized WASM.",
+      "Payplug is a payment solution designed for merchants, online merchants and fintech companies.",
     link: { href: "https://www.payplug.com/", label: "payplug.com" },
     logo: logoDalenys,
   },
   {
     name: "Kinetix Tech",
     description:
-      "High performance web animation library, hand-written in optimized WASM.",
+      "Kinetix allows games to integrate an AI-powered User-Generated Emote feature.",
     link: { href: "https://www.kinetix.tech/", label: "kinetix.tech" },
     logo: logoKinetix,
+  },
+  {
+    name: "Rock U Support",
+    description:
+      "Rock U Support is a platform that allows event organizers and sports coaches to connect with their audience.",
+    link: { href: "https://rockusupport.com/", label: "rockusupport.com" },
+    logo: logoRockUSupport,
+  },
+
+  {
+    name: "alf",
+    description:
+      "alt is a PaaS platform for legal file management, designed to optimize your recurring legal workflows and save time for you and your teams.",
+    link: { href: "https://thisisalf.com/", label: "thisisalf.com" },
+    logo: logoAlf,
+  },
+  {
+    name: "Le Closet",
+    description: "Le dressing illimité pour femme par abonnement.",
+    link: { href: "https://www.lecloset.fr/", label: "lecloset.fr" },
+    logo: logoLeCloset,
   },
 ];
 
