@@ -12,6 +12,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from "@/components/SocialIcons";
+
 import portraitImage from "@/images/portrait.jpg";
 
 function SocialLink({

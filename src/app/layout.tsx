@@ -1,6 +1,7 @@
 import { type Metadata } from "next";
 
 import { Providers } from "@/app/providers";
+
 import { Layout } from "@/components/Layout";
 
 import "@/styles/tailwind.css";

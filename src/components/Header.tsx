@@ -11,6 +11,7 @@ import clsx from "clsx";
 import { useTheme } from "next-themes";
 
 import { Container } from "@/components/Container";
+
 import avatarImage from "@/images/avatar.jpg";
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<"svg">) {

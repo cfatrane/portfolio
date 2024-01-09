@@ -11,6 +11,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from "@/components/SocialIcons";
+
 import logoAirbnb from "@/images/logos/airbnb.svg";
 import logoFacebook from "@/images/logos/facebook.svg";
 import logoPlanetaria from "@/images/logos/planetaria.svg";
