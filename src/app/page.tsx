@@ -191,8 +191,8 @@ function Role({ role }: { role: Role }) {
   );
 }
 
-function Resume() {
-  const resume: Array<Role> = [
+function Resume({ part }) {
+  const resume_one: Array<Role> = [
     {
       company: "Le Figaro",
       title: "Fullstack Web Developer",
@@ -232,6 +232,9 @@ function Resume() {
       start: "Aug 2020",
       end: "Sept 2020",
     },
+  ];
+
+  const resume_two: Array<Role> = [
     {
       company: "TILLI",
       title: "Fullstack Web & Mobile Developer",
@@ -278,15 +281,27 @@ function Resume() {
       </h2>
 
       <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
-        ))}
+        {part === 1 && (
+          <>
+            {resume_one.map((role, roleIndex) => (
+              <Role key={roleIndex} role={role} />
+            ))}
+          </>
+        )}
+
+        {part === 2 && (
+          <>
+            {resume_two.map((role, roleIndex) => (
+              <Role key={roleIndex} role={role} />
+            ))}
+          </>
+        )}
       </ol>
 
-      <Button className="group mt-6 w-full" href="#" variant="secondary">
+      {/* <Button className="group mt-6 w-full" variant="secondary">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+      </Button> */}
     </div>
   );
 }
@@ -381,17 +396,15 @@ export default async function Home() {
       <Photos />
 
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/* <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article article={article} key={article.slug} />
-            ))}
-          </div> */}
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-x-20 gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div className="space-y-10">
+            <Resume part={1} />
+          </div>
 
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+          <div className="space-y-10">
+            {/* <Newsletter /> */}
 
-            <Resume />
+            <Resume part={2} />
           </div>
         </div>
       </Container>
