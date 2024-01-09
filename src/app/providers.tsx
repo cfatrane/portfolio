@@ -4,8 +4,6 @@ import { createContext, useEffect, useRef } from "react";
 
 import { usePathname } from "next/navigation";
 
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider, useTheme } from "next-themes";
 
 function usePrevious<T>(value: T) {
@@ -54,10 +52,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
         <ThemeWatcher />
 
         {children}
-
-        <Analytics />
-
-        <SpeedInsights />
       </ThemeProvider>
     </AppContext.Provider>
   );
