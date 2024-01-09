@@ -5,6 +5,8 @@ import Link from "next/link";
 
 import clsx from "clsx";
 
+import SOCIAL from "@/constants/social";
+
 import { Container } from "@/components/Container";
 import {
   GitHubIcon,
@@ -54,7 +56,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<"svg">) {
 export const metadata: Metadata = {
   title: "About",
   description:
-    "I’m Spencer Sharp. I live in New York City, where I design the future.",
+    "I’m Charles-Edouard Fatrane. I live in Paris, where I design the future.",
 };
 
 export default function About() {
@@ -65,7 +67,7 @@ export default function About() {
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               alt=""
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 grayscale"
               sizes="(min-width: 1024px) 32rem, 20rem"
               src={portraitImage}
             />
@@ -74,7 +76,7 @@ export default function About() {
 
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Spencer Sharp. I live in New York City, where I design the
+            I’m Charles-Edouard Fatrane. I live in Paris, where I design the
             future.
           </h1>
 
@@ -113,28 +115,36 @@ export default function About() {
 
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={TwitterIcon}>
+            <SocialLink href={SOCIAL.twitter} icon={TwitterIcon}>
               Follow on Twitter
             </SocialLink>
 
-            <SocialLink className="mt-4" href="#" icon={InstagramIcon}>
+            <SocialLink
+              className="mt-4"
+              href={SOCIAL.instagram}
+              icon={InstagramIcon}
+            >
               Follow on Instagram
             </SocialLink>
 
-            <SocialLink className="mt-4" href="#" icon={GitHubIcon}>
+            <SocialLink className="mt-4" href={SOCIAL.github} icon={GitHubIcon}>
               Follow on GitHub
             </SocialLink>
 
-            <SocialLink className="mt-4" href="#" icon={LinkedInIcon}>
+            <SocialLink
+              className="mt-4"
+              href={SOCIAL.linkedin}
+              icon={LinkedInIcon}
+            >
               Follow on LinkedIn
             </SocialLink>
 
             <SocialLink
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:cfatrane.pro@gmail.com"
               icon={MailIcon}
             >
-              spencer@planetaria.tech
+              cfatrane.pro@gmail.com
             </SocialLink>
           </ul>
         </div>

@@ -12,10 +12,16 @@ import {
   TwitterIcon,
 } from "@/components/SocialIcons";
 
-import logoAirbnb from "@/images/logos/airbnb.svg";
-import logoFacebook from "@/images/logos/facebook.svg";
-import logoPlanetaria from "@/images/logos/planetaria.svg";
-import logoStarbucks from "@/images/logos/starbucks.svg";
+import logoAyruu from "@/images/logos/ayruu_logo.jpeg";
+import logoBNPParibas from "@/images/logos/bnp_paribas_logo.jpeg";
+import logoDalenys from "@/images/logos/dalenys_logo.jpeg";
+import logoKinetix from "@/images/logos/kinetixtech_logo.jpeg";
+import logoLaPoste from "@/images/logos/la_poste_logo.jpeg";
+import logoLeCloset from "@/images/logos/le_closet_logo.jpeg";
+import logoLeFigaro from "@/images/logos/le_figaro_logo.jpeg";
+import logoRockUSupport from "@/images/logos/rock_u_support_logo.jpeg";
+import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
+import logoTilli from "@/images/logos/tilli_jointhecycle_logo.jpeg";
 import image1 from "@/images/photos/image-1.jpg";
 import image2 from "@/images/photos/image-2.jpg";
 import image3 from "@/images/photos/image-3.jpg";
@@ -153,8 +159,8 @@ function Role({ role }: { role: Role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image alt="" className="h-7 w-7" src={role.logo} unoptimized />
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 overflow-hidden">
+        <Image alt="" className="h-full w-full" src={role.logo} unoptimized />
       </div>
 
       <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -188,35 +194,78 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   const resume: Array<Role> = [
     {
-      company: "Planetaria",
-      title: "CEO",
-      logo: logoPlanetaria,
-      start: "2019",
-      end: {
-        label: "Present",
-        dateTime: new Date().getFullYear().toString(),
-      },
+      company: "Le Figaro",
+      title: "Fullstack Web Developer",
+      logo: logoLeFigaro,
+      start: "Oct 2023",
+      end: "May 2023",
+      // end: {
+      //   label: "Present",
+      //   dateTime: new Date().getFullYear().toString(),
+      // },
     },
     {
-      company: "Airbnb",
-      title: "Product Designer",
-      logo: logoAirbnb,
-      start: "2014",
-      end: "2019",
+      company: "Payplug",
+      title: "Frontend Developer",
+      logo: logoDalenys,
+      start: "Mar 2023",
+      end: "Oct 2022",
     },
     {
-      company: "Facebook",
-      title: "iOS Software Engineer",
-      logo: logoFacebook,
-      start: "2011",
-      end: "2014",
+      company: "Kinetix",
+      title: "Frontend Developer",
+      logo: logoKinetix,
+      start: "Jan 2021",
+      end: "Sept 2022",
     },
     {
-      company: "Starbucks",
-      title: "Shift Supervisor",
-      logo: logoStarbucks,
-      start: "2008",
-      end: "2011",
+      company: "Rock U Support",
+      title: "Mobile Developer",
+      logo: logoRockUSupport,
+      start: "Dec 2020",
+      end: "Dec 2020",
+    },
+    {
+      company: "Ayruu",
+      title: "Frontend Developer",
+      logo: logoAyruu,
+      start: "Aug 2020",
+      end: "Sept 2020",
+    },
+    {
+      company: "TILLI",
+      title: "Fullstack Web & Mobile Developer",
+      logo: logoTilli,
+      start: "Fev 2020",
+      end: "Apr 2020",
+    },
+    {
+      company: "alf",
+      title: "Fullstack Web Developer",
+      logo: logoAlf,
+      start: "Sept 2019",
+      end: "Nov 2019",
+    },
+    {
+      company: "Le Closet",
+      title: "Fullstack Web Developer",
+      logo: logoLeCloset,
+      start: "Fev 2018",
+      end: "Jun 2019",
+    },
+    {
+      company: "BNP Paribas",
+      title: "Fullstack Web Developer",
+      logo: logoBNPParibas,
+      start: "Oct 2017",
+      end: "Jan 2018",
+    },
+    {
+      company: "La Poste",
+      title: "Fullstack Web Developer",
+      logo: logoLaPoste,
+      start: "Oct 2017",
+      end: "Jan 2018",
     },
   ];
 
@@ -319,19 +368,21 @@ export default async function Home() {
 
       <Photos />
 
-      {/* <Container className="mt-24 md:mt-28">
+      <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
+          {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
-              <Article key={article.slug} article={article} />
+              <Article article={article} key={article.slug} />
             ))}
-          </div>
+          </div> */}
+
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
+
             <Resume />
           </div>
         </div>
-      </Container> */}
+      </Container>
     </>
   );
 }
