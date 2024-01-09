@@ -8,9 +8,9 @@ import "@/styles/tailwind.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - Spencer Sharp",
+    template: "%s - Charles-Edouard Fatrane",
     default:
-      "Spencer Sharp - Software designer, founder, and amateur astronaut",
+      "Charles-Edouard Fatrane - Software developer, founder, and amateur astronaut",
   },
   description:
     "I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.",
