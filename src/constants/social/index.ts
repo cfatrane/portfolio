@@ -4,3 +4,5 @@ const SOCIAL = {
   github: "https://github.com/cfatrane/",
   linkedin: "https://www.linkedin.com/in/cfatrane/",
 };
+
+export default SOCIAL;
