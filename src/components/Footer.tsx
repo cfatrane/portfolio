@@ -35,8 +35,8 @@ export function Footer() {
               </div>
 
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} Charles-Edouard Fatrane. All
+                rights reserved.
               </p>
             </div>
           </ContainerInner>
