@@ -72,7 +72,7 @@ function MeetingIcon(props: React.ComponentPropsWithoutRef<"svg">) {
 export const metadata: Metadata = {
   title: "About",
   description:
-    "I’m Charles-Edouard Fatrane. I live in Paris, where I design the future.",
+    "I’m Charles-Edouard Fatrane. I live in Paris, where I design amazing website and applications !",
 };
 
 export default function About() {
@@ -170,7 +170,7 @@ export default function About() {
               href="https://calendly.com/cfatrane-pro"
               icon={MeetingIcon}
             >
-              Meeting on calendly
+              Book a meeting with me on calendly
             </SocialLink>
           </ul>
         </div>
