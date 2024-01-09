@@ -81,34 +81,36 @@ export default function About() {
           </h1>
 
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <p>Hello 👋!</p>
+
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              An alumnus of Ecole 42 with a wealth of experience spanning 5
+              years, I'm a Fullstack developer specializing in the design and
+              deployment of web and mobile solutions using React Js , Node.js
+              and React Native.
             </p>
 
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              My career path, which spans innovative startups to large
+              enterprises, has enabled me to develop web platforms, showcase
+              sites, e-commerce solutions, interactive blogs and responsive
+              mobile applications.
             </p>
 
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              I work closely with my clients to understand their needs and
+              exceed their expectations. If you're looking for a developer who
+              combines technical expertise, attention to detail and a holistic
+              approach to web development, I'd be delighted to discuss your
+              project.
             </p>
 
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              I'm passionate about delivering solutions that not only meet
+              technical requirements, but also add real value for the end user.
+              If you need an expert who can translate your visions into
+              concrete, high-performance digital experiences, I'm at your
+              disposal to discuss your project and contribute to its success.
             </p>
           </div>
         </div>
