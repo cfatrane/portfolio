@@ -334,8 +334,20 @@ export default async function Home() {
           </h1>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Charles-Edouard, a software developer and entrepreneur based in
+            I'm Charles-Edouard, a software developer and entrepreneur based in
             Paris.
+          </p>
+
+          <p className="mt-4">
+            Are you looking for a React / Next JS / React Native developer to
+            join your team? Are you looking to develop a website or mobile
+            application?
+          </p>
+
+          <p className="mt-4">
+            I'm a front-end developer with 5 years' experience in the
+            e-commerce, audiovisual and media sectors. I've had the opportunity
+            to work with companies like BNP, La Poste and Le Figaro.
           </p>
 
           <div className="mt-6 flex gap-6">
