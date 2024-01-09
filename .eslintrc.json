@@ -122,6 +122,7 @@
     "react/jsx-newline": 1,
     "react/jsx-no-useless-fragment": [2, { "allowExpressions": true }],
     "react/jsx-sort-props": [1, { "ignoreCase": true }],
+    "react/no-unescaped-entities": 0,
 
     "react-refresh/only-export-components": [
       "warn",

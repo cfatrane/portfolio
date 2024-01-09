@@ -7,7 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { Popover, Transition } from "@headlessui/react";
-import clsx from "clsx";
+import { clsx } from "clsx";
 import { useTheme } from "next-themes";
 
 import { Container } from "@/components/Container";
