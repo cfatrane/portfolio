@@ -11,6 +11,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
+  MaltIcon,
 } from "@/components/SocialIcons";
 
 import logoAyruu from "@/images/logos/ayruu_logo.jpeg";
@@ -398,6 +399,12 @@ export default async function Home() {
               aria-label="Book a meeting with me on calendly"
               href="https://calendly.com/cfatrane-pro"
               icon={MeetingIcon}
+            />
+
+            <SocialLink
+              aria-label="Book a contract on Malt"
+              href="https://www.malt.fr/profile/cfatrane"
+              icon={MaltIcon}
             />
           </div>
         </div>
