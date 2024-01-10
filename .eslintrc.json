@@ -143,6 +143,8 @@
         ]
       }
     ]
+
+    // "sort-imports": 1
   },
   "settings": {
     "import/resolver": {

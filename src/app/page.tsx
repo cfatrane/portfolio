@@ -6,6 +6,7 @@ import { clsx } from "clsx";
 // import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
 import {
+  MeetingIcon,
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
@@ -345,7 +346,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Web & Mobile developer.
+            Software developer and digital nomad.
           </h1>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
@@ -391,6 +392,12 @@ export default async function Home() {
               aria-label="Follow on LinkedIn"
               href="https://www.linkedin.com/in/cfatrane/"
               icon={LinkedInIcon}
+            />
+
+            <SocialLink
+              aria-label="Book a meeting with me on calendly"
+              href="https://calendly.com/cfatrane-pro"
+              icon={MeetingIcon}
             />
           </div>
         </div>
