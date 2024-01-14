@@ -298,6 +298,14 @@ function Resume({ part }: Readonly<{ part: number }>) {
             ))}
           </>
         )}
+
+        {part === 3 && (
+          <>
+            {[...resume_one, ...resume_two].map((role, roleIndex) => (
+              <Role key={roleIndex} role={role} />
+            ))}
+          </>
+        )}
       </ol>
 
       {/* <Button className="group mt-6 w-full" variant="secondary">
@@ -354,8 +362,7 @@ export default async function Home() {
             I'm Charles-Edouard a Fullstack developer specializing in the design
             and deployment of web and mobile solutions using React Js, Node.js
             and React Native based in Paris. I have 5 years of experience in the
-            e-commerce, audiovisual and media sectors. I've had the opportunity
-            to work with companies like BNP, La Poste and Le Figaro.
+            e-commerce, audiovisual and media sectors.
           </p>
 
           {/* <p className="mt-4">
@@ -413,7 +420,19 @@ export default async function Home() {
       <Photos />
 
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-x-20 gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-x-20 gap-y-20 lg:max-w-none lg:hidden">
+          <div className="space-y-10">
+            <Resume part={3} />
+          </div>
+
+          {/* <div className="space-y-10">
+            <Newsletter />
+
+            <Resume part={2} />
+          </div> */}
+        </div>
+
+        <div className="mx-auto max-w-xl hidden gap-x-20 gap-y-20 lg:max-w-none lg:grid lg:grid-cols-2">
           <div className="space-y-10">
             <Resume part={1} />
           </div>
