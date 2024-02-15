@@ -199,8 +199,8 @@ function Resume({ part }: Readonly<{ part: number }>) {
       company: "Le Figaro",
       title: "Fullstack Web Developer",
       logo: logoLeFigaro,
-      start: "Oct 2023",
-      end: "May 2023",
+      start: "May 2023",
+      end: "Oct 2023",
       // end: {
       //   label: "Present",
       //   dateTime: new Date().getFullYear().toString(),
@@ -210,8 +210,8 @@ function Resume({ part }: Readonly<{ part: number }>) {
       company: "Payplug",
       title: "Frontend Developer",
       logo: logoDalenys,
-      start: "Mar 2023",
-      end: "Oct 2022",
+      start: "Oct 2022",
+      end: "Mar 2023",
     },
     {
       company: "Kinetix",
