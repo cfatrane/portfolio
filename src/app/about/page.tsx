@@ -137,7 +137,7 @@ export default function About() {
 
             <SocialLink
               className="mt-4"
-              href={SOCIAL.linkedin}
+              href={SOCIAL.linkedIn}
               icon={LinkedInIcon}
             >
               Follow on LinkedIn
@@ -145,7 +145,7 @@ export default function About() {
 
             <SocialLink
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              href="mailto:cfatrane.pro@gmail.com"
+              href={SOCIAL.mail}
               icon={MailIcon}
             >
               Contact me by mail
@@ -159,11 +159,7 @@ export default function About() {
               Book a meeting with me on calendly
             </SocialLink>
 
-            <SocialLink
-              className="pt-8"
-              href="https://www.malt.fr/profile/cfatrane"
-              icon={MaltIcon}
-            >
+            <SocialLink className="pt-8" href={SOCIAL.malt} icon={MaltIcon}>
               Book a contract on Malt
             </SocialLink>
           </ul>
