@@ -58,7 +58,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<"svg">) {
 export const metadata: Metadata = {
   title: "About",
   description:
-    "I’m Charles-Edouard Fatrane. I live in Paris, where I design amazing website and applications !",
+    "I’m Charles-Édouard Fatrane. I live in Paris, where I design amazing website and applications !",
 };
 
 export default function About() {
@@ -78,7 +78,7 @@ export default function About() {
 
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Charles-Edouard Fatrane. I live in Paris, where I design the
+            I’m Charles-Édouard Fatrane. I live in Paris, where I design the
             amazing website and applications.
           </h1>
 

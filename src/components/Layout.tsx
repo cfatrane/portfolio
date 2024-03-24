@@ -1,4 +1,5 @@
 import { Footer } from "@/components/Footer";
+import { FooterBis } from "@/components/FooterBis";
 import { Header } from "@/components/Header";
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -16,6 +17,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <main className="flex-auto">{children}</main>
 
         <Footer />
+
+        <FooterBis />
       </div>
     </>
   );

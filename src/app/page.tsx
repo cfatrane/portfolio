@@ -359,7 +359,7 @@ export default async function Home() {
           </h1>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Charles-Edouard a Fullstack developer specializing in the design
+            I'm Charles-Édouard a Fullstack developer specializing in the design
             and deployment of web and mobile solutions using React Js, Node.js
             and React Native based in Paris. I have 5 years of experience in the
             e-commerce, audiovisual and media sectors.
