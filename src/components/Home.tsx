@@ -3,20 +3,23 @@
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { WavyBackground } from "@/components/ui/wavy-background";
 
+import { LogoCloud } from "./LogoCloud";
+
 function Home() {
   const words = [
     {
-      text: "Mobile",
+      text: "Développeur",
+    },
+    {
+      text: "Front",
+      className: "text-blue-500 dark:text-blue-500",
     },
     {
       text: "&",
     },
     {
-      text: "Web",
-    },
-    {
-      text: "Developer.",
       className: "text-blue-500 dark:text-blue-500",
+      text: "Mobile",
     },
   ];
 
@@ -29,6 +32,8 @@ function Home() {
           </p>
 
           <TypewriterEffectSmooth words={words} />
+
+          <LogoCloud />
         </div>
       </WavyBackground>
     </div>

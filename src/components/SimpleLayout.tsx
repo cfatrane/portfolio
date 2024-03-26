@@ -25,7 +25,9 @@ export function SimpleLayout({
         </p>
       </header>
 
-      {children && <div className="mt-16 sm:mt-20">{children}</div>}
+      <div className="animate__animated animate__slideInUp">
+        {children && <div className=" mt-16 sm:mt-20">{children}</div>}
+      </div>
     </Container>
   );
 }

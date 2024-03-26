@@ -20,6 +20,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
+    "animate.css": "^4.1.1",
     "clsx": "^2.1.0",
     "dayjs": "^1.11.10",
     "feed": "^4.2.2",

@@ -8,6 +8,8 @@ import { Providers } from "@/app/providers";
 import { Layout } from "@/components/Layout";
 import "@/styles/tailwind.css";
 
+import "animate.css";
+
 export const metadata: Metadata = {
   title: {
     template: "%s - Charles-Édouard Fatrane",

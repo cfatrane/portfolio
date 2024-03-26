@@ -79,10 +79,10 @@ export default function About() {
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Je m'appelle Charles-Édouard Fatrane. J'habite à Paris, où je
-            conçois des sites Web et des applications incroyables.
+            conçois des sites Web et des applications mobiles.
           </h1>
 
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="animate__animated animate__slideInUp mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>Hello 👋 !</p>
 
             <p>
@@ -121,8 +121,8 @@ export default function About() {
 
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href={SOCIAL.twitter} icon={TwitterIcon}>
-              Suivez moi sur Twitter
+            <SocialLink href={SOCIAL.linkedIn} icon={LinkedInIcon}>
+              Suivez moi sur LinkedIn
             </SocialLink>
 
             <SocialLink
@@ -139,10 +139,10 @@ export default function About() {
 
             <SocialLink
               className="mt-4"
-              href={SOCIAL.linkedIn}
-              icon={LinkedInIcon}
+              href={SOCIAL.twitter}
+              icon={TwitterIcon}
             >
-              Suivez moi sur LinkedIn
+              Suivez moi sur Twitter
             </SocialLink>
 
             <SocialLink
