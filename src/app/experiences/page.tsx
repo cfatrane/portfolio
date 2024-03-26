@@ -61,12 +61,11 @@ function Experiences() {
                 </div>
 
                 <div className="prose-sm text-sm dark dark:prose-invert">
-                  <a href={item.website}>
+                  <a href={item.website} style={{ height: "1000px" }}>
                     {item?.image && (
                       <Image
                         alt="blog thumbnail"
                         className="mb-10 rounded-lg object-cover"
-                        height="1000"
                         src={item.image}
                         width="1000"
                       />
