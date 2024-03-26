@@ -1,7 +1,6 @@
 import { type Metadata } from "next";
 
 import { SimpleLayout } from "@/components/SimpleLayout";
-
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 const projects = [
