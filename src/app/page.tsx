@@ -1,9 +1,9 @@
-import HomeBis from "@/components/Home";
+import Home from "@/components/Home";
 
-export default async function Home() {
+export default async function Index() {
   return (
     <div>
-      <HomeBis />
+      <Home />
     </div>
   );
 }
