@@ -61,11 +61,13 @@ function Experiences() {
                 </div>
 
                 <div className="prose-sm text-sm dark dark:prose-invert">
-                  <a href={item.website} style={{ height: "1000px" }}>
+                  <a href={item.website}>
                     {item?.image && (
                       <Image
-                        alt="blog thumbnail"
+                        alt={`${item.name} thumbnail`}
                         className="mb-10 rounded-lg object-cover"
+                        height="1000"
+                        priority
                         src={item.image}
                         width="1000"
                       />
@@ -82,13 +84,9 @@ function Experiences() {
             ))}
           </div>
         </TracingBeam>
-
-        {/* <HoverEffect items={projects} /> */}
       </SimpleLayout>
     </div>
   );
 }
-
-// export function CardHoverEffectDemo() {
 
 export default Experiences;

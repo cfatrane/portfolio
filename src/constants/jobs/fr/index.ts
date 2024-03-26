@@ -1,13 +1,3 @@
-import screenAlf from "@/images/jobs/alf.jpeg";
-import screenAyruu from "@/images/jobs/ayruu.jpeg";
-import screenBNP from "@/images/jobs/bnp.jpeg";
-import screenKinetix from "@/images/jobs/kinetix.jpeg";
-import screenLaPoste from "@/images/jobs/la_poste.jpeg";
-import screenLeCloset from "@/images/jobs/le_closet.jpeg";
-import screenFigaro from "@/images/jobs/le_figaro.jpeg";
-import screenPayplug from "@/images/jobs/payplug.jpeg";
-import screenRockUSupport from "@/images/jobs/rock_u_support.jpeg";
-import screenTilli from "@/images/jobs/tilli.jpeg";
 import logoAyruu from "@/images/logos/ayruu_logo.jpeg";
 import logoBNP from "@/images/logos/bnp_paribas_logo.jpeg";
 import logoKinetix from "@/images/logos/kinetixtech_logo.jpeg";
@@ -30,7 +20,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur React Js",
     logo: logoLeFigaro,
-    image: screenFigaro,
+    image: "/screenshots/le_figaro.jpeg",
     startDate: "2023-05",
     endDate: "2023-10",
     color: "#183860",
@@ -44,7 +34,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur React Js",
     logo: logoPayplug,
-    image: screenPayplug,
+    image: "/screenshots/payplug.jpeg",
     startDate: "2022-10",
     endDate: "2023-04",
     color: "#ffd908",
@@ -57,7 +47,7 @@ export const JOBS_FR: Props[] = [
       "J'ai rejoint l’équipe plateforme quelques mois après la création de Kinetix, j'étais responsable du développement de leur plateforme ainsi que de leur site vitrine pendant presque 2 ans. Durant mon contrat, le nombre d’utilisateurs a augmenté de 400 % et le taux de conversion client a été amélioré de 30 %. Nous étions en méthodes agiles au sein d'une équipe de 3 développeurs avec un dev backend et ingénieur 3D.",
     ],
     logo: logoKinetix,
-    image: screenKinetix,
+    image: "/screenshots/kinetix.jpeg",
     title: "Développeur React Js / Next Js",
     startDate: "2021-01",
     endDate: "2022-09",
@@ -72,7 +62,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur React Native",
     logo: logoRockUSupport,
-    image: screenRockUSupport,
+    image: "/screenshots/rock_u_support.jpeg",
     startDate: "2020-12",
     endDate: "2020-12",
     color: "#EB5D28",
@@ -86,7 +76,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur React Js",
     logo: logoAyruu,
-    image: screenAyruu,
+    image: "/screenshots/ayruu.jpeg",
     startDate: "2020-09",
     endDate: "2020-09",
     color: "#53AFFB",
@@ -100,7 +90,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur React Js",
     logo: logoTilli,
-    image: screenTilli,
+    image: "/screenshots/tilli.jpeg",
     startDate: "2020-02",
     endDate: "2020-06",
     website: "https://tilli.fr/",
@@ -113,7 +103,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur React Js",
     logo: logoAlf,
-    image: screenAlf,
+    image: "/screenshots/alf.jpeg",
     startDate: "2019-09",
     endDate: "2019-11",
     color: "#390067",
@@ -127,7 +117,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur Fullstack Web",
     logo: logoLeCloset,
-    image: screenLeCloset,
+    image: "/screenshots/le_closet.jpeg",
     startDate: "2018-02",
     endDate: "2018-06",
     website: "https://www.lecloset.fr/",
@@ -140,7 +130,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur React Js",
     logo: logoBNP,
-    image: screenBNP,
+    image: "/screenshots/bnp.jpeg",
     startDate: "2017-08",
     endDate: "2018-01",
     color: "#39A676",
@@ -154,7 +144,7 @@ export const JOBS_FR: Props[] = [
     ],
     title: "Développeur Mobile",
     logo: logoLaPoste,
-    image: screenLaPoste,
+    image: "/screenshots/la_poste.jpeg",
     startDate: "2017-08",
     endDate: "2018-01",
     color: "#2B3EA5",
