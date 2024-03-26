@@ -1,4 +1,4 @@
-import Image, { type ImageProps } from "next/image";
+// import Image, { type ImageProps } from "next/image";
 
 export default function LogoCloud() {
   return (

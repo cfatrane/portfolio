@@ -1,13 +1,8 @@
-import React from "react";
-
 import { type Metadata } from "next";
 
 import Image from "next/image";
 
 import dayjs from "dayjs";
-
-// import { Image } from "@nextui-org/react";
-import { twMerge } from "tailwind-merge";
 
 import { JOBS_FR } from "@/constants/jobs/fr";
 
@@ -43,7 +38,6 @@ function Experiences() {
                   </div>
 
                   <h2 className="w-fit rounded-full bg-black px-4 py-1 text-2xl text-white">
-                    {/* <h2 className="mb-4 w-fit rounded-full bg-black px-4 py-1 text-xl text-white"> */}
                     {item.title}
                   </h2>
                 </a>
@@ -63,7 +57,7 @@ function Experiences() {
                   </p>
                 </div>
 
-                <div className="prose-sm  prose text-sm dark:prose-invert">
+                <div className="prose-sm text-sm dark dark:prose-invert">
                   <a href={item.website}>
                     {item?.image && (
                       <Image
@@ -76,7 +70,9 @@ function Experiences() {
                     )}
                   </a>
 
-                  {item?.description?.map((item) => <p>{item}</p>)}
+                  {item?.description?.map((item, index) => (
+                    <p key={index}>{item}</p>
+                  ))}
                 </div>
               </div>
             ))}

@@ -4,7 +4,6 @@ import { createContext, useEffect, useRef } from "react";
 
 import { usePathname } from "next/navigation";
 
-import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider, useTheme } from "next-themes";
 
 function usePrevious<T>(value: T) {
@@ -25,6 +24,7 @@ function ThemeWatcher() {
 
     function onMediaChange() {
       const systemTheme = media.matches ? "dark" : "light";
+
       if (resolvedTheme === systemTheme) {
         setTheme("system");
       }
