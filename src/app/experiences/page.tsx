@@ -9,9 +9,11 @@ import { JOBS_FR } from "@/constants/jobs/fr";
 import { SimpleLayout } from "@/components/SimpleLayout";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 
+const title = "Une liste des entreprises avec lesquelles j'ai collaboré.";
+
 export const metadata: Metadata = {
   title: "Experiences",
-  description: "Une liste des entreprises avec lesquelles j'ai collaboré",
+  description: title,
 };
 
 function Experiences() {
@@ -19,7 +21,7 @@ function Experiences() {
     <div>
       <SimpleLayout
         intro="Je suis développeur frontend avec 5 ans d’expérience dans des secteurs comme l'e-commerce, l'audiovisuel les sport, la mode et les médias. J’ai eu l’opportunité de travailler avec des entreprises comme la BNP, La Poste et Le Figaro. J'ai aussi pu travailler avec différentes start-ups dans diverses domaines."
-        title="Une liste des entreprises avec lesquelles j'ai collaboré"
+        title={title}
       >
         <TracingBeam>
           <div className="relative mx-auto max-w-2xl pt-4 antialiased">
@@ -55,6 +57,7 @@ function Experiences() {
 
                     <span>
                       {dayjs(item.startDate).format("MMM YYYY")} -{" "}
+
                       {dayjs(item.endDate).format("MMM YYYY")}
                     </span>
                   </p>
