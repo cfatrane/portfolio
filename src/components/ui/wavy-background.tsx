@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+
+import { useEffect, useRef, useState } from "react";
 
 import { createNoise3D } from "simplex-noise";
 
@@ -55,6 +56,7 @@ export const WavyBackground = ({
     h = ctx.canvas.height = window.innerHeight;
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
+
     window.onresize = function () {
       w = ctx.canvas.width = window.innerWidth;
       h = ctx.canvas.height = window.innerHeight;
@@ -72,12 +74,15 @@ export const WavyBackground = ({
   ];
   const drawWave = (n: number) => {
     nt += getSpeed();
+
     for (i = 0; i < n; i++) {
       ctx.beginPath();
       ctx.lineWidth = waveWidth || 50;
       ctx.strokeStyle = waveColors[i % waveColors.length];
+
       for (x = 0; x < w; x += 5) {
         const y = noise(x / 800, 0.3 * i, nt) * 100;
+
         ctx.lineTo(x, y + h * 0.5); // adjust for height, currently at 50% of the container
       }
       ctx.stroke();
@@ -96,12 +101,14 @@ export const WavyBackground = ({
 
   useEffect(() => {
     init();
+
     return () => {
       cancelAnimationFrame(animationId);
     };
   }, []);
 
   const [isSafari, setIsSafari] = useState(false);
+
   useEffect(() => {
     // I'm sorry but i have got to support it on safari.
     setIsSafari(

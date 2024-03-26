@@ -129,11 +129,11 @@
       { "blankLine": "always", "prev": "*", "next": "function" },
       { "blankLine": "always", "prev": "*", "next": "block-like" },
 
-      { "blankLine": "always", "prev": ["import"], "next": "*" },
+      { "blankLine": "always", "prev": "import", "next": "*" },
       {
         "blankLine": "any",
-        "prev": ["import"],
-        "next": ["import"]
+        "prev": "import",
+        "next": "import"
       },
       { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
       {
@@ -162,9 +162,9 @@
           "action"
         ]
       }
-    ]
+    ],
 
-    // "sort-imports": 1
+    "@typescript-eslint/no-explicit-any": "warn"
   },
   "settings": {
     "import/resolver": {
