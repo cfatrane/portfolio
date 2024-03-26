@@ -33,6 +33,7 @@ export const JOBS_FR: Props[] = [
     image: screenFigaro,
     startDate: "2023-05",
     endDate: "2023-10",
+    color: "#183860",
     website: "https://www.lefigaro.fr/",
   },
   {
@@ -60,7 +61,7 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Js / Next Js",
     startDate: "2021-01",
     endDate: "2022-09",
-    color: "#730bda",
+    color: "#EE4364",
     website: "https://www.kinetix.tech/",
   },
   {
@@ -74,6 +75,7 @@ export const JOBS_FR: Props[] = [
     image: screenRockUSupport,
     startDate: "2020-12",
     endDate: "2020-12",
+    color: "#EB5D28",
     website: "https://rockusupport.com/",
   },
   {
@@ -87,6 +89,7 @@ export const JOBS_FR: Props[] = [
     image: screenAyruu,
     startDate: "2020-09",
     endDate: "2020-09",
+    color: "#53AFFB",
     website: "https://ayruu.com/",
   },
   {
@@ -113,6 +116,7 @@ export const JOBS_FR: Props[] = [
     image: screenAlf,
     startDate: "2019-09",
     endDate: "2019-11",
+    color: "#390067",
     website: "https://thisisalf.com/",
   },
   {
@@ -139,6 +143,7 @@ export const JOBS_FR: Props[] = [
     image: screenBNP,
     startDate: "2017-08",
     endDate: "2018-01",
+    color: "#39A676",
     website: "https://group.bnpparibas/",
   },
   {
@@ -152,6 +157,7 @@ export const JOBS_FR: Props[] = [
     image: screenLaPoste,
     startDate: "2017-08",
     endDate: "2018-01",
+    color: "#2B3EA5",
     website: "https://www.laposte.fr/",
   },
 ];
