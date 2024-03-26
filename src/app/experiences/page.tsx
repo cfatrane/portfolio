@@ -7,7 +7,6 @@ import dayjs from "dayjs";
 import { JOBS_FR } from "@/constants/jobs/fr";
 
 import { SimpleLayout } from "@/components/SimpleLayout";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export const metadata: Metadata = {
@@ -85,57 +84,57 @@ function Experiences() {
   );
 }
 
-export function CardHoverEffectDemo() {
-  return (
-    <div className="mx-auto max-w-5xl px-8">
-      <HoverEffect items={projects} />
-    </div>
-  );
-}
+// export function CardHoverEffectDemo() {
+//   return (
+//     <div className="mx-auto max-w-5xl px-8">
+//       <HoverEffect items={projects} />
+//     </div>
+//   );
+// }
 
-const projects = [
-  {
-    title: "Le Figaro",
-    description:
-      "Le Figaro is a French daily morning newspaper founded in 1826. The oldest national newspaper in France",
-    link: "http://lefigaro.fr",
-    // logo: logoLeFigaro,
-  },
-  {
-    title: "Payplug",
-    description:
-      "Payplug is a payment solution designed for merchants, online merchants and fintech companies.",
-    link: "https://www.payplug.com/",
-    // logo: logoDalenys,
-  },
-  {
-    title: "Kinetix Tech",
-    description:
-      "Kinetix allows games to integrate an AI-powered User-Generated Emote feature.",
-    link: "https://www.kinetix.tech/",
-    // logo: logoKinetix,
-  },
-  {
-    title: "Rock U Support",
-    description:
-      "Rock U Support is a platform that allows event organizers and sports coaches to connect with their audience.",
-    link: "https://rockusupport.com/",
-    // logo: logoRockUSupport,
-  },
+// const projects = [
+//   {
+//     title: "Le Figaro",
+//     description:
+//       "Le Figaro is a French daily morning newspaper founded in 1826. The oldest national newspaper in France",
+//     link: "http://lefigaro.fr",
+//     // logo: logoLeFigaro,
+//   },
+//   {
+//     title: "Payplug",
+//     description:
+//       "Payplug is a payment solution designed for merchants, online merchants and fintech companies.",
+//     link: "https://www.payplug.com/",
+//     // logo: logoDalenys,
+//   },
+//   {
+//     title: "Kinetix Tech",
+//     description:
+//       "Kinetix allows games to integrate an AI-powered User-Generated Emote feature.",
+//     link: "https://www.kinetix.tech/",
+//     // logo: logoKinetix,
+//   },
+//   {
+//     title: "Rock U Support",
+//     description:
+//       "Rock U Support is a platform that allows event organizers and sports coaches to connect with their audience.",
+//     link: "https://rockusupport.com/",
+//     // logo: logoRockUSupport,
+//   },
 
-  {
-    title: "alf",
-    description:
-      "alt is a PaaS platform for legal file management, designed to optimize your recurring legal workflows and save time for you and your teams.",
-    link: "https://thisisalf.com/",
-    // logo: logoAlf,
-  },
-  {
-    title: "Le Closet",
-    description: "Le dressing illimité pour femme par abonnement.",
-    link: "https://www.lecloset.fr/",
-    // logo: logoLeCloset,
-  },
-];
+//   {
+//     title: "alf",
+//     description:
+//       "alt is a PaaS platform for legal file management, designed to optimize your recurring legal workflows and save time for you and your teams.",
+//     link: "https://thisisalf.com/",
+//     // logo: logoAlf,
+//   },
+//   {
+//     title: "Le Closet",
+//     description: "Le dressing illimité pour femme par abonnement.",
+//     link: "https://www.lecloset.fr/",
+//     // logo: logoLeCloset,
+//   },
+// ];
 
 export default Experiences;
