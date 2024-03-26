@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import Link from "next/link";
 
+import { Chip } from "@nextui-org/react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { cn } from "@/utils/cn";
@@ -19,6 +20,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    wip?: boolean;
   }[];
   className?: string;
   withMeteors?: boolean;
@@ -59,7 +61,7 @@ export const HoverEffect = ({
           </AnimatePresence>
 
           <Card withMeteors={withMeteors}>
-            <CardTitle>{item.title}</CardTitle>
+            <CardTitle wip={item.wip}>{item.title}</CardTitle>
 
             <CardDescription>{item.description}</CardDescription>
           </Card>
@@ -101,14 +103,24 @@ export const Card = ({
 export const CardTitle = ({
   className,
   children,
+  wip,
 }: {
   className?: string;
   children: React.ReactNode;
+  wip?: boolean;
 }) => {
   return (
-    <h4 className={cn("mt-4 font-bold tracking-wide text-zinc-100", className)}>
-      {children}
-    </h4>
+    <div className="mt-4 flex items-center">
+      <h4 className={cn("font-bold tracking-wide text-zinc-100", className)}>
+        {children}
+      </h4>
+
+      {wip && (
+        <Chip className="ml-2" color="warning" size="sm">
+          WIP
+        </Chip>
+      )}
+    </div>
   );
 };
 
