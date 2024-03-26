@@ -160,7 +160,7 @@ export function Header() {
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </NavbarItem>
       </NavbarContent>
 
