@@ -1,6 +1,7 @@
 import { type Metadata } from "next";
 
 import { SimpleLayout } from "@/components/SimpleLayout";
+
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 const projects = [
@@ -47,7 +48,7 @@ export default function Projects() {
       title="Les projets auxquels j'ai pu contribuer."
     >
       <div className="mx-auto max-w-5xl px-8">
-        <HoverEffect items={projects} />
+        <HoverEffect items={projects} withMeteors />
       </div>
     </SimpleLayout>
   );

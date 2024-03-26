@@ -8,9 +8,12 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { cn } from "@/utils/cn";
 
+import { Meteors } from "@/components/ui/meteors";
+
 export const HoverEffect = ({
   items,
   className,
+  withMeteors,
 }: {
   items: {
     title: string;
@@ -18,6 +21,7 @@ export const HoverEffect = ({
     link: string;
   }[];
   className?: string;
+  withMeteors?: boolean;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -54,7 +58,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
 
-          <Card>
+          <Card withMeteors={withMeteors}>
             <CardTitle>{item.title}</CardTitle>
 
             <CardDescription>{item.description}</CardDescription>
@@ -68,20 +72,28 @@ export const HoverEffect = ({
 export const Card = ({
   className,
   children,
+  withMeteors,
 }: {
   className?: string;
   children: React.ReactNode;
+  withMeteors?: boolean;
 }) => {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
   return (
     <div
       className={cn(
         "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent bg-black p-4 group-hover:border-slate-700 dark:border-white/[0.2]",
         className,
       )}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="relative z-50">
         <div className="p-4">{children}</div>
       </div>
+
+      {withMeteors && isHovered && <Meteors number={20} />}
     </div>
   );
 };

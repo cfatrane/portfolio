@@ -21,6 +21,9 @@ const config: Config = {
   // plugins: [typographyPlugin],
   theme: {
     extend: {
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -41,6 +44,16 @@ const config: Config = {
       "7xl": ["4.5rem", { lineHeight: "1" }],
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
+    },
+    keyframes: {
+      meteor: {
+        "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+        "70%": { opacity: "1" },
+        "100%": {
+          transform: "rotate(215deg) translateX(-500px)",
+          opacity: "0",
+        },
+      },
     },
     typography: typographyStyles,
   },
