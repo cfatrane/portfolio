@@ -5,10 +5,10 @@ import Image from "next/image";
 import { Card } from "@/components/Card";
 import { SimpleLayout } from "@/components/SimpleLayout";
 
-import logoDalenys from "@/images/logos/dalenys_logo.jpeg";
 import logoKinetix from "@/images/logos/kinetixtech_logo.jpeg";
 import logoLeCloset from "@/images/logos/le_closet_logo.jpeg";
 import logoLeFigaro from "@/images/logos/le_figaro_logo.jpeg";
+import logoPayplug from "@/images/logos/payplug_logo.jpeg";
 import logoRockUSupport from "@/images/logos/rock_u_support_logo.jpeg";
 import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
 
@@ -25,7 +25,7 @@ const projects = [
     description:
       "Payplug is a payment solution designed for merchants, online merchants and fintech companies.",
     link: { href: "https://www.payplug.com/", label: "payplug.com" },
-    logo: logoDalenys,
+    logo: logoPayplug,
   },
   {
     name: "Kinetix Tech",
@@ -85,7 +85,7 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 overflow-hidden">
+            <div className="relative z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
                 alt=""
                 className="object-cover"
