@@ -18,7 +18,7 @@ function Experiences() {
   return (
     <div>
       <SimpleLayout
-        intro="Je suis développeur frontend avec 5 ans d’expérience dans des secteurs comme l'e-commerce, l'audiovisuel et les médias. J’ai eu l’opportunité de travailler avec des entreprises comme la BNP, La Poste et Le Figaro."
+        intro="Je suis développeur frontend avec 5 ans d’expérience dans des secteurs comme l'e-commerce, l'audiovisuel les sport, la mode et les médias. J’ai eu l’opportunité de travailler avec des entreprises comme la BNP, La Poste et Le Figaro. J'ai aussi pu travailler avec différentes start-ups dans diverses domaines."
         title="Une liste des entreprises avec lesquelles j'ai collaboré"
       >
         <TracingBeam>
