@@ -33,11 +33,11 @@ function NavItem({
 
   return (
     <NavbarItem isActive={isActive}>
-      <Button variant="light">
-        <Link color={isActive ? "primary" : "foreground"} href={href}>
+      <Link color={isActive ? "primary" : "foreground"} href={href}>
+        <Button color={isActive ? "primary" : "default"} variant="light">
           {children}
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     </NavbarItem>
   );
 }
