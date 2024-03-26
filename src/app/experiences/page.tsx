@@ -11,7 +11,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export const metadata: Metadata = {
   title: "Experiences",
-  description: "Une liste des entreprises avec lesquelles j'ai travaillé",
+  description: "Une liste des entreprises avec lesquelles j'ai collaboré",
 };
 
 function Experiences() {
@@ -19,7 +19,7 @@ function Experiences() {
     <div>
       <SimpleLayout
         intro="Je suis développeur frontend avec 5 ans d’expérience dans des secteurs comme l'e-commerce, l'audiovisuel et les médias. J’ai eu l’opportunité de travailler avec des entreprises comme la BNP, La Poste et Le Figaro."
-        title="Une liste des entreprises avec lesquelles j'ai travaillé"
+        title="Une liste des entreprises avec lesquelles j'ai collaboré"
       >
         <TracingBeam>
           <div className="relative mx-auto max-w-2xl pt-4 antialiased">
