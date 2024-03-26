@@ -1,14 +1,21 @@
+import { nextui } from "@nextui-org/react";
 import typographyPlugin from "@tailwindcss/typography";
 
 import typographyStyles from "./typography";
 
 import type { Config } from "tailwindcss";
 
+const {
+  default: flattenColorPalette,
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
   // plugins: [typographyPlugin],
@@ -37,6 +44,19 @@ const config: Config = {
     },
     typography: typographyStyles,
   },
-  plugins: [typographyPlugin],
+  plugins: [typographyPlugin, addVariablesForColors, nextui()],
 };
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
+
 export default config;

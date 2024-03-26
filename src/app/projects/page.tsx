@@ -1,113 +1,54 @@
 import { type Metadata } from "next";
 
-import Image from "next/image";
-
-import { Card } from "@/components/Card";
 import { SimpleLayout } from "@/components/SimpleLayout";
-
-import logoDalenys from "@/images/logos/dalenys_logo.jpeg";
-import logoKinetix from "@/images/logos/kinetixtech_logo.jpeg";
-import logoLeCloset from "@/images/logos/le_closet_logo.jpeg";
-import logoLeFigaro from "@/images/logos/le_figaro_logo.jpeg";
-import logoRockUSupport from "@/images/logos/rock_u_support_logo.jpeg";
-import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 const projects = [
   {
-    name: "Le Figaro",
+    title: "nextjs-boilerplate",
     description:
-      "Le Figaro is a French daily morning newspaper founded in 1826. The oldest national newspaper in France",
-    link: { href: "http://lefigaro.fr", label: "lefigaro.fr" },
-    logo: logoLeFigaro,
+      "WIP: Boilerplate for Next Js. Eslint, Husky, i18n, Prettier, Shadcn, Storybook, Stripe, Tailwind",
+    link: "https://github.com/cfatrane/nextjs-boilerplate",
   },
   {
-    name: "Payplug",
+    title: "your-life-in",
     description:
-      "Payplug is a payment solution designed for merchants, online merchants and fintech companies.",
-    link: { href: "https://www.payplug.com/", label: "payplug.com" },
-    logo: logoDalenys,
+      "It kind of feels like our lives are made up of a countless number of weeks. But there they are—fully countable—staring you in the face.",
+    link: "https://your-life-in.vercel.app/",
   },
   {
-    name: "Kinetix Tech",
-    description:
-      "Kinetix allows games to integrate an AI-powered User-Generated Emote feature.",
-    link: { href: "https://www.kinetix.tech/", label: "kinetix.tech" },
-    logo: logoKinetix,
+    title: "react-native-boilerplate",
+    description: "WIP: React Native Boilerplate",
+    link: "https://github.com/cfatrane/react-native-boilerplate",
   },
   {
-    name: "Rock U Support",
+    title: "pokedex-app",
     description:
-      "Rock U Support is a platform that allows event organizers and sports coaches to connect with their audience.",
-    link: { href: "https://rockusupport.com/", label: "rockusupport.com" },
-    logo: logoRockUSupport,
-  },
-
-  {
-    name: "alf",
-    description:
-      "alt is a PaaS platform for legal file management, designed to optimize your recurring legal workflows and save time for you and your teams.",
-    link: { href: "https://thisisalf.com/", label: "thisisalf.com" },
-    logo: logoAlf,
+      "WIP: A React Native application for Pokemon. A pokedex with list of all Pokemons and their stats, type, evolution.",
+    link: "https://github.com/cfatrane/pokedex-app",
   },
   {
-    name: "Le Closet",
-    description: "Le dressing illimité pour femme par abonnement.",
-    link: { href: "https://www.lecloset.fr/", label: "lecloset.fr" },
-    logo: logoLeCloset,
+    title: "vitejs-boilerplate",
+    description:
+      "WIP: Boilerplate for Vite Js. Eslint, Husky, Prettier, Tailwind",
+    link: "https://github.com/cfatrane/vitejs-boilerplate",
   },
 ];
 
-function LinkIcon(props: React.ComponentPropsWithoutRef<"svg">) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" {...props}>
-      <path
-        d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Things I’ve made trying to put my dent in the universe.",
+  description: "Les projets auxquels j'ai pu contribuer.",
 };
 
 export default function Projects() {
   return (
     <SimpleLayout
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
-      title="Things I’ve made trying to put my dent in the universe."
+      intro="J'ai travaillé sur des tonnes de petits projets au fil des ans, mais voici ceux dont je suis le plus fier. Beaucoup d'entre eux sont open-source, donc si vous voyez quelque chose qui vous intéresse, regardez le code et contribuez si vous avez des idées pour l'améliorer."
+      title="Les projets auxquels j'ai pu contribuer."
     >
-      <ul
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
-        role="list"
-      >
-        {projects.map((project) => (
-          <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 overflow-hidden">
-              <Image
-                alt=""
-                className="object-cover"
-                src={project.logo}
-                unoptimized
-              />
-            </div>
-
-            <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
-            </h2>
-
-            <Card.Description>{project.description}</Card.Description>
-
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
-
-              <span className="ml-2">{project.link.label}</span>
-            </p>
-          </Card>
-        ))}
-      </ul>
+      <div className="mx-auto max-w-5xl px-8">
+        <HoverEffect items={projects} />
+      </div>
     </SimpleLayout>
   );
 }
