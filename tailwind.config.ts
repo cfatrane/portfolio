@@ -1,3 +1,4 @@
+import { nextui } from "@nextui-org/react";
 import typographyPlugin from "@tailwindcss/typography";
 
 import typographyStyles from "./typography";
@@ -14,6 +15,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
   // plugins: [typographyPlugin],
@@ -42,7 +44,7 @@ const config: Config = {
     },
     typography: typographyStyles,
   },
-  plugins: [typographyPlugin, addVariablesForColors],
+  plugins: [typographyPlugin, addVariablesForColors, nextui()],
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).

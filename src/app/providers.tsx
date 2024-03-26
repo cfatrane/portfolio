@@ -4,6 +4,7 @@ import { createContext, useEffect, useRef } from "react";
 
 import { usePathname } from "next/navigation";
 
+import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider, useTheme } from "next-themes";
 
 function usePrevious<T>(value: T) {
@@ -47,6 +48,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const previousPathname = usePrevious(pathname);
 
   return (
+    // <NextUIProvider>
     <AppContext.Provider value={{ previousPathname }}>
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ThemeWatcher />
@@ -54,5 +56,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
         {children}
       </ThemeProvider>
     </AppContext.Provider>
+    // </NextUIProvider>
   );
 }

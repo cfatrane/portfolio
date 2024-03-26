@@ -1,303 +1,157 @@
+import screenAlf from "@/images/jobs/alf.jpeg";
+import screenAyruu from "@/images/jobs/ayruu.jpeg";
+import screenBNP from "@/images/jobs/bnp.jpeg";
+import screenKinetix from "@/images/jobs/kinetix.jpeg";
+import screenLaPoste from "@/images/jobs/la_poste.jpeg";
+import screenLeCloset from "@/images/jobs/le_closet.jpeg";
+import screenFigaro from "@/images/jobs/le_figaro.jpeg";
+import screenPayplug from "@/images/jobs/payplug.jpeg";
+import screenRockUSupport from "@/images/jobs/rock_u_support.jpeg";
+import screenTilli from "@/images/jobs/tilli.jpeg";
+import logoAyruu from "@/images/logos/ayruu_logo.jpeg";
+import logoBNP from "@/images/logos/bnp_paribas_logo.jpeg";
+import logoKinetix from "@/images/logos/kinetixtech_logo.jpeg";
+import logoLaPoste from "@/images/logos/la_poste_logo.jpeg";
+import logoLeCloset from "@/images/logos/le_closet_logo.jpeg";
+import logoLeFigaro from "@/images/logos/le_figaro_logo.jpeg";
+import logoPayplug from "@/images/logos/payplug_logo.jpeg";
+import logoRockUSupport from "@/images/logos/rock_u_support_logo.jpeg";
+import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
+import logoTilli from "@/images/logos/tilli_logo.jpeg";
+
 import { Props } from "../types";
 
 export const JOBS_FR: Props[] = [
   {
-    companyName: "Figaro",
-    description:
-      "Le Figaro, la culture de la liberté depuis 1826, 1er quotidien généraliste et 1er site d’information le plus consulté en France.",
-    missions: [
-      "Refacto de code et implementation de good practices",
-      "Ajout de features diverses (creation de commandes pour les pigistes, page admin, filtres dans le dashboard, etc...)",
-      "Nettoyage de l'API avec nouvelles méthodes",
-      "Mise en place du nouveau theme avec MUI",
-      "Participation a la creation du nouveaux design (UI / UX) des pages",
-      "Création de nouvelles pages",
-      "Correction de bugs",
+    name: "Figaro",
+    description: [
+      "Le Figaro est un journal quotidien de la presse nationale française publié à Paris. Il est en 2022 le deuxième titre de la presse nationale française, avec une diffusion payée de 351 526 exemplaires. Affichant une audience de plus de 9 millions de visiteurs uniques, le site se caractérise par la qualité et la profondeur de ses contenus.",
+      "J'ai rejoint le Figaro afin de participer au développement d’une plateforme en interne pour les pigistes. Ma mission a duré 6 mois.",
     ],
-    title: "Développeur Fullstack (React Js, Node Js)",
-    technos: {
-      Frontend: [
-        "React Js",
-        "Redux",
-        "Material UI",
-        "Tanstack",
-        "SASS",
-        "styled-components",
-        "Axios",
-      ],
-      Devops: ["Docker", "Github Actions"],
-      Test: ["Jest", "React Testing Library"],
-      Others: ["React Router"],
-    },
+    title: "Développeur React Js",
+    logo: logoLeFigaro,
+    image: screenFigaro,
     startDate: "2023-05",
     endDate: "2023-10",
-    context:
-      "J'ai rejoins le Figaro pour une mission de 6 mois. Nous étions 2 développeurs fullstack à travailler sur la plateforme. J'ai notamment participer a l'ajout de différentes features classiques de dashboard (modification de commande via formulaire, mise en relation d'user, gestion de profil utilisateur etc...) mais aussi a la mise en place de good practices et de tests.",
     website: "https://www.lefigaro.fr/",
   },
   {
-    companyName: "Payplug",
-    description:
-      "Payplug est la solution de paiement française pensée pour les commerçants, e-commerçants de toutes tailles et fintechs. Avec notre plateforme technologique de pointe, nos outils dédiés à la conversion et notre maîtrise unique de la chaîne de paiement, nous vous invitons à viser le meilleur, et plus encore. Payplug, c'est une équipe de 400 passionnés dédiés à la réalisation de vos plus grandes ambitions. Nous accompagnons aujourd'hui 20 000 PME telles que Hast et Plante pour tous, mais aussi de grands groupes comme Maisons du monde, Veepee et kiwi.com. Payplug fait partie du Groupe BPCE depuis 2017.",
-    missions: [
-      "Ajout de features diverses",
-      "Refacto de code et implementation de good practices",
-      "Correction de bugs",
-      "Implementation d'une nouvelle librairie visuelle",
-      "Rebranding / refonte visuelle totale su site",
+    name: "Payplug",
+    description: [
+      "Payplug est la solution de paiement française pensée pour les commerçants, e-commerçants de toutes tailles et fintechs. Ils accompagnent aujourd’hui 20 000 PME telles que Hast et Plante pour tous, mais aussi de grands groupes comme Maisons du monde, Veepee et kiwi.com. Payplug fait partie du Groupe BPCE depuis 2017.",
+      "J’ai rejoint l’équipe Nightbox afin de participer à l'ajout de fonctionnalités et l'amélioration de plusieurs de leurs applications. Durant ma mission de 6 mois, le nombre d’erreurs lié aux transactions a baissé de 40 % et le nombre de bugs a notamment baissé de 70 %.",
     ],
-    title: "frontEndDeveloper",
-    titleMore: "Développeur Frontend (React Js, Vite Js)",
-    technos: {
-      Frontend: [
-        "React Js",
-        "Vite Js",
-        "Next Js",
-        "Redux",
-        "Material UI",
-        "Ant Design",
-        "SASS",
-        "styled-components",
-        "Axios",
-      ],
-      Devops: ["Docker", "Github Actions", "Circle CI"],
-      Test: ["Jest", "React Testing Library"],
-      Others: ["React Router"],
-    },
+    title: "Développeur React Js",
+    logo: logoPayplug,
+    image: screenPayplug,
     startDate: "2022-10",
     endDate: "2023-04",
-    context:
-      "J'ai rejoins Payplug pour une missions de 6 mois. J'ai participer a l'ajout de nouvelle feature sur leur plateforme et notamment a son rebranding. Nous étions en méthodes agiles au sein d'une équipe de 5 développeurs",
     color: "#ffd908",
     website: "https://www.payplug.com/",
   },
   {
-    companyName: "Kinetix",
-    description:
-      "Kinetix is an AI startup bringing Emotes to video games and virtual worlds. We make 3D animation accessible to every creator thanks to AI. By facilitating Emote creation, we empower creators to express themselves.  We provide developers with an Emote SDK to facilitate emotes integration into their projects.Kinetix is on a mission to Humanize the Metaverse. We are at the intersection of gaming, artificial intelligence, and creativity. Come and join our growing team of talented individuals.",
-    missions: [
-      "Création de la plateforme from scratch : Intégration des différentes pages web de l'application avec routing avec React Js (16.8) et Redux ainsi que react-router",
-      "Développement du studio : un éditeur d'animation 3D avec three.js , layout permettant l'édition d'assets 3D comme sur des logiciel tel que Blender, Unity et Maya",
-      "Développement du Trim And Crop : Feature d'édition de vidéo au niveau du temps et de l'espace",
-      "Test des différentes vue avec react-testing-library et de redux avec sa libraire dédié",
-      "Ajout du suivi d'évènements avec Hubspot et Segment",
-      "Création du processus d'inscription pour les différents personas",
-      "Implémentation des méthodes API avec axios",
+    name: "Kinetix",
+    description: [
+      "Kinetix permet aux jeux d'intégrer une fonction d'émote générée par l'utilisateur et alimentée par l'IA. Grâce à cette fonction, les joueurs peuvent créer une émoticône personnalisée à partir de n'importe quelle vidéo, directement dans le jeu, et la faire jouer par leur avatar. Il suffit d'une caméra de téléphone ou de n'importe quelle vidéo pour que l'IA de Kinetix crée et joue une animation in-game.",
+      "J'ai rejoint l’équipe plateforme quelques mois après la création de Kinetix, j'étais responsable du développement de leur plateforme ainsi que de leur site vitrine pendant presque 2 ans. Durant mon contrat, le nombre d’utilisateurs a augmenté de 400 % et le taux de conversion client a été amélioré de 30 %. Nous étions en méthodes agiles au sein d'une équipe de 3 développeurs avec un dev backend et ingénieur 3D.",
     ],
-    title: "frontEndDeveloper",
-    titleMore: "Développeur Frontend (React Js)",
-    technos: {
-      Frontend: [
-        "React Js",
-        "Redux",
-        "Material UI",
-        "Bootstrap",
-        "SASS",
-        "styled-components",
-        "Axios",
-      ],
-      Devops: ["Docker", "Github Actions", "Circle CI"],
-      Test: ["Jest", "React Testing Library"],
-      Others: [
-        "Three JS",
-        "React Router",
-        "React Spring",
-        "Lodash",
-        "Hubspot",
-        "Segment",
-        "DragDnDrop",
-      ],
-    },
+    logo: logoKinetix,
+    image: screenKinetix,
+    title: "Développeur React Js / Next Js",
     startDate: "2021-01",
     endDate: "2022-09",
-    context:
-      "J'ai rejoins Kinetix quelques mois après sa création, j'étais responsable du développement de leur plateforme ainsi que de leur site vitrine pendant presque 2 ans. Nous étions en méthodes agiles au sein d'une équipe de 3 développeurs avec un dev backend et ingénieur 3D",
     color: "#730bda",
     website: "https://www.kinetix.tech/",
   },
   {
-    companyName: "Rock U Support",
-    description:
+    name: "Rock U Support",
+    description: [
       "Rock U Support permet de motiver les sportifs à chaque étape de leur performance grâce à « la famille » sportive : des évènements, des coachs sportifs et des sportifs à proximité. Cerise sur le gâteau ! Lors de l’évènement, les sportifs sont encouragés grâce à des playlist stimulantes composées en temps réel par leurs proches avec des encouragements vocaux.",
-    missions: [
-      "Ajout de feature sur la création et inscription d'évènements avec des pages en React Native",
-      "Ajout de feature sur les groupes de sportifs, comme la prise de rendez-vous par rapport à un lieu",
-      "Refacto de code",
+      "J’ai rejoint l’équipe principale afin de participer à la création de fonctionnalités sur la prise de RDV. Ma mission a duré 3 semaines.",
     ],
-    title: "mobileDeveloper",
-    titleMore: "Développeur Mobile (React Native)",
-    technos: {
-      Frontend: ["React Native", "Redux", "styled-components", "Axios"],
-      Test: ["Jest"],
-      Others: ["React Native Navigation"],
-    },
+    title: "Développeur React Native",
+    logo: logoRockUSupport,
+    image: screenRockUSupport,
     startDate: "2020-12",
     endDate: "2020-12",
-    context:
-      "J'ai rejoins Rock U Support pour une mission de 2 semaines, j'ai travaillé sur l'ajout de quelques features et de la refacto de code",
     website: "https://rockusupport.com/",
   },
   {
-    companyName: "Ayruu",
-    description:
-      "Ayruu est la plateforme technologique centralisant tous les déplacements professionnels dans les entreprises. L'objectif est d'améliorer l’expérience voyage des différents collaborateurs au sein d'une structure en mettant à leur disposition une application mobile simple, fluide et performante et d'une plateforme de management permettant de centraliser toute la gestion de leurs voyages.",
-    missions: [
-      "Intégration / ajout de nouvelles views avec gestion de state (React Js, Redux)",
-      "Ajout de tests automatisés",
-      "Création de form et timeline",
-      "Implémentation de nouvelles méthodes pour l'API avec axios",
+    name: "Ayruu",
+    description: [
+      "Ayruu est la plateforme technologique centralisant tous les déplacements professionnels dans les entreprises. L'objectif est d'améliorer l’expérience des déplacements professionnels des différents collaborateurs au sein d'une entreprise en mettant à leur disposition une application mobile simple, fluide et performante et d'une plateforme de gestion permettant de centraliser toute la gestion de leurs voyages.",
+      "J’ai rejoint Ayruu pour une mission d’environ 1 mois. J’avais pour objectif d'implémenter de nouvelles fonctionnalités pour la réservation d'hôtels taxis et vol.",
     ],
-    title: "frontEndDeveloper",
-    titleMore: "Développeur Frontend (React Js)",
-    technos: {
-      Frontend: [
-        "React Js",
-        "Redux",
-        "styled-components",
-        "Bootstrap",
-        "SASS",
-        "Axios",
-      ],
-      Backend: ["Express", "Node Js", "MongoDB"],
-      Devops: ["Docker", " Gitlab", " Circle Ci"],
-      Test: ["Jest"],
-      Others: ["Charts Js", "i18n"],
-    },
+    title: "Développeur React Js",
+    logo: logoAyruu,
+    image: screenAyruu,
     startDate: "2020-09",
     endDate: "2020-09",
-    context:
-      "J'ai rejoins Ayruu pour environ 1 mois. Au sein de l'équipe j'ai participer a l'intégration de nouvelles pages web avec React Js, Redux, styled-components pour leur nouvelles features de réservations",
     website: "https://ayruu.com/",
   },
   {
-    companyName: "Tilli",
-    description:
-      "Tilli est un réseau de plus de 500 artisans couturiers et maroquiniers locaux pour entretenir et faire perdurer ses objets du quotidien. Tilli reconnecte les consommateurs et les marques aux savoir-faire des artisans, pour RÉPARER, AJUSTER et RÉINVENTER. Nous proposons aux marques une solution omnicanale en retail et en e-commerce qui s'intègre directement dans le parcours client. Cette solution permet aux marques de poursuivre leurs engagements en matière de durabilité, d'améliorer l'expérience de leur client et d'optimiser leurs taux de retours. Au fil des réparations, Tilli vous permet également de collecter des données pour retracer et améliorer les produits et la chaîne de valeur dans son ensemble.",
-    missions: [
-      "Création de nouvelles pages de blog (Gatsby Js)",
-      "Création de plugins qui s’intègrent sur les sites des marques partenaires",
-      "Développement du site ajout de nouvelles vues (React Js, styled-component)",
-      "Ajout de nouvelles fonctionnalités sur la prise de commande, la réservation du calendrier, du panier, des slots",
-      "Ajout de tests automatisés",
-      "Mise en place et optimisations d'outils pour faire gagner du temps aux équipes opérationnelles Customer Care & Tillistes",
-      "Résolution de bugs",
+    name: "Tilli",
+    description: [
+      "Tilli propose des solutions d'entretien et de réparation pour les artisans, les personnes et les marques. Ils connectent les consommateurs et les marques au savoir-faire des artisans en leur permettant de réparer, ajuster et réinventer leurs tissus et leurs articles de maroquinerie. Actuellement, ils ont 580 artisans professionnels dans toute la France et 2 ateliers-boutiques à Paris.",
+      "J’ai rejoint la team dev afin de créer de nouvelles fonctionnalités sur le site web et l’application mobile. Durant mon contrat, l'amélioration du formulaire de réservation nous a permis d’augmenter le taux de conversion de 10 %.",
     ],
-    title: "fullStackWebMobileDeveloper",
-    titleMore:
-      "Développeur Fullstack Web & Mobile (React Js / React Native / Node Js)",
-    technos: {
-      Frontend: [
-        "React Js",
-        "Gatsby Js",
-        "React Native",
-        "styled-components",
-        "Axios",
-      ],
-      Backend: ["Express", "Node Js", "MongoDB"],
-      Devops: ["Bitbucket", "Circle CI", "Gitlab", "Unix"],
-      Test: ["Jest", "Cypress"],
-      Others: ["Moment JS", "React Router"],
-    },
+    title: "Développeur React Js",
+    logo: logoTilli,
+    image: screenTilli,
     startDate: "2020-02",
     endDate: "2020-06",
-    context: "",
     website: "https://tilli.fr/",
   },
   {
-    companyName: "Alf",
-    description:
-      "Plateforme PaaS de management de dossiers juridiques pour optimiser vos flux juridiques récurrents et gagner du temps pour vous et vos équipes.",
-    missions: [
-      "Développement de la plateforme, ajout de nouvelles vues (React Js, Ant Design, styled-components)",
-      "Développement du backend, ajout de nouvelles routes (Node Js, GraphQL, Appolo)",
-      "Mise en place de tests (Jest)",
-      "Implémentation des différentes routes dans le backend",
-      "Création des formulaires pour la gestion des documents, d'entreprises, users ...",
-      "Conception de la timeline pour les process (Ant Design",
-      "Création du processus de gestion des documents d'entreprise",
+    name: "Alf",
+    description: [
+      "alf est une plateforme PaaS de management de dossiers juridiques pour optimiser vos flux juridiques récurrents et gagner du temps pour vous et vos équipes.",
+      "J’ai rejoint l'équipe plateforme dans un contexte de refonte et rebranding en early stage. Mon contrat a duré 3 mois.",
     ],
-    title: "fullStackWebDeveloper",
-    titleMore: "Développeur Fullstack Web (React Js / Node Js)",
-    technos: {
-      Frontend: [
-        "React Js",
-        "Ant Design",
-        "React Native",
-        "styled-components",
-        "Axios",
-      ],
-      Backend: ["Node Js", "PostgreSQL", "MongoDB", "Fastify"],
-      Devops: ["Docker", "Heroku", "AWS", "Gitlab", "OVH"],
-      Test: ["Jest"],
-      Others: ["Redis", "RabbitMQ", "Graph QL", "Apollo", "i18n"],
-    },
+    title: "Développeur React Js",
+    logo: logoAlf,
+    image: screenAlf,
     startDate: "2019-09",
     endDate: "2019-11",
-    context: "",
-    website: "https://thisisalf.com/en/",
+    website: "https://thisisalf.com/",
   },
   {
-    companyName: "Le Closet",
-    description:
-      "Le Closet est une start-up de mode qui révolutionne la consommation de vêtements, en remplaçant la possession par l'usage 💪. Ses abonnées bénéficient d’un dressing illimité, ultra-tendance et diversifié, qu'elles reçoivent sous forme de box, directement à domicile ! Pour le même prix, elles peuvent recevoir autant de box successives qu'elles le souhaitent, en modifier le contenu, et le tout sans engagement. Chez Le Closet, ils sont convaincus que ce service à fois économique, pratique et responsable va s'imposer comme le futur de la mode !",
-    missions: [
-      "Mise en place des test fonctionnels (Rspec, Factory Bot ...)",
-      "Refonte total du site au niveau du front avec Bootstrap",
-      "Refonte de la partie admin avec Active Admin",
-      "Mise en place de nouvelle features en back",
+    name: "Le Closet",
+    description: [
+      "LLe Closet est une start-up de mode qui révolutionne la consommation de vêtements, en remplaçant la possession par l'usage. Ses abonnées bénéficient d’un dressing illimité, ultra-tendance et diversifié, qu'elles reçoivent sous forme de box, directement à domicile ! Pour le même prix, elles peuvent recevoir autant de box successives qu'elles le souhaitent, en modifier le contenu, et le tout sans engagement.",
+      "J’ai rejoint l'équipe afin d'améliorer le coverage de test et aussi de la refonte totale du visuel. Durant mon contrat le coverage de tests est passé de 20 % à 90 %.",
     ],
-    title: "fullStackWebDeveloper",
-    titleMore: "Stagiaire Fullstack Web (Ruby On Rails)",
-    technos: {
-      Backend: ["Ruby On Rails", "PostgreSQL"],
-      Frontend: ["Javascript", "Bootstrap", "SASS"],
-      Test: ["Jest", "Rspec", "Capybara"],
-      Devops: ["Heroku"],
-    },
+    title: "Développeur Fullstack Web",
+    logo: logoLeCloset,
+    image: screenLeCloset,
     startDate: "2018-02",
     endDate: "2018-06",
-    type: "internship",
-    context: "",
     website: "https://www.lecloset.fr/",
   },
   {
-    companyName: "BNP",
-    description:
-      "BNP Paribas est une banque française, la première banque française par son activité et sa rentabilité, et le 10e groupe bancaire international, présent dans 71 pays. Constituant l'un des piliers de l'industrie bancaire française, il est coté au premier marché d'Euronext Paris et fait partie de l'indice CAC 40.",
-    missions: [
-      "Conception d'un intra",
-      "Design des différentes pages du site et de la BDD",
-      "Création de l'API",
-      "Création des différentes méthodes de gestions d'utilisateurs, rôles ...",
-      "Implémentation de tests",
+    name: "BNP",
+    description: [
+      "BNP Paribas est une banque de premier plan en Europe avec un rayonnement international. Elle est présente dans 65 pays, avec plus de 190 000 collaborateurs, dont plus de 145 000 en Europe. Le Groupe accompagne l’ensemble de ses clients (particuliers, associations, entrepreneurs, PME, grandes entreprises et institutionnels) pour les aider à réaliser leurs projets en leur proposant des services de financement, d’investissement, d’épargne et de protection.",
+      "J’ai rejoint l'équipe via le programme Matrice afin de créer un intranet destiné aux employés de la BNP. Mon contrat a duré 3 mois.",
     ],
-    title: "alternatingFullstack",
-    titleMore: "Alternant Fullstack (React Js / Node Js)",
-    technos: {
-      Backend: ["Node Js", "PostgreSQL", "Express"],
-      Frontend: ["React Js", "SASS"],
-      Test: ["Jest"],
-    },
+    title: "Développeur React Js",
+    logo: logoBNP,
+    image: screenBNP,
     startDate: "2017-08",
     endDate: "2018-01",
-    context: "",
-    website: "",
+    website: "https://group.bnpparibas/",
   },
   {
-    companyName: "La Poste",
-    description:
-      "La Poste est une société anonyme française principalement présente en tant qu'opérateur de services postaux (courrier, colis et express), banque, assurance, opérateur de téléphonie mobile, fournisseur de services numériques et de solutions commerce, commerce en ligne (marketing, logistique) et collecte et vente de données",
-    missions: [
-      "Conception d'une application mobile communautaire",
-      "Design des différentes vues avec les designers",
-      "Implémentation d'API REST",
+    name: "La Poste",
+    description: [
+      "Premier réseau commercial de proximité en France. Présent dans plus de 49 pays, sur 5 continents, il a réalisé un chiffre d’affaires de 35,39 Mds€ en 2022 sur le territoire. En 2021, La Poste Groupe est devenue la première entreprise publique à adopter la qualité de société à mission. La Poste Groupe, avec ses 238 000 collaborateurs, naturellement et historiquement engagée pour la société, se mobilise pour rendre ses activités plus durables au regard des enjeux sociétaux et environnementaux, et pour faciliter la transition écologique de tous les Français.",
+      "J’ai rejoint l'équipe via le programme Matrice afin de créer une application communautaire destinée aux habitants de petites villes. Mon contrat a duré 3 mois.",
     ],
-    title: "alternatingMobile",
-    titleMore: "Alternant Mobile (Swift)",
-    technos: { Others: ["Swift"] },
+    title: "Développeur Mobile",
+    logo: logoLaPoste,
+    image: screenLaPoste,
     startDate: "2017-08",
     endDate: "2018-01",
-    context: "",
-    website: "",
+    website: "https://www.laposte.fr/",
   },
 ];
