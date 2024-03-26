@@ -64,11 +64,11 @@ export const WavyBackground = ({
   };
 
   const waveColors = colors ?? [
-    "#38bdf8",
-    "#818cf8",
-    "#c084fc",
-    "#e879f9",
-    "#22d3ee",
+    "#1034A6",
+    "#412F88",
+    "#722B6A",
+    "#D3212D",
+    "#F62D2D",
   ];
   const drawWave = (n: number) => {
     nt += getSpeed();
@@ -114,7 +114,7 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "h-screen flex flex-col items-center justify-center",
+        "flex h-screen flex-col items-center justify-center",
         containerClassName,
       )}
     >
