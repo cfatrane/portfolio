@@ -78,41 +78,43 @@ export default function About() {
 
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Charles-Édouard Fatrane. I live in Paris, where I design the
-            amazing website and applications.
+            Je m'appelle Charles-Édouard Fatrane. J'habite à Paris, où je
+            conçois des sites Web et des applications incroyables.
           </h1>
 
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>Hello 👋!</p>
+            <p>Hello 👋 !</p>
 
             <p>
-              An alumnus of Ecole 42 with a wealth of experience spanning 5
-              years, I'm a Fullstack developer specializing in the design and
-              deployment of web and mobile solutions using React Js , Node.js
-              and React Native.
+              Ancien élève de l'école 42 et doté d'une riche expérience de 6
+              ans, je suis un développeur Fullstack spécialisé dans la
+              conception et le déploiement de solutions web et mobiles à l'aide
+              de React Js , Node.js et React Native
             </p>
 
             <p>
-              My career path, which spans innovative startups to large
-              enterprises, has enabled me to develop web platforms, showcase
-              sites, e-commerce solutions, interactive blogs and responsive
-              mobile applications.
+              Mon parcours professionnel, qui s'étend des startups innovantes
+              aux grandes entreprises, m'a permis de développer des plateformes
+              web, des sites vitrines, des solutions e-commerce, des blogs
+              interactifs et des applications mobiles réactives.
             </p>
 
             <p>
-              I work closely with my clients to understand their needs and
-              exceed their expectations. If you're looking for a developer who
-              combines technical expertise, attention to detail and a holistic
-              approach to web development, I'd be delighted to discuss your
-              project.
+              Je collabore étroitement avec mes clients pour comprendre leurs
+              besoins et dépasser leurs attentes. Si vous cherchez un
+              développeur qui combine expertise technique, souci du détail et
+              une approche globale du développement web, je serais ravi de
+              discuter de votre projet.
             </p>
 
             <p>
-              I'm passionate about delivering solutions that not only meet
-              technical requirements, but also add real value for the end user.
-              If you need an expert who can translate your visions into
-              concrete, high-performance digital experiences, I'm at your
-              disposal to discuss your project and contribute to its success.
+              Je suis passionné par le fait d'offrir des solutions qui non
+              seulement répondent aux exigences techniques, mais qui apportent
+              également une réelle valeur ajoutée à l'utilisateur final. Si vous
+              avez besoin d'un expert capable de traduire vos visions en
+              expériences numériques concrètes et performantes, je suis à votre
+              disposition pour discuter de votre projet et contribuer à son
+              succès.
             </p>
           </div>
         </div>
@@ -120,7 +122,7 @@ export default function About() {
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink href={SOCIAL.twitter} icon={TwitterIcon}>
-              Follow on Twitter
+              Suivez moi sur Twitter
             </SocialLink>
 
             <SocialLink
@@ -128,11 +130,11 @@ export default function About() {
               href={SOCIAL.instagram}
               icon={InstagramIcon}
             >
-              Follow on Instagram
+              Suivez moi sur Instagram
             </SocialLink>
 
             <SocialLink className="mt-4" href={SOCIAL.github} icon={GitHubIcon}>
-              Follow on GitHub
+              Suivez moi sur GitHub
             </SocialLink>
 
             <SocialLink
@@ -140,7 +142,7 @@ export default function About() {
               href={SOCIAL.linkedIn}
               icon={LinkedInIcon}
             >
-              Follow on LinkedIn
+              Suivez moi sur LinkedIn
             </SocialLink>
 
             <SocialLink
@@ -148,19 +150,19 @@ export default function About() {
               href={SOCIAL.mail}
               icon={MailIcon}
             >
-              Contact me by mail
+              Contacter moi par mail
             </SocialLink>
 
             <SocialLink
               className="pt-8"
-              href="https://calendly.com/cfatrane-pro"
+              href={SOCIAL.calendly}
               icon={MeetingIcon}
             >
-              Book a meeting with me on calendly
+              Booker un meeting avec moi sur calendly
             </SocialLink>
 
             <SocialLink className="pt-8" href={SOCIAL.malt} icon={MaltIcon}>
-              Book a contract on Malt
+              Booker une mission sur Malt
             </SocialLink>
           </ul>
         </div>

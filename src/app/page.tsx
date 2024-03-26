@@ -5,11 +5,12 @@ import LogoCloud from "@/components/LogoCloud";
 export default async function Home() {
   return (
     <div>
-      <Container>
-        <HomeBis />
+      <HomeBis />
 
-        <LogoCloud />
-      </Container>
+      {/* <Container> */}
+      <LogoCloud />
+
+      {/* </Container> */}
     </div>
   );
 }
