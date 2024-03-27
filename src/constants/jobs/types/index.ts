@@ -3,11 +3,10 @@
 export type Props = {
   name: string;
   description?: string[];
-  // missions?: string[];
+  missions?: string[];
   title: string;
   logo?: any;
   image?: any;
-  // image?: StaticImageData;
   // titleMore?: string;
   // type?: string;
   // technos?: {
@@ -19,7 +18,6 @@ export type Props = {
   // };
   startDate: string;
   endDate: string;
-  // context?: string;
   color?: string;
   website: string;
 };
