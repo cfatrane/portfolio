@@ -27,7 +27,7 @@ function Experiences() {
           <div className="relative mx-auto max-w-2xl pt-4 antialiased">
             {JOBS_FR.map((item, index) => (
               <div className="mb-10" key={`content-${index}`}>
-                <a className="mb-4 flex items-center" href={item.website}>
+                <a className="mb-4 flex w-fit items-center" href={item.website}>
                   <div className="relative z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                     <Image
                       alt=""
@@ -39,7 +39,7 @@ function Experiences() {
                   </div>
 
                   <h2
-                    className="w-fit rounded-full bg-black px-4 py-1 text-2xl text-white"
+                    className="w-fit px-4 py-1 text-2xl text-white"
                     style={{ color: item.color }}
                   >
                     {item.title}

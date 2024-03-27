@@ -23,7 +23,7 @@ export const JOBS_FR: Props[] = [
     image: "/screenshots/le_figaro.jpeg",
     startDate: "2023-05",
     endDate: "2023-10",
-    color: "#183860",
+    color: "#0F6FEF",
     website: "https://www.lefigaro.fr/",
   },
   {
@@ -106,7 +106,7 @@ export const JOBS_FR: Props[] = [
     image: "/screenshots/alf.jpeg",
     startDate: "2019-09",
     endDate: "2019-11",
-    color: "#390067",
+    color: "#AE56F3",
     website: "https://thisisalf.com/",
   },
   {

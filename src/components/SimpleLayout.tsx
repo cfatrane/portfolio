@@ -27,8 +27,12 @@ export function SimpleLayout({
         </p>
       </header>
 
-      <div className="animate__animated animate__slideInUp">
-        {children && <div className=" mt-16 sm:mt-20">{children}</div>}
+      <div className="relative w-full bg-white bg-grid-black/[0.2] dark:bg-black dark:bg-grid-white/[0.2]">
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+
+        <div className="animate__animated animate__slideInUp">
+          {children && <div className=" mt-16 sm:mt-20">{children}</div>}
+        </div>
       </div>
     </Container>
   );

@@ -25,6 +25,7 @@
     "dayjs": "^1.11.10",
     "feed": "^4.2.2",
     "framer-motion": "^11.0.20",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.0.2",
     "next-themes": "^0.2.1",
     "react": "^18",
