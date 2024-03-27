@@ -69,10 +69,10 @@ function Experiences() {
                       <Image
                         alt={`${item.name} thumbnail`}
                         className="mb-10 rounded-lg object-cover"
-                        height="1000"
+                        height={1000}
                         priority
                         src={item.image}
-                        width="1000"
+                        width={1000}
                       />
                     )}
                   </a>
