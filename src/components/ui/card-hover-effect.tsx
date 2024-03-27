@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Chip } from "@nextui-org/react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { cn } from "@/utils/cn";
-
 import { Meteors } from "@/components/ui/meteors";
+
+import { cn } from "@/utils/cn";
 
 export const HoverEffect = ({
   items,

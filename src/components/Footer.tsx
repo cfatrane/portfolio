@@ -1,8 +1,8 @@
 import { JSX, SVGProps } from "react";
 
-import SOCIAL from "@/constants/social";
-
 import { ContainerOuter } from "@/components/Container";
+
+import SOCIAL from "@/constants/social";
 
 const navigation = [
   {

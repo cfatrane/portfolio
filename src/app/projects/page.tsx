@@ -1,9 +1,9 @@
 import { type Metadata } from "next";
 
-import { PROJECTS } from "@/constants/projects";
-
 import { SimpleLayout } from "@/components/SimpleLayout";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
+
+import { PROJECTS } from "@/constants/projects";
 
 export const metadata: Metadata = {
   title: "Projects",

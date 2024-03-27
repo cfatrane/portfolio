@@ -4,10 +4,10 @@ import Image from "next/image";
 
 import dayjs from "dayjs";
 
-import { JOBS_FR } from "@/constants/jobs/fr";
-
 import { SimpleLayout } from "@/components/SimpleLayout";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+
+import { JOBS_FR } from "@/constants/jobs/fr";
 
 const title = "Une liste des entreprises avec lesquelles j'ai collaboré.";
 

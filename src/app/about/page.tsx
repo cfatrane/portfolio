@@ -5,8 +5,6 @@ import Link from "next/link";
 
 import { clsx } from "clsx";
 
-import SOCIAL from "@/constants/social";
-
 import { Container } from "@/components/Container";
 import {
   GitHubIcon,
@@ -17,6 +15,8 @@ import {
   TwitterIcon,
 } from "@/components/SocialIcons";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+
+import SOCIAL from "@/constants/social";
 
 import portraitImage from "@/images/portrait.jpg";
 
