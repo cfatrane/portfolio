@@ -18,9 +18,8 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
 
-  // P
-  // Prettier
-  "prettier.singleQuote": true,
+  // Typescript
+  "typescript.preferences.importModuleSpecifier": "non-relative",
 
   "[dockerfile]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"

@@ -95,7 +95,7 @@ export const WavyBackground = ({
     ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
-    drawWave(5);
+    drawWave(10);
     animationId = requestAnimationFrame(render);
   };
 

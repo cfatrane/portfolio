@@ -78,8 +78,8 @@ export function Header() {
         />
 
         <NavbarBrand className="flex items-center">
-          <Button variant="light">
-            <Link color={isHomePage ? "primary" : "foreground"} href="/">
+          <Link color={isHomePage ? "primary" : "foreground"} href="/">
+            <Button color={isHomePage ? "primary" : "default"} variant="light">
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -96,8 +96,8 @@ export function Header() {
               </svg>
 
               <p className="ml-2 font-bold text-inherit text-white">Home</p>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 

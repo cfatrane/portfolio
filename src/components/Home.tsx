@@ -25,7 +25,11 @@ function Home() {
 
   return (
     <div>
-      <WavyBackground className="mx-auto max-w-4xl pb-40">
+      <WavyBackground
+        blur={5}
+        className="mx-auto max-w-4xl pb-40"
+        waveWidth={100}
+      >
         <div className="flex h-[40rem] flex-col items-center justify-center">
           <p className="inter-var text-center text-2xl font-bold text-white md:text-4xl lg:text-7xl">
             Charles-Édouard Fatrane

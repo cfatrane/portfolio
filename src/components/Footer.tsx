@@ -1,10 +1,8 @@
 import { JSX, SVGProps } from "react";
 
-import Link from "next/link";
-
 import SOCIAL from "@/constants/social";
 
-import { ContainerInner, ContainerOuter } from "@/components/Container";
+import { ContainerOuter } from "@/components/Container";
 
 const navigation = [
   {
@@ -81,6 +79,8 @@ export function Footer() {
                 className="text-gray-400 hover:text-gray-500"
                 href={item.href}
                 key={item.name}
+                rel="noreferrer noopener"
+                target="_blank"
               >
                 <span className="sr-only">{item.name}</span>
 
@@ -95,48 +95,6 @@ export function Footer() {
               rights reserved.
             </p>
           </div>
-        </div>
-      </ContainerOuter>
-    </footer>
-  );
-}
-
-function NavLink({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <Link
-      className="transition hover:text-teal-500 dark:hover:text-teal-400"
-      href={href}
-    >
-      {children}
-    </Link>
-  );
-}
-
-export function FooterBis() {
-  return (
-    <footer className="mt-32 flex-none">
-      <ContainerOuter>
-        <div className="border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
-          <ContainerInner>
-            <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-              <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">About</NavLink>
-
-                <NavLink href="/projects">Projects</NavLink>
-              </div>
-
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Charles-Édouard Fatrane. All
-                rights reserved.
-              </p>
-            </div>
-          </ContainerInner>
         </div>
       </ContainerOuter>
     </footer>
