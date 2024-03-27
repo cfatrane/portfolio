@@ -1,8 +1,11 @@
 import { type Metadata } from "next";
 
-import Image from "next/image";
+import NextImage from "next/image";
+import Link from "next/link";
 
+import { Image } from "@nextui-org/react";
 import dayjs from "dayjs";
+import kebabCase from "lodash/kebabCase";
 
 import { SimpleLayout } from "@/components/SimpleLayout";
 import { TracingBeam } from "@/components/ui/tracing-beam";
@@ -17,6 +20,12 @@ export const metadata: Metadata = {
 };
 
 function Experiences() {
+  const experience = JOBS_FR.find(
+    (element) => element.name === kebabCase("Figaro"),
+  );
+
+  console.log("experience", experience);
+
   return (
     <div>
       <SimpleLayout
@@ -27,9 +36,12 @@ function Experiences() {
           <div className="relative mx-auto max-w-2xl pt-4 antialiased">
             {JOBS_FR.map((item, index) => (
               <div className="mb-10" key={`content-${index}`}>
-                <a className="mb-4 flex w-fit items-center" href={item.website}>
+                <Link
+                  className="mb-4 flex w-fit items-center"
+                  href={`experiences/${kebabCase(item.name)}`}
+                >
                   <div className="relative z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                    <Image
+                    <NextImage
                       alt=""
                       className="object-cover"
                       height={50}
@@ -44,7 +56,7 @@ function Experiences() {
                   >
                     {item.title}
                   </h2>
-                </a>
+                </Link>
 
                 <div
                   className="mb-4 text-sm font-bold"
@@ -70,7 +82,7 @@ function Experiences() {
                         alt={`${item.name} thumbnail`}
                         className="mb-10 rounded-lg object-cover"
                         height={1000}
-                        priority
+                        isZoomed
                         src={item.image}
                         width={1000}
                       />
