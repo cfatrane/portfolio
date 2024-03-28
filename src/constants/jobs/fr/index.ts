@@ -30,6 +30,14 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Js",
     logo: logoLeFigaro,
     image: "/screenshots/le_figaro.jpeg",
+    technos: {
+      Frontend:
+        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
+      Backend: "Node Js / MongoDB",
+      Devops: "Docker / Github / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira / Adobe XD",
+    },
     startDate: "2023-05",
     endDate: "2023-10",
     color: "#0F6FEF",
@@ -55,6 +63,14 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Js",
     logo: logoPayplug,
     image: "/screenshots/payplug.jpeg",
+    technos: {
+      Frontend:
+        "React Js / Vite Js / Next Js / Typescript / Javascript / Redux / Material UI / Ant Design / SASS / styled-components / Axios / React Router / Sentry",
+      Backend: "Node Js / MongoDB",
+      Devops: "Docker / Github / Github Actions / CircleCI",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira / Sketch",
+    },
     startDate: "2022-10",
     endDate: "2023-04",
     color: "#ffd908",
@@ -79,6 +95,14 @@ export const JOBS_FR: Props[] = [
     logo: logoKinetix,
     image: "/screenshots/kinetix.jpeg",
     title: "Développeur React Js / Next Js",
+    technos: {
+      Frontend:
+        "React Js / Redux / Material UI / Bootstrap / SASS / styled-components / Axios /  Three Js / React Router / React Spring / Lodash / Hubspot / Segment / DragDnDrop",
+      Backend: "Node Js / MongoDB",
+      Devops: "AWS / Github / Github Actions / CircleCI",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Figma / Linear / Notion",
+    },
     startDate: "2021-01",
     endDate: "2022-09",
     color: "#EE4364",
@@ -98,6 +122,13 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Native",
     logo: logoRockUSupport,
     image: "/screenshots/rock_u_support.jpeg",
+    technos: {
+      Frontend: "React Native / Javascript / styled-components / Axios",
+      Backend: "Node Js / MongoDB",
+      Devops: "Github",
+      Test: "Jest",
+      Tools: "Slack",
+    },
     startDate: "2020-12",
     endDate: "2020-12",
     color: "#EB5D28",
@@ -117,6 +148,14 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Js",
     logo: logoAyruu,
     image: "/screenshots/ayruu.jpeg",
+    technos: {
+      Frontend:
+        "React Js / Redux / styled-components / Bootstrap / SASS / Axios",
+      Backend: "Node Js / MongoDB",
+      Devops: "Docker / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira / Adobe XD",
+    },
     startDate: "2020-09",
     endDate: "2020-09",
     color: "#53AFFB",
@@ -139,6 +178,14 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Js",
     logo: logoTilli,
     image: "/screenshots/tilli.jpeg",
+    technos: {
+      Frontend:
+        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
+      Backend: "Node Js / MongoDB",
+      Devops: "Docker / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira / Adobe XD",
+    },
     startDate: "2020-02",
     endDate: "2020-06",
     website: "https://tilli.fr/",
@@ -161,6 +208,14 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Js",
     logo: logoAlf,
     image: "/screenshots/alf.jpeg",
+    technos: {
+      Frontend:
+        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
+      Backend: "Node Js / MongoDB",
+      Devops: "Docker / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira / Adobe XD",
+    },
     startDate: "2019-09",
     endDate: "2019-11",
     color: "#AE56F3",
@@ -181,6 +236,14 @@ export const JOBS_FR: Props[] = [
     title: "Développeur Fullstack Web",
     logo: logoLeCloset,
     image: "/screenshots/le_closet.jpeg",
+    technos: {
+      Frontend:
+        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
+      Backend: "Node Js / MongoDB",
+      Devops: "Docker / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira / Adobe XD",
+    },
     startDate: "2018-02",
     endDate: "2018-06",
     website: "https://www.lecloset.fr/",
@@ -201,6 +264,14 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Js",
     logo: logoBNP,
     image: "/screenshots/bnp.jpeg",
+    technos: {
+      Frontend:
+        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
+      Backend: "Node Js / MongoDB",
+      Devops: "Docker / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira / Adobe XD",
+    },
     startDate: "2017-08",
     endDate: "2018-01",
     color: "#39A676",
@@ -220,6 +291,14 @@ export const JOBS_FR: Props[] = [
     title: "Développeur Mobile",
     logo: logoLaPoste,
     image: "/screenshots/la_poste.jpeg",
+    technos: {
+      Frontend:
+        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
+      Backend: "Node Js / MongoDB",
+      Devops: "Docker / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira / Adobe XD",
+    },
     startDate: "2017-08",
     endDate: "2018-01",
     color: "#2B3EA5",
