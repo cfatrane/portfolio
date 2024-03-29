@@ -25,6 +25,7 @@
     "dayjs": "^1.11.10",
     "feed": "^4.2.2",
     "framer-motion": "^11.0.20",
+    "lodash": "^4.17.21",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.0.2",
     "next-themes": "^0.2.1",
@@ -34,6 +35,7 @@
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

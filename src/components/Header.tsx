@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import { usePathname } from "next/navigation";
 
+import { Button } from "@nextui-org/button";
+import { Link } from "@nextui-org/link";
 import {
   Navbar,
   NavbarBrand,
@@ -12,9 +14,7 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
+} from "@nextui-org/navbar";
 
 const navigation = [
   { name: "About", href: "/about" },

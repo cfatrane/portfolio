@@ -1,25 +1,23 @@
-// import { StaticImageData } from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export type Props = {
   name: string;
-  description?: string[];
-  // missions?: string[];
+  description: string[];
+  missions: string[];
   title: string;
-  logo?: any;
-  image?: any;
-  // image?: StaticImageData;
-  // titleMore?: string;
+  logo: string | StaticImport;
+  image?: string;
   // type?: string;
-  // technos?: {
-  //   Backend?: string[];
-  //   Frontend?: string[];
-  //   Devops?: string[];
-  //   Test?: string[];
-  //   Others?: string[];
-  // };
+  technos: {
+    Frontend?: string;
+    Backend?: string;
+    Devops?: string;
+    Test?: string;
+    Others?: string;
+    Tools?: string;
+  };
   startDate: string;
   endDate: string;
-  // context?: string;
   color?: string;
   website: string;
 };
