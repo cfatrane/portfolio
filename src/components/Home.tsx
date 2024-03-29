@@ -1,9 +1,8 @@
 "use client";
 
+import { LogoCloud } from "@/components/LogoCloud";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { WavyBackground } from "@/components/ui/wavy-background";
-
-import { LogoCloud } from "./LogoCloud";
 
 function Home() {
   const words = [

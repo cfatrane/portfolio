@@ -10,7 +10,7 @@ export function LogoCloud() {
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
             height={48}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-            width={158}
+            width={48}
           />
 
           <Image
@@ -18,7 +18,7 @@ export function LogoCloud() {
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
             height={48}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-            width={158}
+            width={48}
           />
 
           <Image
@@ -26,7 +26,7 @@ export function LogoCloud() {
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
             height={48}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-            width={158}
+            width={48}
           />
 
           <Image
@@ -34,15 +34,15 @@ export function LogoCloud() {
             className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
             height={48}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-            width={158}
+            width={48}
           />
 
           <Image
-            alt="Statamic"
+            alt="tailwindcss"
             className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
             height={48}
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-            width={158}
+            width={48}
           />
         </div>
       </div>
