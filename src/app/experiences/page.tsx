@@ -1,9 +1,8 @@
 import { type Metadata } from "next";
 
 import NextImage from "next/image";
-import Link from "next/link";
 
-import { Image } from "@nextui-org/react";
+import { Link, Image } from "@nextui-org/react";
 import dayjs from "dayjs";
 import kebabCase from "lodash/kebabCase";
 
@@ -33,6 +32,8 @@ function Experiences() {
                 <Link
                   className="mb-4 flex w-fit items-center"
                   href={`experiences/${kebabCase(item.name)}`}
+                  showAnchorIcon
+                  style={{ color: item.color }}
                 >
                   <div className="relative z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                     <NextImage
@@ -76,6 +77,7 @@ function Experiences() {
                         alt={`${item.name} thumbnail`}
                         className="mb-10 rounded-lg object-cover"
                         height={1000}
+                        isBlurred
                         src={item.image}
                         width={1000}
                       />
