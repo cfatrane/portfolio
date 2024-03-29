@@ -1,6 +1,6 @@
 import { Props } from "./types";
 
-export const TECHNOS: Props[] = [
+export const TECHNOS_ICONS: Props[] = [
   // Base
   {
     name: "Javascript",

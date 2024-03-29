@@ -18,7 +18,9 @@ import { SimpleLayout } from "@/components/SimpleLayout";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 
 import { JOBS_FR } from "@/constants/jobs/fr";
-import { TECHNOS } from "@/constants/technos";
+import { TECHNOS_ICONS } from "@/constants/technos";
+
+import { extractAllTechnos } from "@/utils/jobs";
 
 const SkeletonMission = ({ missions }: { missions: string[] }) => (
   <div className="h-full min-h-[6rem] w-full overflow-scroll rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800">
@@ -33,23 +35,24 @@ const SkeletonMission = ({ missions }: { missions: string[] }) => (
 );
 
 const SkeletonTechnos = ({ technos }: { technos: string[] | undefined }) => {
+  const iconArray = technos
+    ?.map((techno) => {
+      const icon = TECHNOS_ICONS.find((elem) => elem.name === techno)?.icon;
+
+      if (icon) {
+        return { icon, name: techno };
+      }
+    })
+    .filter((elem) => elem !== undefined) as { icon: string; name: string }[];
+
   return (
     <div className="flex h-full min-h-[6rem] w-full flex-1 flex-wrap items-center justify-center gap-4 rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800">
-      {technos?.map((techno) => (
-        <>
-          {TECHNOS.find((elem) => elem.name === techno)?.icon && (
-            <div key={techno}>
-              <Tooltip content={techno}>
-                <Image
-                  alt={techno}
-                  height={40}
-                  src={TECHNOS.find((elem) => elem.name === techno)?.icon}
-                  width={40}
-                />
-              </Tooltip>
-            </div>
-          )}
-        </>
+      {iconArray?.map((techno) => (
+        <div key={techno.name}>
+          <Tooltip content={techno.name}>
+            <Image alt={techno.name} height={40} src={techno.icon} width={40} />
+          </Tooltip>
+        </div>
       ))}
     </div>
   );
@@ -65,19 +68,9 @@ function ExperienceDetail({ params }: { params: { slug: string } }) {
   }
 
   const missions = experience.missions;
-  const frontend = experience?.technos?.Frontend?.split("/").map((item) =>
-    item.trim(),
-  );
-  const backend = experience?.technos?.Backend?.split("/").map((item) =>
-    item.trim(),
-  );
-  const devops = experience?.technos?.Devops?.split("/").map((item) =>
-    item.trim(),
-  );
-  const tools = experience?.technos?.Tools?.split("/").map((item) =>
-    item.trim(),
-  );
-  const test = experience?.technos?.Test?.split("/").map((item) => item.trim());
+
+  const { frontend, backend, devops, tools, test } =
+    extractAllTechnos(experience);
 
   const items = [
     {
@@ -119,7 +112,7 @@ function ExperienceDetail({ params }: { params: { slug: string } }) {
   ];
 
   return (
-    <SimpleLayout intro={experience!.title} title={experience!.name}>
+    <SimpleLayout intro={experience.title} title={experience.name}>
       <BentoGrid className="mx-auto max-w-4xl">
         {items.map((item, i) => (
           <BentoGridItem
