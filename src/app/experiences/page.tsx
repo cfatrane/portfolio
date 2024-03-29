@@ -2,7 +2,8 @@ import { type Metadata } from "next";
 
 import NextImage from "next/image";
 
-import { Link, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/image";
+import { Link } from "@nextui-org/link";
 import dayjs from "dayjs";
 import kebabCase from "lodash/kebabCase";
 
