@@ -1,8 +1,9 @@
 import { type Metadata } from "next";
 
 import Image from "next/image";
-import Link from "next/link";
+import NextLink from "next/link";
 
+import { Link } from "@nextui-org/link";
 import { clsx } from "clsx";
 
 import { Container } from "@/components/Container";
@@ -33,14 +34,14 @@ function SocialLink({
 }) {
   return (
     <li className={clsx(className, "flex")}>
-      <Link
+      <NextLink
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
         href={href}
       >
         <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
 
         <span className="ml-4">{children}</span>
-      </Link>
+      </NextLink>
     </li>
   );
 }
@@ -91,10 +92,10 @@ export default function About() {
             <p>Hello 👋 !</p>
 
             <p>
-              Ancien élève de l'école 42 et doté d'une riche expérience de 6
-              ans, je suis un développeur Fullstack spécialisé dans la
-              conception et le déploiement de solutions web et mobiles à l'aide
-              de React Js , Node.js et React Native
+              Ancien élève de l'école 42, je suis développeur frontend avec 5
+              ans d’expérience dans des secteurs comme l'e-commerce,
+              l'audiovisuel et les médias. J’ai eu l’opportunité de travailler
+              avec des entreprises comme la BNP, La Poste et Le Figaro.
             </p>
 
             <p>
@@ -108,18 +109,39 @@ export default function About() {
               Je collabore étroitement avec mes clients pour comprendre leurs
               besoins et dépasser leurs attentes. Si vous cherchez un
               développeur qui combine expertise technique, souci du détail et
-              une approche globale du développement web, je serais ravi de
+              une approche complete du développement web, je serais ravi de
               discuter de votre projet.
             </p>
 
-            <p>
+            {/* <p>
               Je suis passionné par le fait d'offrir des solutions qui non
               seulement répondent aux exigences techniques, mais qui apportent
-              également une réelle valeur ajoutée à l'utilisateur final. Si vous
-              avez besoin d'un expert capable de traduire vos visions en
+              également une réelle valeur ajoutée à l'utilisateur final.
+            </p>
+
+            <p>
+              Si vous avez besoin d'un expert capable de traduire vos visions en
               expériences numériques concrètes et performantes, je suis à votre
               disposition pour discuter de votre projet et contribuer à son
               succès.
+            </p> */}
+
+            <p>
+              On échange sur votre projet ?<br />
+
+              Contactez-moi par e-mail :{" "}
+
+              <Link href="mailto:cfatrane.pro@gmail.com">
+                cfatrane.pro@gmail.com
+              </Link>
+
+              <br />
+
+              Réserver un créneau :{" "}
+
+              <Link href="https://calendly.com/cfatrane-pro">
+                https://calendly.com/cfatrane-pro
+              </Link>
             </p>
           </div>
         </div>
