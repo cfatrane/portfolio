@@ -66,7 +66,7 @@ export const JOBS_FR: Props[] = [
     technos: {
       Frontend:
         "React Js / Vite Js / Next Js / Typescript / Javascript / Redux / Material UI / Ant Design / SASS / styled-components / Axios / React Router / Sentry",
-      Backend: "Node Js / MongoDB",
+      Backend: "Node Js / PHP / MongoDB",
       Devops: "Docker / Github / Github Actions / CircleCI",
       Test: "Jest / React Testing Library",
       Tools: "Slack / Jira / Sketch",
@@ -97,7 +97,7 @@ export const JOBS_FR: Props[] = [
     title: "Développeur React Js / Next Js",
     technos: {
       Frontend:
-        "React Js / Redux / Material UI / Bootstrap / SASS / styled-components / Axios /  Three Js / React Router / React Spring / Lodash / Hubspot / Segment / DragDnDrop",
+        "React Js / Redux / Material UI / Bootstrap / SASS / styled-components / Axios /  Three Js / React Router / React Spring / Lodash / Hubspot / Segment / React DnD",
       Backend: "Node Js / MongoDB",
       Devops: "AWS / Github / Github Actions / CircleCI",
       Test: "Jest / React Testing Library",
@@ -124,8 +124,8 @@ export const JOBS_FR: Props[] = [
     image: "/screenshots/rock_u_support.jpeg",
     technos: {
       Frontend: "React Native / Javascript / styled-components / Axios",
-      Backend: "Node Js / MongoDB",
-      Devops: "Github",
+      // Backend: "Node Js / MongoDB",
+      Devops: "Gitlab",
       Test: "Jest",
       Tools: "Slack",
     },
@@ -150,11 +150,11 @@ export const JOBS_FR: Props[] = [
     image: "/screenshots/ayruu.jpeg",
     technos: {
       Frontend:
-        "React Js / Redux / styled-components / Bootstrap / SASS / Axios",
-      Backend: "Node Js / MongoDB",
-      Devops: "Docker / Github Actions",
+        "React Js / Redux / styled-components / Bootstrap / SASS / Axios / Charts Js / i18n",
+      Backend: " Express / Node Js / MongoDB",
+      Devops: "Docker / Gitlab / CircleCI",
       Test: "Jest / React Testing Library",
-      Tools: "Slack / Jira / Adobe XD",
+      Tools: "Slack / Jira",
     },
     startDate: "2020-09",
     endDate: "2020-09",
@@ -181,10 +181,10 @@ export const JOBS_FR: Props[] = [
     technos: {
       Frontend:
         "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
-      Backend: "Node Js / MongoDB",
-      Devops: "Docker / Github Actions",
-      Test: "Jest / React Testing Library",
-      Tools: "Slack / Jira / Adobe XD",
+      Backend: "Express / Node Js / MongoDB",
+      Devops: "Bitbucket / CircleCI / Gitlab",
+      Test: "Jest / React Testing Library / Cypress",
+      Tools: "Slack / Jira",
     },
     startDate: "2020-02",
     endDate: "2020-06",
@@ -210,11 +210,12 @@ export const JOBS_FR: Props[] = [
     image: "/screenshots/alf.jpeg",
     technos: {
       Frontend:
-        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
-      Backend: "Node Js / MongoDB",
-      Devops: "Docker / Github Actions",
+        "React Js / Ant Design / React Native / styled-components / Axios / i18n",
+      Backend:
+        "Node Js / PostgreSQL / MongoDB / Fastify / Redis / RabbitMQ / GraphQL / Apollo",
+      Devops: "Docker / Heroku / AWS / Gitlab / OVH",
       Test: "Jest / React Testing Library",
-      Tools: "Slack / Jira / Adobe XD",
+      Tools: "Slack / Figma",
     },
     startDate: "2019-09",
     endDate: "2019-11",
@@ -237,12 +238,11 @@ export const JOBS_FR: Props[] = [
     logo: logoLeCloset,
     image: "/screenshots/le_closet.jpeg",
     technos: {
-      Frontend:
-        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
-      Backend: "Node Js / MongoDB",
-      Devops: "Docker / Github Actions",
-      Test: "Jest / React Testing Library",
-      Tools: "Slack / Jira / Adobe XD",
+      Frontend: "Ruby / Javascript / Bootstrap / SASS",
+      Backend: "Ruby On Rails / PostgreSQL",
+      Devops: "Heroku / Github",
+      Test: "Jest / Rspec / Capybara",
+      Tools: "Slack / Figma",
     },
     startDate: "2018-02",
     endDate: "2018-06",
@@ -265,12 +265,10 @@ export const JOBS_FR: Props[] = [
     logo: logoBNP,
     image: "/screenshots/bnp.jpeg",
     technos: {
-      Frontend:
-        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
-      Backend: "Node Js / MongoDB",
-      Devops: "Docker / Github Actions",
+      Frontend: "React Js / SASS",
+      Backend: "Node Js / PostgreSQL / Express",
+      Devops: "Github",
       Test: "Jest / React Testing Library",
-      Tools: "Slack / Jira / Adobe XD",
     },
     startDate: "2017-08",
     endDate: "2018-01",
@@ -292,12 +290,8 @@ export const JOBS_FR: Props[] = [
     logo: logoLaPoste,
     image: "/screenshots/la_poste.jpeg",
     technos: {
-      Frontend:
-        "React Js / Typescript / Javascript / Redux / Material UI / Tanstack / SASS / styled-components / Axios / React Router",
-      Backend: "Node Js / MongoDB",
-      Devops: "Docker / Github Actions",
-      Test: "Jest / React Testing Library",
-      Tools: "Slack / Jira / Adobe XD",
+      Frontend: "Swift",
+      Devops: "Gitlab",
     },
     startDate: "2017-08",
     endDate: "2018-01",

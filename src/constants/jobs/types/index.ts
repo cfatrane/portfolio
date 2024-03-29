@@ -1,11 +1,11 @@
-import { StaticImageData } from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export type Props = {
   name: string;
-  description?: string[];
-  missions?: string[];
+  description: string[];
+  missions: string[];
   title: string;
-  logo?: StaticImageData;
+  logo: string | StaticImport;
   image?: string;
   // type?: string;
   technos: {

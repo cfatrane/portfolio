@@ -7,6 +7,10 @@ export const TECHNOS: Props[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
   },
   {
+    name: "Ruby",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg",
+  },
+  {
     name: "Typescript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
   },
@@ -56,6 +60,10 @@ export const TECHNOS: Props[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sentry/sentry-original.svg",
   },
   {
+    name: "Swift",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg",
+  },
+  {
     name: "Tailwind CSS",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
@@ -69,16 +77,28 @@ export const TECHNOS: Props[] = [
   },
   // Backend
   {
-    name: "Node Js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-  },
-  {
     name: "Express",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
   },
   {
+    name: "Fastify",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastify/fastify-original.svg",
+  },
+  {
+    name: "PHP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+  },
+  {
     name: "Nest Js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
+  },
+  {
+    name: "Node Js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Ruby On Rails",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg",
   },
   // Databases
   {
@@ -87,8 +107,12 @@ export const TECHNOS: Props[] = [
   },
   // Deploy
   {
-    name: "CircleCI",
+    name: "AWS",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/circleci/circleci-plain.svg",
+  },
+  {
+    name: "CircleCI",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   },
   {
     name: "Docker",
@@ -118,6 +142,10 @@ export const TECHNOS: Props[] = [
   {
     name: "Jest",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+  },
+  {
+    name: "Rspec",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rspec/rspec-original.svg",
   },
   // Tools
   {
