@@ -20,12 +20,6 @@ export const metadata: Metadata = {
 };
 
 function Experiences() {
-  const experience = JOBS_FR.find(
-    (element) => element.name === kebabCase("Figaro"),
-  );
-
-  console.log("experience", experience);
-
   return (
     <div>
       <SimpleLayout
@@ -67,11 +61,11 @@ function Experiences() {
 
                     <span> | </span>
 
-                    <span>
-                      {dayjs(item.startDate).format("MMM YYYY")} -{" "}
+                    <span>{dayjs(item.startDate).format("MMM YYYY")}</span>
 
-                      {dayjs(item.endDate).format("MMM YYYY")}
-                    </span>
+                    <span> - </span>
+
+                    <span>{dayjs(item.endDate).format("MMM YYYY")}</span>
                   </p>
                 </div>
 
@@ -82,7 +76,6 @@ function Experiences() {
                         alt={`${item.name} thumbnail`}
                         className="mb-10 rounded-lg object-cover"
                         height={1000}
-                        isZoomed
                         src={item.image}
                         width={1000}
                       />
