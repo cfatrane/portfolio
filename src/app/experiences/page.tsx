@@ -76,20 +76,17 @@ function Experiences() {
                     {item?.image && (
                       <Image
                         alt={`${item.name} thumbnail`}
-                        className="mb-10 rounded-lg object-cover"
+                        className="rounded-lg object-cover"
                         height={1000}
                         isBlurred
+                        isZoomed
                         src={item.image}
                         width={1000}
                       />
                     )}
                   </a>
 
-                  {item?.description?.map((item, index) => (
-                    <p className="mb-2" key={index}>
-                      {item}
-                    </p>
-                  ))}
+                  <p className="mb-2 mt-8">{item.description}</p>
                 </div>
               </div>
             ))}

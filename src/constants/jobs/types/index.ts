@@ -2,12 +2,11 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export type Props = {
   name: string;
-  description: string[];
+  description: string;
   missions: string[];
   title: string;
   logo: string | StaticImport;
   image?: string;
-  // type?: string;
   technos: {
     Frontend?: string;
     Backend?: string;
@@ -18,6 +17,7 @@ export type Props = {
   };
   startDate: string;
   endDate: string;
+  context: string;
   color?: string;
   website: string;
 };
