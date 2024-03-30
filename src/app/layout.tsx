@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: "Charles-Édouard Fatrane - Web & Mobile Developer",
   },
   description:
-    "I'm Charles-Édouard Fatrane, a web and mobile developer based in Paris. I’m a freelancer and digital nomad traveling all around the world.",
+    "I'm Charles-Édouard Fatrane, a web and mobile developer based in Paris. I'm a freelancer and digital nomad traveling all around the world.",
   alternates: {
     types: {
       "application/rss+xml": `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

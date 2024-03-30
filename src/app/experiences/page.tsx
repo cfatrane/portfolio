@@ -23,13 +23,13 @@ function Experiences() {
   return (
     <div>
       <SimpleLayout
-        intro="Je suis développeur frontend avec 5 ans d’expérience dans des secteurs comme l'e-commerce, l'audiovisuel les sport, la mode et les médias. J’ai eu l’opportunité de travailler avec des entreprises comme la BNP, La Poste et Le Figaro. J'ai aussi pu travailler avec différentes start-ups dans diverses domaines."
+        intro="Que ce soit pendant mes stages, alternances, CDI ou contrats freelances, j'ai eu la chance de travailler dans plusieurs grands groupes et startups au cours de ma carrière professionnelle."
         title={title}
       >
         <TracingBeam>
           <div className="relative mx-auto max-w-2xl pt-4 antialiased">
-            {JOBS_FR.map((item, index) => (
-              <div className="mb-10" key={`content-${index}`}>
+            {JOBS_FR.map((item) => (
+              <div className="mb-10" key={item.name}>
                 <Link
                   className="mb-4 flex w-fit items-center"
                   href={`experiences/${kebabCase(item.name)}`}

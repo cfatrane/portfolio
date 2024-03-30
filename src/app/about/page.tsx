@@ -70,7 +70,7 @@ export default function About() {
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
-              alt=""
+              alt="me"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               sizes="(min-width: 1024px) 32rem, 20rem"
               src={portraitImage}
@@ -92,10 +92,10 @@ export default function About() {
             <p>Hello 👋 !</p>
 
             <p>
-              Ancien élève de l'école 42, je suis développeur frontend avec 5
-              ans d’expérience dans des secteurs comme l'e-commerce,
-              l'audiovisuel et les médias. J’ai eu l’opportunité de travailler
-              avec des entreprises comme la BNP, La Poste et Le Figaro.
+              Je suis développeur frontend depuis plus de 5 ans exerçant dans
+              des secteurs comme l'e-commerce, l'audiovisuel et les médias. J'ai
+              eu l'opportunité de travailler avec des entreprises comme la BNP,
+              La Poste et Le Figaro mais aussi avec différentes start-ups.
             </p>
 
             <p>
@@ -110,7 +110,7 @@ export default function About() {
               besoins et dépasser leurs attentes. Si vous cherchez un
               développeur qui combine expertise technique, souci du détail et
               une approche complete du développement web, je serais ravi de
-              discuter de votre projet.
+              discuter avec vous.
             </p>
 
             {/* <p>

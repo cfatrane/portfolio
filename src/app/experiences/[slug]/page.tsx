@@ -12,21 +12,19 @@ import {
   WrenchIcon,
 } from "@heroicons/react/24/solid";
 import { Tooltip } from "@nextui-org/tooltip";
-import kebabCase from "lodash/kebabCase";
 
 import { SimpleLayout } from "@/components/SimpleLayout";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 
-import { JOBS_FR } from "@/constants/jobs/fr";
 import { TECHNOS_ICONS } from "@/constants/technos";
 
-import { extractAllTechnos } from "@/utils/jobs";
+import { extractAllTechnos, getExperience } from "@/utils/jobs";
 
 const SkeletonMission = ({ missions }: { missions: string[] }) => (
   <div className="h-full min-h-[6rem] w-full overflow-scroll rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800">
     <ul className="list-inside list-disc p-4">
-      {missions.map((mission, index) => (
-        <li className="text-sm" key={index}>
+      {missions.map((mission) => (
+        <li className="text-sm" key={mission}>
           {mission}
         </li>
       ))}
@@ -59,9 +57,7 @@ const SkeletonTechnos = ({ technos }: { technos: string[] | undefined }) => {
 };
 
 function ExperienceDetail({ params }: { params: { slug: string } }) {
-  const experience = JOBS_FR.find(
-    (element) => kebabCase(element.name) === kebabCase(params.slug),
-  );
+  const experience = getExperience(params.slug);
 
   if (!experience) {
     return notFound();
@@ -79,48 +75,74 @@ function ExperienceDetail({ params }: { params: { slug: string } }) {
       header: <SkeletonMission missions={missions} />,
       icon: <RectangleStackIcon className="h-4 w-4 text-neutral-500" />,
     },
-    {
-      title: "Devops",
-      description: "Les Alchimistes du Flux.",
-      header: <SkeletonTechnos technos={devops} />,
-      icon: <GlobeAltIcon className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "Backend",
-      description: "Les Architectes de l'Ombre.",
-      header: <SkeletonTechnos technos={backend} />,
-      icon: <InboxStackIcon className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "Frontend",
-      description: "L'Art de l'Interface.",
-      header: <SkeletonTechnos technos={frontend} />,
-      icon: <BuildingStorefrontIcon className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "Tools",
-      description: "La Boîte à Outils Magique.",
-      header: <SkeletonTechnos technos={tools} />,
-      icon: <WrenchIcon className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "Test",
-      description: "La Chasse aux Bugs.",
-      header: <SkeletonTechnos technos={test} />,
-      icon: <AdjustmentsVerticalIcon className="h-4 w-4 text-neutral-500" />,
-    },
+    ...((devops?.length ?? 0) > 0
+      ? [
+          {
+            title: "Devops",
+            description: "Les Alchimistes du Flux.",
+            header: <SkeletonTechnos technos={devops} />,
+            icon: <GlobeAltIcon className="h-4 w-4 text-neutral-500" />,
+          },
+        ]
+      : []),
+    ...((backend?.length ?? 0) > 0
+      ? [
+          {
+            title: "Backend",
+            description: "Les Architectes de l'Ombre.",
+            header: <SkeletonTechnos technos={backend} />,
+            icon: <InboxStackIcon className="h-4 w-4 text-neutral-500" />,
+          },
+        ]
+      : []),
+    ...((frontend?.length ?? 0) > 0
+      ? [
+          {
+            title: "Frontend",
+            description: "L'Art de l'Interface.",
+            header: <SkeletonTechnos technos={frontend} />,
+            icon: (
+              <BuildingStorefrontIcon className="h-4 w-4 text-neutral-500" />
+            ),
+          },
+        ]
+      : []),
+    ...((tools?.length ?? 0) > 0
+      ? [
+          {
+            title: "Tools",
+            description: "La Boîte à Outils Magique.",
+            header: <SkeletonTechnos technos={tools} />,
+            icon: <WrenchIcon className="h-4 w-4 text-neutral-500" />,
+          },
+        ]
+      : []),
+    ...((test?.length ?? 0) > 0
+      ? [
+          {
+            title: "Test",
+            description: "La Chasse aux Bugs.",
+            header: <SkeletonTechnos technos={test} />,
+            icon: (
+              <AdjustmentsVerticalIcon className="h-4 w-4 text-neutral-500" />
+            ),
+          },
+        ]
+      : []),
   ];
 
   return (
     <SimpleLayout intro={experience.title} title={experience.name}>
       <BentoGrid className="mx-auto max-w-4xl">
-        {items.map((item, i) => (
+        {items.map((item, index) => (
           <BentoGridItem
-            className={i === 0 || i === 3 || i === 4 ? "md:col-span-2" : ""}
+            className={
+              index === 0 || index === 3 || index === 4 ? "md:col-span-2" : ""
+            }
             description={item.description}
             header={item.header}
             icon={item.icon}
-            key={i}
+            key={index}
             title={item.title}
           />
         ))}
