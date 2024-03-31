@@ -1,8 +1,14 @@
+"use client";
+
 import { JSX, SVGProps } from "react";
+
+import { usePathname } from "next/navigation";
 
 import { ContainerOuter } from "@/components/Container";
 
 import SOCIAL from "@/constants/social";
+
+import { cn } from "@/utils/cn";
 
 const navigation = [
   {
@@ -69,8 +75,15 @@ const navigation = [
 ];
 
 export function Footer() {
+  const isHomePage = usePathname() === "/";
+  let className;
+
+  if (!isHomePage) {
+    className = "mt-32";
+  }
+
   return (
-    <footer className="mt-32 border-t">
+    <footer className={cn("border-t", className)}>
       <ContainerOuter>
         <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-2">

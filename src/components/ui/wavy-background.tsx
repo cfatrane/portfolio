@@ -36,7 +36,10 @@ export const WavyBackground = ({
     i: number,
     x: number,
     ctx: any,
-    canvas: any;
+    canvas: any,
+    container: any;
+
+  const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const getSpeed = () => {
     switch (speed) {
@@ -51,15 +54,16 @@ export const WavyBackground = ({
 
   const init = () => {
     canvas = canvasRef.current;
+    container = containerRef.current;
     ctx = canvas.getContext("2d");
-    w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
+    w = ctx.canvas.width = container?.offsetWidth;
+    h = ctx.canvas.height = container?.offsetHeight;
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
 
     window.onresize = function () {
-      w = ctx.canvas.width = window.innerWidth;
-      h = ctx.canvas.height = window.innerHeight;
+      w = ctx.canvas.width = container?.offsetWidth;
+      h = ctx.canvas.height = container?.offsetHeight;
       ctx.filter = `blur(${blur}px)`;
     };
     render();
@@ -121,9 +125,10 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "flex h-screen flex-col items-center justify-center",
+        "flex h-full flex-col items-center justify-center",
         containerClassName,
       )}
+      ref={containerRef}
     >
       <canvas
         className="absolute inset-0 z-0"

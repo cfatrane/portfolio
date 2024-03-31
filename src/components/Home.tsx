@@ -23,23 +23,17 @@ function Home() {
   ];
 
   return (
-    <div>
-      <WavyBackground
-        blur={5}
-        className="mx-auto max-w-4xl pb-40"
-        waveWidth={100}
-      >
-        <div className="flex h-[40rem] flex-col items-center justify-center">
-          <p className="inter-var text-center text-2xl font-bold text-white md:text-4xl lg:text-7xl">
-            Charles-Édouard Fatrane
-          </p>
+    <WavyBackground blur={5} className="mx-auto max-w-4xl" waveWidth={100}>
+      <div className="flex flex-col items-center justify-center">
+        <p className="inter-var text-center text-2xl font-bold text-white md:text-4xl lg:text-7xl">
+          Charles-Édouard Fatrane
+        </p>
 
-          <TypewriterEffectSmooth words={words} />
+        <TypewriterEffectSmooth words={words} />
 
-          <LogoCloud />
-        </div>
-      </WavyBackground>
-    </div>
+        <LogoCloud />
+      </div>
+    </WavyBackground>
   );
 }
 
