@@ -13,10 +13,10 @@ import "animate.css";
 export const metadata: Metadata = {
   title: {
     template: "%s - Charles-Édouard Fatrane",
-    default: "Charles-Édouard Fatrane - Web & Mobile Developer",
+    default: "Charles-Édouard Fatrane - Développeur Web & Mobile",
   },
   description:
-    "I'm Charles-Édouard Fatrane, a web and mobile developer based in Paris. I'm a freelancer and digital nomad traveling all around the world.",
+    "Je m'appelle Charles-Édouard, développeur web et mobile basé à Paris. Je suis freelance et digital.",
   alternates: {
     types: {
       "application/rss+xml": `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="h-full antialiased" lang="en" suppressHydrationWarning>
+    <html className="h-full antialiased" lang="fr" suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="flex w-full">
