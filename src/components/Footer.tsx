@@ -104,8 +104,8 @@ export function Footer() {
 
           <div className="mt-8 md:order-1 md:mt-0">
             <p className="text-center text-xs leading-5 text-zinc-400 dark:text-zinc-500">
-              &copy; {new Date().getFullYear()} Charles-Édouard Fatrane. All
-              rights reserved.
+              &copy; {new Date().getFullYear()} Made with ❤️ by Charles-Édouard
+              Fatrane. All rights reserved.
             </p>
           </div>
         </div>
