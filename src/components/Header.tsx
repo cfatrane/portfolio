@@ -75,7 +75,7 @@ export function Header() {
         className="mx-auto max-w-7xl md:justify-between"
         maxWidth="full"
         onMenuOpenChange={setIsMenuOpen}
-        shouldHideOnScroll
+        position="static"
       >
         <NavbarContent>
           <NavbarMenuToggle
