@@ -159,7 +159,8 @@
       }
     ],
 
-    "@typescript-eslint/no-explicit-any": "warn"
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-var-requires": ["error", { "allow": ["@next*"] }]
   },
   "settings": {
     "import/resolver": {

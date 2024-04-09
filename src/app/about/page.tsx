@@ -88,7 +88,7 @@ export default function About() {
             />
           </h1>
 
-          <div className="animate__animated animate__slideInUp mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>Hello 👋 !</p>
 
             <p>
