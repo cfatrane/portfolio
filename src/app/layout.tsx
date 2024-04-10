@@ -15,11 +15,6 @@ export const metadata: Metadata = {
   },
   description:
     "Je m'appelle Charles-Édouard, développeur web et mobile basé à Paris. Je suis freelance et digital.",
-  alternates: {
-    types: {
-      "application/rss+xml": `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
 };
 
 export default function RootLayout({

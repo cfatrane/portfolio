@@ -48,7 +48,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const previousPathname = usePrevious(pathname);
 
   return (
-    // <NextUIProvider>
     <AppContext.Provider value={{ previousPathname }}>
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ThemeWatcher />
@@ -56,6 +55,5 @@ export function Providers({ children }: { children: React.ReactNode }) {
         {children}
       </ThemeProvider>
     </AppContext.Provider>
-    // </NextUIProvider>
   );
 }
