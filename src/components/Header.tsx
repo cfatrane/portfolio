@@ -17,9 +17,9 @@ import {
 } from "@nextui-org/navbar";
 
 const navigation = [
-  { name: "About", href: "/about" },
-  { name: "Experiences", href: "/experiences" },
-  { name: "Projects", href: "/projects" },
+  { name: "ABOUT", href: "/about" },
+  { name: "EXPERIENCES", href: "/experiences" },
+  { name: "PROJECTS", href: "/projects" },
 ];
 
 function NavItem({
@@ -34,7 +34,11 @@ function NavItem({
   return (
     <NavbarItem isActive={isActive}>
       <Link color={isActive ? "primary" : "foreground"} href={href}>
-        <Button color={isActive ? "primary" : "default"} variant="light">
+        <Button
+          className="font-light"
+          color={isActive ? "primary" : "default"}
+          variant="light"
+        >
           {children}
         </Button>
       </Link>
@@ -70,9 +74,9 @@ export function Header() {
   const isHomePage = usePathname() === "/";
 
   return (
-    <div className="border-b">
+    <div className="font-nippo font-light">
       <Navbar
-        className="mx-auto max-w-7xl md:justify-between"
+        className="mx-auto max-w-7xl bg-transparent md:justify-between"
         maxWidth="full"
         onMenuOpenChange={setIsMenuOpen}
         position="static"
@@ -89,7 +93,7 @@ export function Header() {
                 color={isHomePage ? "primary" : "default"}
                 variant="light"
               >
-                <svg
+                {/* <svg
                   className="h-6 w-6"
                   fill="none"
                   stroke="currentColor"
@@ -102,9 +106,9 @@ export function Header() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                </svg>
+                </svg> */}
 
-                <p className="ml-2 font-bold text-inherit text-white">Home</p>
+                <p className="font text-inherit text-white">HOME</p>
               </Button>
             </Link>
           </NavbarBrand>
@@ -118,11 +122,11 @@ export function Header() {
           ))}
         </NavbarContent>
 
-        {/* <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-        <ThemeToggle />
-        </NavbarItem>
-      </NavbarContent> */}
+        <NavbarContent justify="end">
+          <NavbarItem className="hidden lg:flex">
+            {/* <ThemeToggle /> */}
+          </NavbarItem>
+        </NavbarContent>
 
         <NavbarMenu>
           {navigation.map((item, index) => (
