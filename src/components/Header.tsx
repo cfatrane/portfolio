@@ -1,141 +1,105 @@
 "use client";
 
-import { useState } from "react";
-
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { Button } from "@nextui-org/button";
-import { Link } from "@nextui-org/link";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-} from "@nextui-org/navbar";
+import { Menu, Home } from "lucide-react";
 
-const navigation = [
-  { name: "ABOUT", href: "/about" },
-  { name: "EXPERIENCES", href: "/experiences" },
-  { name: "PROJECTS", href: "/projects" },
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+
+const navItems = [
+  { label: "ABOUT", href: "/about" },
+  { label: "EXPERIENCES", href: "/experiences" },
+  { label: "PROJECTS", href: "/projects" },
 ];
 
-function NavItem({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
+type NavigationItemProps = { href: string; label: string };
+
+function HeaderNavigationItem({ href, label }: NavigationItemProps) {
   const isActive = usePathname() === href;
 
   return (
-    <NavbarItem isActive={isActive}>
-      <Link color={isActive ? "primary" : "foreground"} href={href}>
-        <Button
-          className="font-light"
-          color={isActive ? "primary" : "default"}
-          variant="light"
-        >
-          {children}
-        </Button>
-      </Link>
-    </NavbarItem>
+    <Link
+      className={`${
+        isActive ? "text-foreground" : "text-muted-foreground"
+      } transition-colors hover:text-foreground`}
+      href={href}
+    >
+      {label}
+    </Link>
   );
 }
 
-function NavMenuItem({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
+function HeaderNavigationItemMobile({ href, label }: NavigationItemProps) {
   const isActive = usePathname() === href;
 
   return (
-    <NavbarMenuItem>
-      <Link
-        className="w-full"
-        color={isActive ? "primary" : "foreground"}
-        href={href}
-        size="lg"
-      >
-        {children}
-      </Link>
-    </NavbarMenuItem>
+    <Link
+      className={`${
+        isActive
+          ? "hover:text-foreground"
+          : "text-muted-foreground hover:text-foreground"
+      }`}
+      href={href}
+    >
+      {label}
+    </Link>
   );
 }
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isHomePage = usePathname() === "/";
-
   return (
-    <div className="font-nippo font-light">
-      <Navbar
-        className="mx-auto max-w-7xl bg-transparent md:justify-between"
-        maxWidth="full"
-        onMenuOpenChange={setIsMenuOpen}
-        position="static"
-      >
-        <NavbarContent>
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
+    <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-secondary px-4 font-nippo md:px-6">
+      <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+        <Link
+          className="flex items-center gap-2 text-lg font-semibold md:text-base"
+          href="/"
+        >
+          <Home className="h-6 w-6" />
+
+          <span className="sr-only">CEF Inc</span>
+        </Link>
+
+        {navItems.map((item) => (
+          <HeaderNavigationItem
+            href={item.href}
+            key={item.label}
+            label={item.label}
           />
+        ))}
+      </nav>
 
-          <NavbarBrand className="flex items-center">
-            <Link color={isHomePage ? "primary" : "foreground"} href="/">
-              <Button
-                color={isHomePage ? "primary" : "default"}
-                variant="light"
-              >
-                {/* <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg> */}
+      <Sheet>
+        <SheetTrigger asChild>
+          <Button className="shrink-0 md:hidden" size="icon" variant="outline">
+            <Menu className="h-5 w-5" />
 
-                <p className="font text-inherit text-white">HOME</p>
-              </Button>
+            <span className="sr-only">Toggle navigation menu</span>
+          </Button>
+        </SheetTrigger>
+
+        <SheetContent side="left">
+          <nav className="grid gap-6 text-lg font-medium">
+            <Link
+              className="flex items-center gap-2 text-lg font-semibold"
+              href="/"
+            >
+              <Home className="h-6 w-6" />
+
+              <span className="sr-only">CEF Inc</span>
             </Link>
-          </NavbarBrand>
-        </NavbarContent>
 
-        <NavbarContent className="hidden gap-10 sm:flex" justify="end">
-          {navigation.map((navItem) => (
-            <NavItem href={navItem.href} key={navItem.name}>
-              {navItem.name}
-            </NavItem>
-          ))}
-        </NavbarContent>
-
-        <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex">
-            {/* <ThemeToggle /> */}
-          </NavbarItem>
-        </NavbarContent>
-
-        <NavbarMenu>
-          {navigation.map((item, index) => (
-            <NavMenuItem href={item.href} key={`${item}-${index}`}>
-              {item.name}
-            </NavMenuItem>
-          ))}
-        </NavbarMenu>
-      </Navbar>
-    </div>
+            {navItems.map((item) => (
+              <HeaderNavigationItemMobile
+                href={item.href}
+                key={item.label}
+                label={item.label}
+              />
+            ))}
+          </nav>
+        </SheetContent>
+      </Sheet>
+    </header>
   );
 }
