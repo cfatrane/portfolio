@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { Menu, Home } from "lucide-react";
 
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -100,6 +101,12 @@ export function Header() {
           </nav>
         </SheetContent>
       </Sheet>
+
+      <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
+        <div className="ml-auto">
+          <ThemeToggle />
+        </div>
+      </div>
     </header>
   );
 }
