@@ -66,7 +66,7 @@ export default function RootLayout({
         <Providers>
           <Header />
 
-          <div className="grow">{children}</div>
+          <div className="grow pt-16 font-nippo">{children}</div>
 
           <Footer />
         </Providers>
