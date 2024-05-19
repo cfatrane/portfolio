@@ -7,8 +7,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Providers } from "@/app/providers";
 
-import { Layout } from "@/components/Layout";
-import "@/styles/tailwind.css";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+
+// import "@/styles/tailwind.css";
+import "./globals.css";
 
 const nippo = localFont({
   src: [
@@ -56,12 +59,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="h-full antialiased" lang="fr" suppressHydrationWarning>
-      <body className="flex h-full bg-zinc-50 dark:bg-zinc-900">
+    <html className="antialiased" lang="fr" suppressHydrationWarning>
+      <body
+        className={`flex min-h-screen w-full flex-col bg-zinc-50 dark:bg-zinc-900 ${nippo.variable}`}
+      >
         <Providers>
-          <div className={`" flex w-full ${nippo.variable}`}>
-            <Layout>{children}</Layout>
-          </div>
+          <Header />
+
+          <div className="grow">{children}</div>
+
+          <Footer />
         </Providers>
 
         <Analytics />
