@@ -1,6 +1,6 @@
 const SOCIAL = {
-  twitter: "https://twitter.com/aristoteartem/",
-  instagram: "https://www.instagram.com/aristoteartem/",
+  twitter: "https://x.com/codexom_dev",
+  instagram: "https://www.instagram.com/codexom_dev/",
   github: "https://github.com/cfatrane/",
   linkedIn: "https://www.linkedin.com/in/cfatrane/",
   calendly: "https://calendly.com/cfatrane-pro",
