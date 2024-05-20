@@ -34,7 +34,7 @@ export const PROJECTS = [
   },
   {
     title: "the-next-google",
-    description: "The famous",
+    description: "I dare you to click",
     link: "http://planetaria.tech",
   },
 ];
