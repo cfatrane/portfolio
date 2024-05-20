@@ -31,7 +31,7 @@ export const HoverEffect = ({
     <div
       className={cn(
         "grid grid-cols-1 py-10  md:grid-cols-2  lg:grid-cols-3",
-        className,
+        className
       )}
     >
       {items.map((item, idx) => (
@@ -86,7 +86,7 @@ export const Card = ({
     <div
       className={cn(
         "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-transparent bg-black p-4 group-hover:border-slate-700 dark:border-white/[0.2]",
-        className,
+        className
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -135,7 +135,7 @@ export const CardDescription = ({
     <p
       className={cn(
         "mt-8 text-sm leading-relaxed tracking-wide text-zinc-400",
-        className,
+        className
       )}
     >
       {children}
