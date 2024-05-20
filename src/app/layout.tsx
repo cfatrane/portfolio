@@ -66,7 +66,9 @@ export default function RootLayout({
         <Providers>
           <Header />
 
-          <div className="grow pt-16 font-nippo">{children}</div>
+          <main className="flex grow items-center justify-center pt-16 font-nippo">
+            {children}
+          </main>
 
           <Footer />
         </Providers>
