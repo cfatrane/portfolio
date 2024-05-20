@@ -69,7 +69,7 @@ export default function About() {
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               alt="me"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover grayscale dark:bg-zinc-800"
               sizes="(min-width: 1024px) 32rem, 20rem"
               src={portraitImage}
             />
@@ -77,7 +77,7 @@ export default function About() {
         </div>
 
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             "Je m'appelle Charles-Édouard Fatrane. J'habite à Paris, où je
             conçois des sites Web et des applications mobiles."
           </h1>
