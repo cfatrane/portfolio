@@ -4,8 +4,6 @@ import { JSX, SVGProps } from "react";
 
 import { usePathname } from "next/navigation";
 
-import { ContainerOuter } from "@/components/Container";
-
 import SOCIAL from "@/constants/social";
 
 import { cn } from "@/utils/cn";
@@ -83,32 +81,30 @@ export function Footer() {
   }
 
   return (
-    <footer className={cn("border-t bg-secondary font-nippo", className)}>
-      <ContainerOuter>
-        <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-          <div className="flex justify-center space-x-6 md:order-2">
-            {navigation.map((item) => (
-              <a
-                className="text-foreground"
-                href={item.href}
-                key={item.name}
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                <span className="sr-only">{item.name}</span>
+    <footer className={cn("bg-secondary font-nippo", className)}>
+      <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+        <div className="flex justify-center space-x-6 md:order-2">
+          {navigation.map((item) => (
+            <a
+              className="text-foreground"
+              href={item.href}
+              key={item.name}
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <span className="sr-only">{item.name}</span>
 
-                <item.icon aria-hidden="true" className="h-6 w-6" />
-              </a>
-            ))}
-          </div>
-
-          <div className="mt-8 md:order-1 md:mt-0">
-            <p className="text-center text-xs leading-5 text-foreground">
-              &copy; {new Date().getFullYear()} Charles-Édouard Fatrane
-            </p>
-          </div>
+              <item.icon aria-hidden="true" className="h-6 w-6" />
+            </a>
+          ))}
         </div>
-      </ContainerOuter>
+
+        <div className="mt-8 md:order-1 md:mt-0">
+          <p className="text-center text-sm leading-5 text-primary">
+            COPYRIGHT &copy; {new Date().getFullYear()} CHARLES-ÉDOUARD FATRANE
+          </p>
+        </div>
+      </div>
     </footer>
   );
 }
