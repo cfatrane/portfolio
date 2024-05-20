@@ -32,4 +32,9 @@ export const PROJECTS = [
     link: "https://github.com/cfatrane/vitejs-boilerplate",
     wip: true,
   },
+  {
+    title: "the-next-google",
+    description: "The famous",
+    link: "http://planetaria.tech",
+  },
 ];
