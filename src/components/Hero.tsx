@@ -29,7 +29,7 @@ function Hero() {
           Développeur Web & Mobile
         </Highlight>
         <br />
-        <div className="mt-6">
+        <div className="mt-12">
           <TechnoCloud />
         </div>
       </motion.h1>

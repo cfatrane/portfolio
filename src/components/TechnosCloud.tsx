@@ -30,8 +30,10 @@ function LogoCloudItem({
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger>
-          <div className="relative size-12">
-            <Icon className={fill} />
+          <div className="relative size-8 md:size-12">
+            <Icon
+              className={`origin-center transition ease-in-out hover:scale-125 ${fill}`}
+            />
           </div>
         </TooltipTrigger>
 
@@ -46,7 +48,7 @@ function LogoCloudItem({
 export function TechnoCloud() {
   return (
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <div className="mx-auto flex max-w-lg items-center justify-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none">
+      <div className="mx-auto flex max-w-lg flex-wrap items-center justify-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none">
         <LogoCloudItem content="React Js" icon={ReactIcon} />
 
         <LogoCloudItem content="Next Js" icon={NextJsIcon} />
