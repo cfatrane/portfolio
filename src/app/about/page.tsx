@@ -82,7 +82,7 @@ export default function About() {
             conçois des sites Web et des applications mobiles."
           </h1>
 
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 space-y-7 font-sans text-base text-zinc-600 dark:text-zinc-400">
             <p>Hello 👋 !</p>
 
             <p>
@@ -122,13 +122,18 @@ export default function About() {
 
             <p>
               On échange sur votre projet ?<br />
+              <br className="md:hidden" />
               Contactez-moi par e-mail :{" "}
-              <Link href="mailto:cfatrane.pro@gmail.com">
+              <Link className="underline" href="mailto:cfatrane.pro@gmail.com">
                 cfatrane.pro@gmail.com
               </Link>
               <br />
+              <br className="md:hidden" />
               Réserver un créneau :{" "}
-              <Link href="https://calendly.com/cfatrane-pro">
+              <Link
+                className="underline"
+                href="https://calendly.com/cfatrane-pro"
+              >
                 https://calendly.com/cfatrane-pro
               </Link>
             </p>
