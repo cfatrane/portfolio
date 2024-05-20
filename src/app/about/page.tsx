@@ -1,9 +1,8 @@
 import { type Metadata } from "next";
 
 import Image from "next/image";
-import NextLink from "next/link";
+import Link from "next/link";
 
-import { Link } from "@nextui-org/link";
 import { clsx } from "clsx";
 
 import { Container } from "@/components/Container";
@@ -25,27 +24,27 @@ function SocialLink({
   href,
   children,
   icon: Icon,
-}: {
+}: Readonly<{
   className?: string;
   href: string;
   icon: React.ComponentType<{ className?: string }>;
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <li className={clsx(className, "flex")}>
-      <NextLink
+      <Link
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
         href={href}
       >
         <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
 
         <span className="ml-4">{children}</span>
-      </NextLink>
+      </Link>
     </li>
   );
 }
 
-function MailIcon(props: React.ComponentPropsWithoutRef<"svg">) {
+function MailIcon(props: Readonly<React.ComponentPropsWithoutRef<"svg">>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" {...props}>
       <path
