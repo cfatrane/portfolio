@@ -57,7 +57,7 @@ export const TextRevealCard = ({
 
   function touchMoveHandler(event: React.TouchEvent<HTMLDivElement>) {
     event.preventDefault();
-    const clientX = event.touches[0]!.clientX;
+    const { clientX } = event.touches[0]!;
 
     if (cardRef.current) {
       const relativeX = clientX - left;

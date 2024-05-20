@@ -61,7 +61,7 @@ function ExperienceDetail({ params }: { params: { slug: string } }) {
     return notFound();
   }
 
-  const missions = experience.missions;
+  const { missions } = experience;
 
   const { frontend, backend, devops, tools, test } =
     extractAllTechnos(experience);
