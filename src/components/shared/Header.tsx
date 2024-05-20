@@ -55,9 +55,9 @@ function HeaderNavigationItemMobile({
 
 export function Header() {
   return (
-    <div className="w-full bg-secondary">
+    <div className="sticky top-0 z-10 w-full bg-secondary">
       <div className="container mx-auto sm:px-6 lg:px-8">
-        <header className="sticky top-0 z-10 flex h-16 w-full items-center gap-4 border-b px-4 md:px-6">
+        <header className="flex h-16 w-full items-center gap-4 border-b px-4 md:px-6">
           <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
             <Link
               className="flex items-center gap-2 text-lg font-semibold md:text-base"
