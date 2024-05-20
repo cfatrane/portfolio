@@ -1,3 +1,5 @@
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -60,6 +62,7 @@ const config = {
       },
       fontFamily: {
         nippo: ["var(--font-nippo)"],
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {
