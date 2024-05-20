@@ -65,7 +65,7 @@ export default function RootLayout({
   return (
     <html className="antialiased" lang="fr" suppressHydrationWarning>
       <body
-        className={`flex min-h-svh w-full flex-col bg-secondary ${nippo.className} ${nippo.variable} ${fontSans.variable}`}
+        className={`flex min-h-svh w-full flex-col bg-card ${nippo.className} ${nippo.variable} ${fontSans.variable}`}
       >
         <Providers>
           <Header />
