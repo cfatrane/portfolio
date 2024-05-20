@@ -69,7 +69,7 @@ function Experiences() {
                 </p>
               </div>
 
-              <div className="prose-sm text-sm dark dark:prose-invert">
+              <div className="prose-sm dark:prose-invert dark text-sm">
                 <a href={item.website}>
                   {item?.image && (
                     <Image

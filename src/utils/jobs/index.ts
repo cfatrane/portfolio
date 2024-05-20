@@ -25,7 +25,7 @@ export const extractAllTechnos = (experience: Props) => {
 
 export const getExperience = (slug: string) => {
   const experience = JOBS_FR.find(
-    (element) => kebabCase(element.name) === kebabCase(slug),
+    (element) => kebabCase(element.name) === kebabCase(slug)
   );
 
   return experience;

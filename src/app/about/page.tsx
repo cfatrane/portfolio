@@ -122,17 +122,12 @@ export default function About() {
 
             <p>
               On échange sur votre projet ?<br />
-
               Contactez-moi par e-mail :{" "}
-
               <Link href="mailto:cfatrane.pro@gmail.com">
                 cfatrane.pro@gmail.com
               </Link>
-
               <br />
-
               Réserver un créneau :{" "}
-
               <Link href="https://calendly.com/cfatrane-pro">
                 https://calendly.com/cfatrane-pro
               </Link>
