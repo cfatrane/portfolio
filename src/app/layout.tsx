@@ -70,7 +70,7 @@ export default function RootLayout({
         <Providers>
           <Header />
 
-          <main className="flex grow items-center justify-center font-nippo">
+          <main className="flex grow justify-center font-nippo">
             {children}
           </main>
 
