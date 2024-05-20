@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+import { TechnoCloud } from "@/components/TechnosCloud";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 
 function Hero() {
@@ -27,6 +28,10 @@ function Hero() {
         <Highlight className="font-normal text-primary/75">
           Développeur Web & Mobile
         </Highlight>
+        <br />
+        <div className="mt-6">
+          <TechnoCloud />
+        </div>
       </motion.h1>
     </HeroHighlight>
   );
