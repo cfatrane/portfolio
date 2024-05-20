@@ -13,6 +13,7 @@ const navItems = [
   { label: "ABOUT", href: "/about" },
   { label: "EXPERIENCES", href: "/experiences" },
   { label: "PROJECTS", href: "/projects" },
+  { label: "TOOLS", href: "/tools" },
 ];
 
 type NavigationItemProps = { href: string; label: string };
@@ -51,7 +52,7 @@ function HeaderNavigationItemMobile({ href, label }: NavigationItemProps) {
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-secondary px-4 font-nippo md:px-6">
+    <header className="sticky top-0 z-10 flex h-16 w-full items-center gap-4 border-b bg-secondary px-4 font-nippo md:px-6">
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <Link
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
