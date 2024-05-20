@@ -7,7 +7,10 @@ import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 
 function Hero() {
   return (
-    <HeroHighlight>
+    <HeroHighlight
+      className="flex items-center justify-center"
+      containerClassName="h-full"
+    >
       <motion.h1
         animate={{
           opacity: 1,
