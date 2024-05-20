@@ -83,13 +83,13 @@ export function Footer() {
   }
 
   return (
-    <footer className={cn("border-t", className)}>
+    <footer className={cn("border-t bg-secondary", className)}>
       <ContainerOuter>
         <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item) => (
               <a
-                className="text-gray-400 hover:text-gray-500"
+                className="text-foreground"
                 href={item.href}
                 key={item.name}
                 rel="noreferrer noopener"
@@ -103,7 +103,7 @@ export function Footer() {
           </div>
 
           <div className="mt-8 md:order-1 md:mt-0">
-            <p className="text-center text-xs leading-5 text-zinc-400 dark:text-zinc-500">
+            <p className="text-center text-xs leading-5 text-foreground">
               &copy; {new Date().getFullYear()} Charles-Édouard Fatrane
             </p>
           </div>
