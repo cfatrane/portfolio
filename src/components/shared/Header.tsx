@@ -25,7 +25,7 @@ function HeaderNavigationItem({ href, label }: Readonly<NavigationItemProps>) {
     <Link
       className={`${
         isActive ? "text-foreground" : "text-muted-foreground"
-      } font-nippo transition-colors hover:text-foreground`}
+      } transition-colors hover:text-foreground`}
       href={href}
     >
       {label}
@@ -45,7 +45,7 @@ function HeaderNavigationItemMobile({
         isActive
           ? "hover:text-foreground"
           : "text-muted-foreground hover:text-foreground"
-      } font-nippo`}
+      }`}
       href={href}
     >
       {label}
@@ -58,9 +58,9 @@ export function Header() {
     <div className="sticky top-0 z-10 w-full border-b bg-background">
       <div className="container mx-auto sm:px-6 lg:px-8">
         <header className="flex h-16 w-full items-center gap-4 px-4 md:px-6">
-          <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+          <nav className="hidden flex-col gap-6 text-lg md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
             <Link
-              className="flex items-center gap-2 text-lg font-semibold md:text-base"
+              className="flex items-center gap-2 text-lg md:text-base"
               href="/"
             >
               <Home className="h-6 w-6" />
@@ -91,7 +91,7 @@ export function Header() {
             </SheetTrigger>
 
             <SheetContent side="left">
-              <nav className="grid gap-6 text-lg font-medium">
+              <nav className="grid gap-6 text-lg">
                 <Link
                   className="flex items-center gap-2 text-lg font-semibold"
                   href="/"
