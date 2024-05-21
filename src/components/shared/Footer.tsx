@@ -91,7 +91,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-sm leading-5 text-primary">
+          <p className="text-center text-sm leading-5 text-foreground">
             COPYRIGHT &copy; {new Date().getFullYear()} CHARLES-ÉDOUARD FATRANE
           </p>
         </div>
