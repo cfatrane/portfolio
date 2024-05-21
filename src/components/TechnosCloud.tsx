@@ -55,9 +55,17 @@ export function TechnoCloud() {
 
         <LogoCloudItem content="Typescript" icon={TypescriptIcon} />
 
-        <LogoCloudItem content="Vercel" fill="fill-primary" icon={VercelIcon} />
+        <LogoCloudItem
+          content="Vercel"
+          fill="fill-foreground"
+          icon={VercelIcon}
+        />
 
-        <LogoCloudItem content="Prisma" fill="fill-primary" icon={PrismaIcon} />
+        <LogoCloudItem
+          content="Prisma"
+          fill="fill-foreground"
+          icon={PrismaIcon}
+        />
 
         <LogoCloudItem content="PostgreSQL" icon={PostgresIcon} />
 
