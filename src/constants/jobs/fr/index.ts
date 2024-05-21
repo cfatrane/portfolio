@@ -1,5 +1,6 @@
 import logoAyruu from "@/images/logos/ayruu_logo.jpeg";
 import logoBNP from "@/images/logos/bnp_paribas_logo.jpeg";
+import logoJedid from "@/images/logos/jedid.jpeg";
 import logoKinetix from "@/images/logos/kinetixtech_logo.jpeg";
 import logoLaPoste from "@/images/logos/la_poste_logo.jpeg";
 import logoLeCloset from "@/images/logos/le_closet_logo.jpeg";
@@ -9,9 +10,37 @@ import logoRockUSupport from "@/images/logos/rock_u_support_logo.jpeg";
 import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
 import logoTilli from "@/images/logos/tilli_logo.jpeg";
 
-import { Props } from "../types";
+import { JobType } from "../types";
 
-export const JOBS_FR: Props[] = [
+export const JOBS_FR: JobType[] = [
+  {
+    name: "Jedid",
+    description:
+      "Jedid : une application où vous pourrez décrire à notre IA votre besoin puis modélisez en 3D votre vêtement rêvé à partir des réponses données. Nous vous fournissons ensuite le patron et vous connectons à une couturière de quartier. Modélisez votre vêtement idéal en 3D et passez du rêve à la réalité grâce à une couturière de proximité.",
+    missions: [
+      "Création et implémentation de nouveaux designs (UI / UX) des screens",
+      "Création de l'interface ",
+      "Implémentation de good practices",
+      "Correction de bugs",
+    ],
+    title: "Développeur Mobile",
+    logo: logoJedid,
+    image: "/screenshots/le_figaro.jpeg",
+    technos: {
+      Frontend:
+        "React Native / Typescript / Javascript / Redux / Flutter / Firebase / Tanstack / SASS / Axios",
+      Backend: "Firebase",
+      Devops: "Github / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Jira",
+    },
+    startDate: "2024-03",
+    endDate: "2024-05",
+    context:
+      "J'ai rejoint le Figaro afin de participer au développement d’une plateforme en interne pour les pigistes. Ma mission a duré 6 mois.",
+    color: "#8E7AA9",
+    website: "https://www.jedid.fr/",
+  },
   {
     name: "Figaro",
     description:

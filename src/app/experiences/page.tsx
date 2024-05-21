@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 import kebabCase from "lodash/kebabCase";
 
 import { SimpleLayout } from "@/components/SimpleLayout";
+import { Button } from "@/components/ui/button";
 
 import { JOBS_FR } from "@/constants/jobs/fr";
 
@@ -29,7 +30,7 @@ function Experiences() {
             <div className="mb-10" key={item.name}>
               <Link
                 className="mb-4 flex w-fit items-center"
-                href={`experiences/${kebabCase(item.name)}`}
+                href={item.website}
                 showAnchorIcon
                 style={{ color: item.color }}
               >
@@ -70,6 +71,14 @@ function Experiences() {
 
               <div className="prose-sm dark:prose-invert dark font-sans text-sm">
                 <p className="mb-2 mt-8">{item.description}</p>
+              </div>
+
+              <div className="mt-4 flex justify-center">
+                <Button asChild style={{ backgroundColor: item.color }}>
+                  <Link href={`experiences/${kebabCase(item.name)}`}>
+                    Détail
+                  </Link>
+                </Button>
               </div>
             </div>
           ))}

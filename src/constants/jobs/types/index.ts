@@ -1,6 +1,6 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-export type Props = {
+export type JobType = {
   name: string;
   description: string;
   missions: string[];
