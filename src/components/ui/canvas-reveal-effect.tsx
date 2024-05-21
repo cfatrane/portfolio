@@ -211,10 +211,14 @@ const ShaderMaterial = ({
     }
     lastFrameTime = timestamp;
 
-    const { material } = ref.current;
-    const timeLocation = material.uniforms.u_time;
+    const material = ref.current.material as THREE.ShaderMaterial; // Cast the material to ShaderMaterial
 
-    timeLocation.value = timestamp;
+    if (material.uniforms) {
+      // Check if the material has the 'uniforms' property
+      const timeLocation = material.uniforms.u_time;
+
+      timeLocation.value = timestamp;
+    }
   });
 
   const getUniforms = () => {
