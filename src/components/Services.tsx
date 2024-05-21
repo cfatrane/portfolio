@@ -32,7 +32,7 @@ export function Process() {
         <Card
           description="Analyse des besoins et des objectifs puis propositions et plan d'action détaillé"
           icon={<AceternityIcon />}
-          title="Consultation / Stratégie"
+          title="1 / Consultation & Stratégie"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -43,7 +43,7 @@ export function Process() {
         <Card
           description="Approche agile et itérative"
           icon={<AceternityIcon />}
-          title="Développement"
+          title="2 / Développement"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -62,7 +62,7 @@ export function Process() {
         <Card
           description="Tests rigoureux et validation finale pour garantir la qualité."
           icon={<AceternityIcon />}
-          title="Livraison"
+          title="3 / Livraison"
         >
           <CanvasRevealEffect
             animationSpeed={3}
