@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { Computer, Handshake, Rocket } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
@@ -31,7 +32,7 @@ export function Process() {
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-4 px-8 py-20 lg:flex-row">
         <Card
           description="Analyse des besoins et des objectifs puis propositions et plan d'action détaillé"
-          icon={<AceternityIcon />}
+          icon={<Handshake />}
           title="1 / Consultation & Stratégie"
         >
           <CanvasRevealEffect
@@ -42,7 +43,8 @@ export function Process() {
 
         <Card
           description="Approche agile et itérative"
-          icon={<AceternityIcon />}
+          icon={<Computer />}
+          // icon={<AceternityIcon />}
           title="2 / Développement"
         >
           <CanvasRevealEffect
@@ -61,7 +63,7 @@ export function Process() {
 
         <Card
           description="Tests rigoureux et validation finale pour garantir la qualité."
-          icon={<AceternityIcon />}
+          icon={<Rocket />}
           title="3 / Livraison"
         >
           <CanvasRevealEffect
@@ -134,28 +136,6 @@ const Card = ({
         </p>
       </div>
     </div>
-  );
-};
-
-const AceternityIcon = () => {
-  return (
-    <svg
-      className="h-10 w-10 text-black group-hover/canvas-card:text-white dark:text-white "
-      fill="none"
-      height="65"
-      viewBox="0 0 66 65"
-      width="66"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit="3.86874"
-        strokeWidth="15"
-        style={{ mixBlendMode: "darken" }}
-      />
-    </svg>
   );
 };
 
