@@ -4,7 +4,7 @@ import { Process } from "@/components/Services";
 export default function Index() {
   return (
     <div className="flex w-full flex-col">
-      <div className="flex h-screen items-center justify-center">
+      <div className="h-screen">
         <Hero />
       </div>
 
