@@ -1,12 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
-const stats = [
-  { label: "Transactions every 24 hours", value: "44 million" },
-  { label: "Assets under holding", value: "$119 trillion" },
-  { label: "New users annually", value: "46,000" },
-];
+import portraitImage from "@/images/portrait.jpg";
 
 function WhoIAm() {
   return (
@@ -20,48 +17,42 @@ function WhoIAm() {
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
               <p className="text-xl leading-8 text-card-foreground">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                id at vitae feugiat egestas ac. Diam nulla orci at in viverra
-                scelerisque eget. Eleifend egestas fringilla sapien.
+                Salut ! Moi c'est Charles-Edouard Fatrane, un développeur
+                full-stack passionné, basé entre Paris et Toulouse. Avec plus de
+                six ans d'expérience dans le domaine, je maîtrise des
+                technologies super cool comme Typescript, Next.js, React.js,
+                React Native / Expo.
               </p>
 
               <div className="mt-10 max-w-xl text-base leading-7 text-muted-foreground">
                 <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
+                  J'ai eu la chance de bosser avec des grands noms comme BNP, La
+                  Poste et Le Figaro, ainsi qu'avec des startups pleines
+                  d'innovation. J'ai touché à tout : mode, e-commerce,
+                  audiovisuel, médias... Quand je ne suis pas derrière mon
+                  écran, j'adore faire du vélo, courir, aller au cinéma et
+                  voyager. Ces passions me gardent en forme et nourrissent ma
+                  créativité.
                 </p>
 
                 <p className="mt-10">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
+                  Pour la suite, j'ai plein d'idées en tête : lancer plusieurs
+                  business, aider de nouvelles startups et grand groupe à
+                  grandir. Je suis aussi un grand fan des projets open source et
+                  j'en crée de plus en plus aujourd'hui afin d'aider les jeunes
+                  développeurs dans leurs parcours.
                 </p>
               </div>
             </div>
 
             <div className="lg:flex lg:flex-auto lg:justify-center">
               <dl className="w-64 space-y-8 xl:w-80">
-                {stats.map((stat) => (
-                  <div
-                    className="flex flex-col-reverse gap-y-4"
-                    key={stat.label}
-                  >
-                    <dt className="text-base leading-7 text-gray-600">
-                      {stat.label}
-                    </dt>
-
-                    <dd className="text-5xl font-semibold tracking-tight text-gray-900">
-                      {stat.value}
-                    </dd>
-                  </div>
-                ))}
+                <Image
+                  alt="me"
+                  className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover grayscale dark:bg-zinc-800"
+                  sizes="(min-width: 1024px) 32rem, 20rem"
+                  src={portraitImage}
+                />
               </dl>
             </div>
           </div>
