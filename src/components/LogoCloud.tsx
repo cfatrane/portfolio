@@ -1,82 +1,57 @@
-import Image from "next/image";
+import { clsx } from "clsx";
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { LeFigaroLogo, PayplugLogo } from "@/constants/company/logos";
 
-type LogoCloudItemProps = {
-  content: string;
-  src: string;
-};
-
-function LogoCloudItem({ content, src }: Readonly<LogoCloudItemProps>) {
+function LogoCloudItem({
+  className,
+  icon: Icon,
+}: Readonly<{
+  className?: string;
+  icon: React.ComponentType<{ className?: string }>;
+}>) {
   return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger>
-          <Image
-            alt={`${content.toLowerCase()} logo`}
-            className="max-h-12 w-full object-contain"
-            height={48}
-            src={src}
-            width={48}
-          />
-        </TooltipTrigger>
-
-        <TooltipContent>
-          <p>{content}</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+    <div className={clsx(className)}>
+      <Icon
+        className={`size-full origin-center fill-white transition ease-in-out hover:scale-125`}
+      />
+    </div>
   );
 }
 
 export function LogoCloud() {
   return (
-    <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-        <LogoCloudItem
-          content="React Js"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-        />
+    <div className="bg-secondary py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 className="text-center text-lg font-semibold leading-8 text-primary">
+          J'ai collaborer avec de grands groupes français
+        </h2>
 
-        <LogoCloudItem
-          content="Next Js"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-        />
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <LogoCloudItem
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            icon={LeFigaroLogo}
+          />
 
-        <LogoCloudItem
-          content="Typescript"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-        />
+          <LogoCloudItem
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            icon={PayplugLogo}
+          />
 
-        <LogoCloudItem
-          content="Vercel"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
-        />
+          <LogoCloudItem
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            icon={PayplugLogo}
+          />
 
-        <LogoCloudItem
-          content="Prisma"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
-        />
+          <LogoCloudItem
+            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+            icon={PayplugLogo}
+          />
 
-        <LogoCloudItem
-          content="Prisma"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-        />
-
-        <LogoCloudItem
-          content="Node Js"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-        />
-
-        <LogoCloudItem
-          content="Tailwind"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-        />
+          <LogoCloudItem
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            icon={PayplugLogo}
+          />
+        </div>
       </div>
     </div>
   );
