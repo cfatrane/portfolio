@@ -1,14 +1,24 @@
 import Hero from "@/components/Hero";
+import { LogoCloud } from "@/components/LogoCloud";
 import { Process } from "@/components/Services";
+import WhoIAm from "@/components/WhoIAm";
 
 export default function Index() {
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex w-full flex-col justify-center">
       <div className="h-screen">
         <Hero />
       </div>
 
-      <div className="mt-32 sm:mt-56 ">
+      <div>
+        <WhoIAm />
+      </div>
+
+      <div className="mt-32 sm:mt-40">
+        <LogoCloud />
+      </div>
+
+      <div className="mt-32 sm:mt-56">
         <Process />
       </div>
     </div>
