@@ -15,7 +15,7 @@ import {
   VercelIcon,
 } from "@/constants/bar";
 
-type LogoCloudItemProps = {
+type TechnoCloudItemProps = {
   content: string;
   icon: React.ComponentType<{ className?: string }>;
   fill?: string;
@@ -25,7 +25,7 @@ function LogoCloudItem({
   content,
   icon: Icon,
   fill,
-}: Readonly<LogoCloudItemProps>) {
+}: Readonly<TechnoCloudItemProps>) {
   return (
     <TooltipProvider>
       <Tooltip>
