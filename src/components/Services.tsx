@@ -14,11 +14,11 @@ export function Process() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-base font-semibold leading-7 text-indigo-400">
+        <h2 className="text-base font-semibold leading-7 text-primary">
           Des process rapides
         </h2>
 
-        <p className="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+        <p className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Vous avez un projet ? Parlons en.
         </p>
 
