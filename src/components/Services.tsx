@@ -2,8 +2,11 @@
 
 import React, { useState } from "react";
 
+import Link from "next/link";
+
 import { AnimatePresence, motion } from "framer-motion";
 
+import { Button } from "@/components/ui/button";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 
 export function Process() {
@@ -11,11 +14,11 @@ export function Process() {
     <div className="flex flex-col items-center justify-center">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-base font-semibold leading-7 text-indigo-400">
-          Allons droit au but
+          Des process rapides
         </h2>
 
         <p className="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-          Des process rapides et sans accroc
+          Vous avez un projet ? Parlons en.
         </p>
 
         <p className="mt-6 text-lg leading-8 text-muted-foreground">
@@ -68,6 +71,12 @@ export function Process() {
           />
         </Card>
       </div>
+
+      <Button asChild>
+        <Link href="https://calendly.com/cfatrane-pro/meeting-europe">
+          Prendre RDV
+        </Link>
+      </Button>
     </div>
   );
 }
