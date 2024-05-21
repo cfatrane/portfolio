@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 import { clsx } from "clsx";
 
@@ -7,6 +8,8 @@ import KinetixLogo from "@/assets/company/kinetix-logo.png";
 import LaPosteLogo from "@/assets/company/la-poste.png";
 import LeFigaroLogo from "@/assets/company/le-figaro.png";
 import PayplugLogo from "@/assets/company/payplug.png";
+
+import { Button } from "@/components/ui/button";
 
 function LogoCloudItem({
   alt,
@@ -31,7 +34,7 @@ function LogoCloudItem({
 
 export function LogoCloud() {
   return (
-    <div className="bg-secondary py-24 sm:py-32">
+    <div className="flex flex-col items-center justify-center bg-secondary py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-primary">
           J'ai collaborer avec de grands groupes et startups françaises
@@ -69,6 +72,10 @@ export function LogoCloud() {
           />
         </div>
       </div>
+
+      <Button asChild className="mt-20">
+        <Link href="/experiences">La liste complete</Link>
+      </Button>
     </div>
   );
 }
