@@ -118,7 +118,7 @@ export const WavyBackground = ({
     setIsSafari(
       typeof window !== "undefined" &&
         navigator.userAgent.includes("Safari") &&
-        !navigator.userAgent.includes("Chrome"),
+        !navigator.userAgent.includes("Chrome")
     );
   }, []);
 
@@ -126,7 +126,7 @@ export const WavyBackground = ({
     <div
       className={cn(
         "flex h-full flex-col items-center justify-center",
-        containerClassName,
+        containerClassName
       )}
       ref={containerRef}
     >

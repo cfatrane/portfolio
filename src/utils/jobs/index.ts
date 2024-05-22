@@ -1,9 +1,9 @@
 import kebabCase from "lodash/kebabCase";
 
 import { JOBS_FR } from "@/constants/jobs/fr";
-import { Props } from "@/constants/jobs/types";
+import { JobType } from "@/constants/jobs/types";
 
-export const extractTechnos = (experience: Props, name: string) => {
+export const extractTechnos = (experience: JobType, name: string) => {
   const technos = experience.technos[
     (name as Extract<keyof (typeof experience)["technos"], string>) ?? ""
   ]
@@ -13,7 +13,7 @@ export const extractTechnos = (experience: Props, name: string) => {
   return technos;
 };
 
-export const extractAllTechnos = (experience: Props) => {
+export const extractAllTechnos = (experience: JobType) => {
   const frontend = extractTechnos(experience, "Frontend");
   const backend = extractTechnos(experience, "Backend");
   const devops = extractTechnos(experience, "Devops");
@@ -25,7 +25,7 @@ export const extractAllTechnos = (experience: Props) => {
 
 export const getExperience = (slug: string) => {
   const experience = JOBS_FR.find(
-    (element) => kebabCase(element.name) === kebabCase(slug),
+    (element) => kebabCase(element.name) === kebabCase(slug)
   );
 
   return experience;

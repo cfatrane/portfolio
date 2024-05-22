@@ -14,16 +14,21 @@ export const PROJECTS = [
     wip: true,
   },
   {
-    title: "react-native-boilerplate",
-    description: "React Native Boilerplate",
-    link: "https://github.com/cfatrane/react-native-boilerplate",
-    wip: true,
+    title: "the-next-google",
+    description: "I dare you to click",
+    link: "http://planetaria.tech",
   },
   {
     title: "pokedex-app",
     description:
       "A React Native application for Pokemon. A pokedex with list of all Pokemons and their stats, type, evolution.",
     link: "https://github.com/cfatrane/pokedex-app",
+    wip: true,
+  },
+  {
+    title: "react-native-boilerplate",
+    description: "React Native Boilerplate",
+    link: "https://github.com/cfatrane/react-native-boilerplate",
     wip: true,
   },
   {

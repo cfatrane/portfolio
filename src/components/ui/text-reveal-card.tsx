@@ -57,7 +57,7 @@ export const TextRevealCard = ({
 
   function touchMoveHandler(event: React.TouchEvent<HTMLDivElement>) {
     event.preventDefault();
-    const clientX = event.touches[0]!.clientX;
+    const { clientX } = event.touches[0]!;
 
     if (cardRef.current) {
       const relativeX = clientX - left;
@@ -72,7 +72,7 @@ export const TextRevealCard = ({
     <div
       className={cn(
         "relative w-[40rem] overflow-hidden rounded-lg border border-white/[0.08] bg-[#1d1c20] p-8",
-        className,
+        className
       )}
       onMouseEnter={mouseEnterHandler}
       onMouseLeave={mouseLeaveHandler}

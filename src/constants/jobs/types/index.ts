@@ -1,6 +1,6 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-export type Props = {
+export type JobType = {
   name: string;
   description: string;
   missions: string[];
@@ -16,8 +16,8 @@ export type Props = {
     Tools?: string;
   };
   startDate: string;
-  endDate: string;
-  context: string;
+  endDate?: string | null;
+  context?: string;
   color?: string;
   website: string;
 };

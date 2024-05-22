@@ -1,13 +1,13 @@
 import { type Metadata } from "next";
 
-import NextImage from "next/image";
+import Image from "next/image";
 
-import { Image } from "@nextui-org/image";
 import { Link } from "@nextui-org/link";
 import dayjs from "dayjs";
 import kebabCase from "lodash/kebabCase";
 
 import { SimpleLayout } from "@/components/SimpleLayout";
+import { Button } from "@/components/ui/button";
 
 import { JOBS_FR } from "@/constants/jobs/fr";
 
@@ -30,12 +30,12 @@ function Experiences() {
             <div className="mb-10" key={item.name}>
               <Link
                 className="mb-4 flex w-fit items-center"
-                href={`experiences/${kebabCase(item.name)}`}
+                href={item.website}
                 showAnchorIcon
                 style={{ color: item.color }}
               >
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                  <NextImage
+                <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                  <Image
                     alt=""
                     className="object-cover"
                     height={50}
@@ -65,26 +65,24 @@ function Experiences() {
 
                   <span> - </span>
 
-                  <span>{dayjs(item.endDate).format("MMM YYYY")}</span>
+                  <span>
+                    {item.endDate
+                      ? dayjs(item.endDate).format("MMM YYYY")
+                      : "Aujourd'hui"}
+                  </span>
                 </p>
               </div>
 
-              <div className="prose-sm text-sm dark dark:prose-invert">
-                <a href={item.website}>
-                  {item?.image && (
-                    <Image
-                      alt={`${item.name} thumbnail`}
-                      className="rounded-lg object-cover"
-                      height={1000}
-                      isBlurred
-                      isZoomed
-                      src={item.image}
-                      width={1000}
-                    />
-                  )}
-                </a>
-
+              <div className="prose-sm dark:prose-invert dark font-sans text-sm">
                 <p className="mb-2 mt-8">{item.description}</p>
+              </div>
+
+              <div className="mt-4 flex justify-center">
+                <Button asChild style={{ backgroundColor: item.color }}>
+                  <Link href={`experiences/${kebabCase(item.name)}`}>
+                    Détail
+                  </Link>
+                </Button>
               </div>
             </div>
           ))}

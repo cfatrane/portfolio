@@ -13,7 +13,7 @@
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
   "ignorePatterns": ["dist", ".eslintrc.cjs"],
   "parser": "@typescript-eslint/parser",
@@ -137,6 +137,13 @@
         "next": ["const", "let", "var"]
       }
     ],
+    "prefer-const": "warn",
+    "prefer-destructuring": "warn",
+    "prefer-object-spread": "warn",
+    // S
+    // "sort-keys": ["off", "asc", { "natural": true, "minKeys": 5 }],
+    // "sort-vars": "error",
+    // "sort-imports": ["warn"],
 
     // React
     "react/jsx-newline": 1,

@@ -1,9 +1,8 @@
 import { type Metadata } from "next";
 
 import Image from "next/image";
-import NextLink from "next/link";
+import Link from "next/link";
 
-import { Link } from "@nextui-org/link";
 import { clsx } from "clsx";
 
 import { Container } from "@/components/Container";
@@ -25,27 +24,27 @@ function SocialLink({
   href,
   children,
   icon: Icon,
-}: {
+}: Readonly<{
   className?: string;
   href: string;
   icon: React.ComponentType<{ className?: string }>;
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <li className={clsx(className, "flex")}>
-      <NextLink
+      <Link
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
         href={href}
       >
         <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
 
         <span className="ml-4">{children}</span>
-      </NextLink>
+      </Link>
     </li>
   );
 }
 
-function MailIcon(props: React.ComponentPropsWithoutRef<"svg">) {
+function MailIcon(props: Readonly<React.ComponentPropsWithoutRef<"svg">>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" {...props}>
       <path
@@ -70,7 +69,7 @@ export default function About() {
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               alt="me"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover grayscale dark:bg-zinc-800"
               sizes="(min-width: 1024px) 32rem, 20rem"
               src={portraitImage}
             />
@@ -78,12 +77,12 @@ export default function About() {
         </div>
 
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             "Je m'appelle Charles-Édouard Fatrane. J'habite à Paris, où je
             conçois des sites Web et des applications mobiles."
           </h1>
 
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 space-y-7 font-sans text-base text-zinc-600 dark:text-zinc-400">
             <p>Hello 👋 !</p>
 
             <p>
@@ -123,18 +122,18 @@ export default function About() {
 
             <p>
               On échange sur votre projet ?<br />
-
+              <br className="md:hidden" />
               Contactez-moi par e-mail :{" "}
-
-              <Link href="mailto:cfatrane.pro@gmail.com">
+              <Link className="underline" href="mailto:cfatrane.pro@gmail.com">
                 cfatrane.pro@gmail.com
               </Link>
-
               <br />
-
+              <br className="md:hidden" />
               Réserver un créneau :{" "}
-
-              <Link href="https://calendly.com/cfatrane-pro">
+              <Link
+                className="underline"
+                href="https://calendly.com/cfatrane-pro"
+              >
                 https://calendly.com/cfatrane-pro
               </Link>
             </p>
