@@ -21,10 +21,10 @@ function LogoCloudItem({
   icon: StaticImageData;
 }>) {
   return (
-    <div className={clsx(className, "relative h-20 w-48")}>
+    <div className={clsx(className, "relative h-20 w-52")}>
       <Image
         alt={alt}
-        className="size-full shrink origin-center rounded bg-foreground object-contain p-2 transition ease-in-out hover:scale-125"
+        className="size-full shrink origin-center rounded bg-white object-contain p-2 transition ease-in-out hover:scale-125"
         fill
         src={icon}
       />
