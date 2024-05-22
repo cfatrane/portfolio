@@ -16,8 +16,8 @@ export type JobType = {
     Tools?: string;
   };
   startDate: string;
-  endDate: string;
-  context: string;
+  endDate?: string | null;
+  context?: string;
   color?: string;
   website: string;
 };

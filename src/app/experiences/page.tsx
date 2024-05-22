@@ -65,7 +65,11 @@ function Experiences() {
 
                   <span> - </span>
 
-                  <span>{dayjs(item.endDate).format("MMM YYYY")}</span>
+                  <span>
+                    {item.endDate
+                      ? dayjs(item.endDate).format("MMM YYYY")
+                      : "Aujourd'hui"}
+                  </span>
                 </p>
               </div>
 

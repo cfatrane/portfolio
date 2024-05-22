@@ -131,6 +131,10 @@ function ExperienceDetail({ params }: { params: { slug: string } }) {
 
   return (
     <SimpleLayout intro={experience.title} title={experience.name}>
+      <header className="max-w-2xl">
+        <p className="mb-16">{experience.context}</p>
+      </header>
+
       <BentoGrid className="mx-auto max-w-4xl">
         {items.map((item, index) => (
           <BentoGridItem

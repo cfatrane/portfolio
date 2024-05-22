@@ -9,6 +9,7 @@ import logoPayplug from "@/images/logos/payplug_logo.jpeg";
 import logoRockUSupport from "@/images/logos/rock_u_support_logo.jpeg";
 import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
 import logoTilli from "@/images/logos/tilli_logo.jpeg";
+import logoUzzle from "@/images/logos/uzzle_logo.jpeg";
 
 import { JobType } from "../types";
 
@@ -35,11 +36,33 @@ export const JOBS_FR: JobType[] = [
       Tools: "Jira",
     },
     startDate: "2024-03",
-    endDate: "2024-05",
-    context:
-      "J'ai rejoint le Figaro afin de participer au développement d’une plateforme en interne pour les pigistes. Ma mission a duré 6 mois.",
     color: "#8E7AA9",
     website: "https://www.jedid.fr/",
+  },
+  {
+    name: "Uzzle",
+    description:
+      "Uzzle vous permet de créer vos personnages de toutes pièces en un instant. Grâce à notre algorithme d’intelligence artificielle, nous aidons les auteurs à développer des histoires cohérentes avec des personnages aux vies captivantes.",
+    missions: [
+      "Création et implémentation de nouveaux designs (UI / UX) des screens",
+      "Création de l'interface ",
+      "Implémentation de good practices",
+      "Correction de bugs",
+    ],
+    title: "Cofondateur",
+    logo: logoUzzle,
+    image: "/screenshots/le_figaro.jpeg",
+    technos: {
+      Frontend:
+        "Next Js / React Js / Typescript / Javascript / Redux / shadcn / Firebase / Tanstack / SASS / Axios",
+      Backend: "Firebase / Node Js / MongoDB",
+      Devops: "Github / Github Actions",
+      Test: "Jest / React Testing Library",
+      Tools: "Slack / Jira",
+    },
+    startDate: "2024-02",
+    // color: "#F0F0F0",
+    website: "https://uzzle.ai/",
   },
   {
     name: "Figaro",
