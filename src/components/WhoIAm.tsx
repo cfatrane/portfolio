@@ -17,7 +17,7 @@ function WhoIAm() {
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
               <p className="text-xl leading-8 text-card-foreground">
-                Salut ! Moi c'est Charles-Edouard Fatrane, un développeur
+                Salut ! Moi c'est Charles-Édouard Fatrane, un développeur
                 full-stack passionné, basé entre Paris et Toulouse. Avec plus de
                 six ans d'expérience dans le domaine, je maîtrise des
                 technologies super cool comme Typescript, Next.js, React.js,
@@ -46,7 +46,7 @@ function WhoIAm() {
             </div>
 
             <div className="lg:flex lg:flex-auto lg:justify-center">
-              <dl className="w-64 space-y-8 xl:w-80">
+              <dl className="mx-auto w-64 space-y-8 xl:w-80">
                 <Image
                   alt="me"
                   className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover grayscale dark:bg-zinc-800"
