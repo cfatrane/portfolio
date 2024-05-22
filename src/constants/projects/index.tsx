@@ -14,10 +14,9 @@ export const PROJECTS = [
     wip: true,
   },
   {
-    title: "react-native-boilerplate",
-    description: "React Native Boilerplate",
-    link: "https://github.com/cfatrane/react-native-boilerplate",
-    wip: true,
+    title: "the-next-google",
+    description: "I dare you to click",
+    link: "http://planetaria.tech",
   },
   {
     title: "pokedex-app",
@@ -27,14 +26,15 @@ export const PROJECTS = [
     wip: true,
   },
   {
+    title: "react-native-boilerplate",
+    description: "React Native Boilerplate",
+    link: "https://github.com/cfatrane/react-native-boilerplate",
+    wip: true,
+  },
+  {
     title: "vitejs-boilerplate",
     description: "Boilerplate for Vite Js. Eslint, Husky, Prettier, Tailwind",
     link: "https://github.com/cfatrane/vitejs-boilerplate",
     wip: true,
-  },
-  {
-    title: "the-next-google",
-    description: "I dare you to click",
-    link: "http://planetaria.tech",
   },
 ];
