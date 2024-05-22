@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: title,
 };
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
     <SimpleLayout
       intro="J'ai travaillé sur des tonnes de petits projets au fil des ans, en voici quelques-un. Beaucoup d'entre eux sont open-source, donc si vous voyez quelque chose qui vous intéresse, regardez le code et contribuez si vous avez des idées pour l'améliorer."

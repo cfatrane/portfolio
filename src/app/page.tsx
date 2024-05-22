@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import { LogoCloud } from "@/components/LogoCloud";
+import Projects from "@/components/pages/Home/Projects";
 import { Process } from "@/components/Services";
 import WhoIAm from "@/components/WhoIAm";
 
@@ -18,7 +19,11 @@ export default function Index() {
         <LogoCloud />
       </div>
 
-      <div className="mt-32 sm:mt-56">
+      <div className="py-16 sm:py-20">
+        <Projects />
+      </div>
+
+      <div className="bg-secondary py-16 sm:pt-28">
         <Process />
       </div>
     </div>
