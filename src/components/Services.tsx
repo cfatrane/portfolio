@@ -23,9 +23,9 @@ export function Process() {
         </p>
 
         <p className="mt-6 text-lg leading-8 text-muted-foreground">
-          Analyse des besoins, propositions stratégiques, développement agile et
-          itératif, tests rigoureux et validation finale pour assurer la
-          qualité.
+          J'écoute vos besoins, propose des stratégies sur mesure, développe de
+          manière agile et itérative, effectue des tests minutieux et valide
+          chaque étape pour garantir une qualité optimale.
         </p>
       </div>
 
