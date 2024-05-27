@@ -8,8 +8,8 @@ import portraitImage from "@/images/portrait.jpg";
 function WhoIAm() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="mx-auto mt-12 w-full max-w-7xl px-6 py-20 sm:mt-0 lg:px-8 xl:mt-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+      <div className="mx-auto w-full max-w-7xl px-6 py-20 sm:mt-0 lg:px-8 xl:mt-8">
+        <div className="mx-auto max-w-7xl lg:mx-0 lg:max-w-none">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Qui suis je ?
           </h2>
