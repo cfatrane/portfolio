@@ -76,7 +76,7 @@ export function Process() {
 
       <Button asChild>
         <Link href="https://calendly.com/cfatrane-pro/meeting-europe">
-          Prendre RDV
+          Passez a l'étape supérieur
         </Link>
       </Button>
     </div>
@@ -98,7 +98,7 @@ const Card = ({
 
   return (
     <div
-      className="group/canvas-card relative relative mx-auto flex h-[30rem] w-full  max-w-sm items-center justify-center border border-black/[0.2] p-4 dark:border-white/[0.2]"
+      className="group/canvas-card relative mx-auto flex h-[30rem] w-full max-w-sm items-center justify-center border border-black/[0.2] p-4 dark:border-white/[0.2]"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
