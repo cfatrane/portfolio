@@ -11,19 +11,19 @@ export default function Index() {
         <Hero />
       </div>
 
-      <div>
-        <WhoIAm />
-      </div>
-
-      <div className="mt-32 sm:mt-40">
+      <div className="bg-secondary py-24 sm:py-32">
         <LogoCloud />
       </div>
 
-      <div className="py-16 sm:py-20">
+      <div className="py-12">
+        <WhoIAm />
+      </div>
+
+      <div className="bg-secondary py-16 sm:py-20">
         <Projects />
       </div>
 
-      <div className="bg-secondary py-16 sm:pt-28">
+      <div className="py-16 sm:pt-28">
         <Process />
       </div>
     </div>
