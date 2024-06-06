@@ -11,7 +11,7 @@ export default function Index() {
         <Hero />
       </div>
 
-      <div className="bg-secondary py-24 sm:py-32">
+      <div className="py-24 sm:py-32">
         <LogoCloud />
       </div>
 
@@ -19,7 +19,7 @@ export default function Index() {
         <WhoIAm />
       </div>
 
-      <div className="bg-secondary py-16 sm:py-20">
+      <div className="py-16 sm:py-20">
         <Projects />
       </div>
 
