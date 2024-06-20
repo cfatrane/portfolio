@@ -14,11 +14,6 @@ export const PROJECTS = [
     wip: true,
   },
   {
-    title: "the-next-google",
-    description: "I dare you to click",
-    link: "http://planetaria.tech",
-  },
-  {
     title: "pokedex-app",
     description:
       "A React Native application for Pokemon. A pokedex with list of all Pokemons and their stats, type, evolution.",
