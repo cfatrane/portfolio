@@ -12,7 +12,7 @@ export const JOBS: JobType[] = [
       "Correction de bugs",
     ],
     title: "Co-founder",
-    logoUrl: "/uzzle.jpeg",
+    logoUrl: "/logo/uzzle.jpeg",
     image: "/screenshots/le_figaro.jpeg",
     technos: {
       Frontend:
@@ -37,7 +37,7 @@ export const JOBS: JobType[] = [
       "Correction de bugs",
     ],
     title: "Mobile Developer",
-    logoUrl: "/jedid.jpeg",
+    logoUrl: "/logo/jedid.jpeg",
     image: "/screenshots/le_figaro.jpeg",
     technos: {
       Frontend:
@@ -66,7 +66,7 @@ export const JOBS: JobType[] = [
       "Correction de bugs",
     ],
     title: "React Js Developer",
-    logoUrl: "/le_figaro.jpeg",
+    logoUrl: "/logo/le_figaro.jpeg",
     image: "/screenshots/le_figaro.jpeg",
     technos: {
       Frontend:
@@ -99,7 +99,7 @@ export const JOBS: JobType[] = [
       "Corrections de bugs",
     ],
     title: "React Js Developer",
-    logoUrl: "/payplug.jpeg",
+    logoUrl: "/logo/payplug.jpeg",
     image: "/screenshots/payplug.jpeg",
     technos: {
       Frontend:
@@ -130,7 +130,7 @@ export const JOBS: JobType[] = [
       "Implémentation des méthodes API avec Axios",
       "Ajout de tests automatisé",
     ],
-    logoUrl: "/kinetixtech.jpeg",
+    logoUrl: "/logo/kinetixtech.jpeg",
     image: "/screenshots/kinetix.jpeg",
     title: "React Js Developer",
     technos: {
@@ -158,7 +158,7 @@ export const JOBS: JobType[] = [
       "Refacto de code",
     ],
     title: "React Native Developer",
-    logoUrl: "/rock_u_support.jpeg",
+    logoUrl: "/logo/rock_u_support.jpeg",
     image: "/screenshots/rock_u_support.jpeg",
     technos: {
       Frontend: "React Native / Javascript / styled-components / Axios",
@@ -184,7 +184,7 @@ export const JOBS: JobType[] = [
       "Ajout de test",
     ],
     title: "React Js Developer",
-    logoUrl: "/ayruu.jpeg",
+    logoUrl: "/logo/ayruu.jpeg",
     image: "/screenshots/ayruu.jpeg",
     technos: {
       Frontend:
@@ -214,7 +214,7 @@ export const JOBS: JobType[] = [
       "Résolution de bugs",
     ],
     title: "React Js Developer",
-    logoUrl: "/tilli.jpeg",
+    logoUrl: "/logo/tilli.jpeg",
     image: "/screenshots/tilli.jpeg",
     technos: {
       Frontend:
@@ -244,7 +244,7 @@ export const JOBS: JobType[] = [
       "Page admin",
     ],
     title: "React Js Developer",
-    logoUrl: "/this_is_alf.jpeg",
+    logoUrl: "/logo/this_is_alf.jpeg",
     image: "/screenshots/alf.jpeg",
     technos: {
       Frontend:
@@ -273,7 +273,7 @@ export const JOBS: JobType[] = [
       "Mise en place de nouvelles fonctionnalités en back",
     ],
     title: "Fullstack Web Developer",
-    logoUrl: "le_closet.jpeg",
+    logoUrl: "/logole_closet.jpeg",
     image: "/screenshots/le_closet.jpeg",
     technos: {
       Frontend: "Ruby / Javascript / Bootstrap / SASS",
@@ -300,7 +300,7 @@ export const JOBS: JobType[] = [
       "Implémentation de tests",
     ],
     title: "React Js Developer",
-    logoUrl: "/bnp_paribas.jpeg",
+    logoUrl: "/logo/bnp_paribas.jpeg",
     image: "/screenshots/bnp.jpeg",
     technos: {
       Frontend: "React Js / SASS",
@@ -325,7 +325,7 @@ export const JOBS: JobType[] = [
       "Implémentation d'API REST",
     ],
     title: "Mobile Developer",
-    logoUrl: "/la_poste.jpeg",
+    logoUrl: "/logo/la_poste.jpeg",
     image: "/screenshots/la_poste.jpeg",
     technos: {
       Frontend: "Swift",
