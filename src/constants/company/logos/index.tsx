@@ -1,5 +1,5 @@
 export function BNPIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg
@@ -880,7 +880,7 @@ export function BNPIcon(
 }
 
 export function LaPosteIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg
@@ -903,7 +903,7 @@ export function LaPosteIcon(
 }
 
 export function LeFigaroLogo(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg
@@ -1045,7 +1045,7 @@ export function LeFigaroLogo(
 }
 
 export function PayplugLogo(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg

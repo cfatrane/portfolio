@@ -3,6 +3,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = { transpilePackages: ["three"] };
 
 module.exports = withBundleAnalyzer(nextConfig);

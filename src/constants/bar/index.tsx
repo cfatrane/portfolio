@@ -1,6 +1,6 @@
 // TODO : Change name of this file
 export function JavascriptIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg viewBox="0 0 128 128" {...props}>
@@ -15,7 +15,7 @@ export function JavascriptIcon(
 }
 
 export function NextJsIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg viewBox="0 0 128 128" {...props}>
@@ -62,7 +62,7 @@ export function NextJsIcon(
 }
 
 export function PostgresIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg viewBox="0 0 128 128" {...props}>
@@ -84,7 +84,7 @@ export function PostgresIcon(
 }
 
 export function PrismaIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg viewBox="0 0 128 128" {...props}>
@@ -98,7 +98,7 @@ export function PrismaIcon(
 }
 
 export function ReactIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg viewBox="0 0 128 128" {...props}>
@@ -112,7 +112,7 @@ export function ReactIcon(
 }
 
 export function TailwindIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg viewBox="0 0 128 128" {...props}>
@@ -125,7 +125,7 @@ export function TailwindIcon(
 }
 
 export function TypescriptIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg viewBox="0 0 128 128" {...props}>
@@ -141,7 +141,7 @@ export function TypescriptIcon(
 }
 
 export function VercelIcon(
-  props: Readonly<React.ComponentPropsWithoutRef<"svg">>
+  props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {
   return (
     <svg viewBox="0 0 128 128" {...props}>

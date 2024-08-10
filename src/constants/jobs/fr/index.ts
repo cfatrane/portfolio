@@ -11,9 +11,7 @@ import logoAlf from "@/images/logos/thisisalf_logo.jpeg";
 import logoTilli from "@/images/logos/tilli_logo.jpeg";
 import logoUzzle from "@/images/logos/uzzle_logo.jpeg";
 
-import { JobType } from "../types";
-
-export const JOBS_FR: JobType[] = [
+export const JOBS_FR = [
   {
     name: "Jedid",
     description:
