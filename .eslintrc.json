@@ -15,7 +15,12 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "ignorePatterns": [
+    "dist",
+    ".eslintrc.cjs",
+    "**/components/ui/**",
+    "**/components/magicui/**"
+  ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["react-refresh"],
   "rules": {
@@ -69,6 +74,18 @@
     ],
 
     "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "all",
+        "argsIgnorePattern": "^_",
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_",
+        "destructuredArrayIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
     "@typescript-eslint/no-var-requires": ["error", { "allow": ["@next*"] }]
   },
   "settings": {

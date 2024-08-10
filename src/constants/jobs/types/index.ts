@@ -1,11 +1,10 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-
 export type JobType = {
-  name: string;
+  company: string;
   description: string;
+  badges?: string[];
   missions: string[];
   title: string;
-  logo: string | StaticImport;
+  logoUrl: string;
   image?: string;
   technos: {
     Frontend?: string;
@@ -19,5 +18,5 @@ export type JobType = {
   endDate?: string | null;
   context?: string;
   color?: string;
-  website: string;
+  href: string;
 };
