@@ -160,7 +160,11 @@ export default function Index() {
                 key={project.title}
               >
                 <ProjectCard
-                  dates={project.dates}
+                  dates={`${dayjs(project.startDate).format("MMM YYYY")} - ${
+                    project.endDate
+                      ? dayjs(project.endDate).format("MMM YYYY")
+                      : "Present"
+                  }`}
                   description={project.description}
                   href={project.href}
                   image={project.image}

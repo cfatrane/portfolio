@@ -1,5 +1,7 @@
-import { Button } from "@/components/Button";
+import Link from "next/link";
+
 import { Container } from "@/components/Container";
+import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
@@ -17,9 +19,11 @@ export default function NotFound() {
           Sorry, we couldn’t find the page you’re looking for.
         </p>
 
-        <Button className="mt-4" href="/" variant="secondary">
-          Go back home
-        </Button>
+        <Link href="/" passHref>
+          <Button className="mt-4" variant="secondary">
+            Go back home
+          </Button>
+        </Link>
       </div>
     </Container>
   );

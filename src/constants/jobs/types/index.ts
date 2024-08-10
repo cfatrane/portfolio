@@ -20,3 +20,16 @@ export type JobType = {
   color?: string;
   href: string;
 };
+
+export type ProjectType = {
+  title: string;
+  href: string;
+  description: string;
+  technologies: string[];
+  links: { type: string; href: string; icon: JSX.Element }[];
+  image?: string;
+  video?: string;
+  startDate: string;
+  endDate?: string | null;
+  wip?: boolean;
+};

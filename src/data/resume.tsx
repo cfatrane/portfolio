@@ -3,17 +3,18 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 import { Icons } from "@/components/icons";
 
 import { JOBS } from "@/constants/jobs";
+import { PROJECTS } from "@/constants/projects";
 
 export const DATA = {
-  name: "Charles-Edouard Fatrane",
+  name: "Charles-Édouard Fatrane",
   initials: "DV",
   url: "https://cfatrane.me",
   location: "Paris, France",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Software Engineer and Entrepreneur. I love create stuffs and helping people.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I have been a frontend developer for over 6 years, working in sectors such as e-commerce, audiovisual and media.\n My professional background, which ranges from innovative start-ups to large companies, has allowed me to develop web platforms, showcase sites, e-commerce solutions, interactive blogs and responsive mobile applications.\n I work closely with my clients to understand their needs and exceed their expectations. If you are looking for a developer who combines technical expertise, attention to detail and a comprehensive approach to web development, I would be delighted to discuss with you.",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -48,6 +49,19 @@ export const DATA = {
     email: "cfatrane.pro@gmail.com",
     tel: "+330769043501",
     social: {
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/cfatrane/",
+        icon: Icons.linkedin,
+
+        navbar: true,
+      },
+      Malt: {
+        name: "Youtube",
+        url: "https://www.malt.fr/profile/cfatrane/",
+        icon: Icons.malt,
+        navbar: true,
+      },
       GitHub: {
         name: "GitHub",
         url: "https://github.com/cfatrane/",
@@ -55,10 +69,10 @@ export const DATA = {
 
         navbar: true,
       },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/cfatrane/",
-        icon: Icons.linkedin,
+      Instagram: {
+        name: "X",
+        url: "https://www.instagram.com/codexom_dev/",
+        icon: Icons.instagram,
 
         navbar: true,
       },
@@ -69,18 +83,12 @@ export const DATA = {
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:cfatrane.pro@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -88,162 +96,23 @@ export const DATA = {
   work: [...JOBS],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
+      school: "42",
+      href: "https://42.fr/",
+      degree: "Bachelor",
+      logoUrl: "/logo/42born2code_logo.jpeg",
       start: "2016",
-      end: "2021",
+      end: "2019",
     },
     {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
+      school: "Join Lion",
+      href: "https://lion.mariaschools.com/",
+      degree: "Startup Formation",
+      logoUrl: "/logo/joinlion_logo.jpeg",
       start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
       end: "2016",
     },
   ],
-  projects: [
-    {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
-      active: true,
-      description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
-  ],
+  projects: [...PROJECTS],
   hackathons: [
     {
       title: "Hack Western 5",

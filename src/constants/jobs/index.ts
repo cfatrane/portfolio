@@ -11,7 +11,7 @@ export const JOBS: JobType[] = [
       "Implémentation de good practices",
       "Correction de bugs",
     ],
-    title: "Cofondateur",
+    title: "Co-founder",
     logoUrl: "/uzzle.jpeg",
     image: "/screenshots/le_figaro.jpeg",
     technos: {
@@ -36,7 +36,7 @@ export const JOBS: JobType[] = [
       "Implémentation de good practices",
       "Correction de bugs",
     ],
-    title: "Développeur Mobile",
+    title: "Mobile Developer",
     logoUrl: "/jedid.jpeg",
     image: "/screenshots/le_figaro.jpeg",
     technos: {
@@ -65,7 +65,7 @@ export const JOBS: JobType[] = [
       "Refacto de code et implémentation de good practices",
       "Correction de bugs",
     ],
-    title: "Développeur React Js",
+    title: "React Js Developer",
     logoUrl: "/le_figaro.jpeg",
     image: "/screenshots/le_figaro.jpeg",
     technos: {
@@ -98,7 +98,7 @@ export const JOBS: JobType[] = [
       "Ajout de tests automatisé",
       "Corrections de bugs",
     ],
-    title: "Développeur React Js",
+    title: "React Js Developer",
     logoUrl: "/payplug.jpeg",
     image: "/screenshots/payplug.jpeg",
     technos: {
@@ -132,7 +132,7 @@ export const JOBS: JobType[] = [
     ],
     logoUrl: "/kinetixtech.jpeg",
     image: "/screenshots/kinetix.jpeg",
-    title: "Développeur React Js / Next Js",
+    title: "React Js Developer",
     technos: {
       Frontend:
         "React Js / Redux / Material UI / Bootstrap / SASS / styled-components / Axios /  Three Js / React Router / React Spring / Lodash / Hubspot / Segment / React DnD",
@@ -157,7 +157,7 @@ export const JOBS: JobType[] = [
       "Création du formulaire pour la prise de rendez-vous en fonction du lieu de la séance de sport",
       "Refacto de code",
     ],
-    title: "Développeur React Native",
+    title: "React Native Developer",
     logoUrl: "/rock_u_support.jpeg",
     image: "/screenshots/rock_u_support.jpeg",
     technos: {
@@ -183,7 +183,7 @@ export const JOBS: JobType[] = [
       "Implémentation du suivi visuel façon timeline pour les différentes étapes du voyage, notamment l’avion",
       "Ajout de test",
     ],
-    title: "Développeur React Js",
+    title: "React Js Developer",
     logoUrl: "/ayruu.jpeg",
     image: "/screenshots/ayruu.jpeg",
     technos: {
@@ -213,7 +213,7 @@ export const JOBS: JobType[] = [
       "Mise en place et optimisations d'outils pour faire gagner du temps aux équipes opérationnelles Customer Care & Tillistes sur l’application mobile",
       "Résolution de bugs",
     ],
-    title: "Développeur React Js",
+    title: "React Js Developer",
     logoUrl: "/tilli.jpeg",
     image: "/screenshots/tilli.jpeg",
     technos: {
@@ -243,7 +243,7 @@ export const JOBS: JobType[] = [
       "Création des formulaires pour la gestion d'entreprise et users",
       "Page admin",
     ],
-    title: "Développeur React Js",
+    title: "React Js Developer",
     logoUrl: "/this_is_alf.jpeg",
     image: "/screenshots/alf.jpeg",
     technos: {
@@ -272,7 +272,7 @@ export const JOBS: JobType[] = [
       "Refonte de la partie admin avec Active Admin",
       "Mise en place de nouvelles fonctionnalités en back",
     ],
-    title: "Développeur Fullstack Web",
+    title: "Fullstack Web Developer",
     logoUrl: "le_closet.jpeg",
     image: "/screenshots/le_closet.jpeg",
     technos: {
@@ -299,7 +299,7 @@ export const JOBS: JobType[] = [
       "Création des différentes méthodes de gestions d'utilisateurs, rôles ...",
       "Implémentation de tests",
     ],
-    title: "Développeur React Js",
+    title: "React Js Developer",
     logoUrl: "/bnp_paribas.jpeg",
     image: "/screenshots/bnp.jpeg",
     technos: {
@@ -324,7 +324,7 @@ export const JOBS: JobType[] = [
       "Design des différentes vues avec les designers",
       "Implémentation d'API REST",
     ],
-    title: "Développeur Mobile",
+    title: "Mobile Developer",
     logoUrl: "/la_poste.jpeg",
     image: "/screenshots/la_poste.jpeg",
     technos: {
