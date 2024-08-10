@@ -32,4 +32,10 @@ export const PROJECTS = [
     link: "https://github.com/cfatrane/vitejs-boilerplate",
     wip: true,
   },
+  {
+    title: "instagram-checker",
+    description: "A simple dashboard to check your basic Instagram stats",
+    link: "https://instagram-checker.vercel.app",
+    wip: true,
+  },
 ];
