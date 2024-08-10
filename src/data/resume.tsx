@@ -1,13 +1,10 @@
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 import { Icons } from "@/components/icons";
 
-import { JOBS } from "@/constants/jobs";
-import { PROJECTS } from "@/constants/projects";
-
 export const DATA = {
   name: "Charles-Édouard Fatrane",
-  initials: "DV",
+  initials: "CEF",
   url: "https://cfatrane.me",
   location: "Paris, France",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
@@ -43,7 +40,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "cfatrane.pro@gmail.com",
@@ -92,8 +89,6 @@ export const DATA = {
       },
     },
   },
-
-  work: [...JOBS],
   education: [
     {
       school: "42",
@@ -112,7 +107,6 @@ export const DATA = {
       end: "2016",
     },
   ],
-  projects: [...PROJECTS],
   hackathons: [
     {
       title: "Hack Western 5",

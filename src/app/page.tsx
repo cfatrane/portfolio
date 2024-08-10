@@ -13,6 +13,9 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 
+import { JOBS } from "@/constants/jobs";
+import { PROJECTS } from "@/constants/projects";
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Index() {
@@ -65,7 +68,7 @@ export default function Index() {
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
 
-          {DATA.work.map((work, id) => (
+          {JOBS.map((work, id) => (
             <BlurFade
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
               key={work.company}
@@ -154,7 +157,7 @@ export default function Index() {
           </BlurFade>
 
           <div className="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
-            {DATA.projects.map((project, id) => (
+            {PROJECTS.map((project, id) => (
               <BlurFade
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
                 key={project.title}

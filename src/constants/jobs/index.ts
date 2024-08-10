@@ -273,7 +273,7 @@ export const JOBS: JobType[] = [
       "Mise en place de nouvelles fonctionnalités en back",
     ],
     title: "Fullstack Web Developer",
-    logoUrl: "/logole_closet.jpeg",
+    logoUrl: "/logo/le_closet.jpeg",
     image: "/screenshots/le_closet.jpeg",
     technos: {
       Frontend: "Ruby / Javascript / Bootstrap / SASS",

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: "Charles-Édouard Fatrane - Développeur Web & Mobile",
   },
   description:
-    "Je m'appelle Charles-Édouard, développeur web et mobile basé à Paris. Je suis freelance et digital.",
+    "Je m'appelle Charles-Édouard, développeur web et mobile basé à Paris. Je suis freelance, entrepreneur et digital nomad.",
   openGraph: {
     title: `${DATA.name}`,
     description: DATA.description,
