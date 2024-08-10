@@ -1,6 +1,6 @@
-import { Icons } from "@/components/icons";
+import { ProjectType } from "@/types";
 
-import { ProjectType } from "@/constants/jobs/types";
+import { Icons } from "@/components/icons";
 
 export const PROJECTS: ProjectType[] = [
   {

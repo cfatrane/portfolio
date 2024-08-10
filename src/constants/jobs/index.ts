@@ -1,4 +1,4 @@
-import { JobType } from "@/constants/jobs/types";
+import { JobType } from "@/types";
 
 export const JOBS: JobType[] = [
   {

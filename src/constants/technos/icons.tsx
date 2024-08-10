@@ -1,4 +1,3 @@
-// TODO : Change name of this file
 export function JavascriptIcon(
   props: Readonly<React.ComponentPropsWithoutRef<"svg">>,
 ) {

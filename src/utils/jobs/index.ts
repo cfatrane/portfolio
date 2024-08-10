@@ -1,7 +1,7 @@
+import { JobType } from "@/types";
 import kebabCase from "lodash/kebabCase";
 
 import { JOBS_FR } from "@/constants/jobs/fr";
-import { JobType } from "@/constants/jobs/types";
 
 export const extractTechnos = (experience: JobType, name: string) => {
   const technos = experience.technos[
